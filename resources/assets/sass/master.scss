@@ -1,0 +1,54 @@
+body{
+	font-family: 'Lato', sans-serif;
+
+}
+
+
+.header{
+	background: white;
+	min-height: 1px;
+	overflow: hidden;
+}
+
+
+
+.placeholder-nav{
+	
+	height: 0;
+	position:relative;
+	right: 109px;
+	display: inline-block;
+	border-left: 109px solid transparent;
+	border-bottom: 109px solid #01579B;	
+	padding-right:110px;
+	width: 100%;
+	float:right;
+	position: relative;
+	left: 55px;
+}
+
+.main-logo img{
+	width: 200px;
+	position: relative; 
+	top: 15px;
+	display: block; 
+	float: right;
+	margin-left:20px;
+}
+
+.contact-balk{
+	background: #E65100;
+	height: 45px;
+}
+
+.contact-balk .contact-info{
+	margin-top: 12px;
+	color: white;
+
+	span{
+		color: #01579B;
+		position: relative;
+		right: 10px;
+		font-weight: 600;		
+	}
+}
