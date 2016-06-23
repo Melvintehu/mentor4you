@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+
+use App\Mentor;
 use App\Http\Requests;
 
 class MentorsController extends Controller
@@ -15,7 +17,11 @@ class MentorsController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'mentors' => Mentor::all(),
+        ];
+
+        return view('cms.pages.mentors.overzicht', compact('data'));
     }
 
     /**
