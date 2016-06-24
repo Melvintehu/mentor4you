@@ -19,7 +19,7 @@ body{
 	right: 109px;
 	display: inline-block;
 	border-left: 109px solid transparent;
-	border-bottom: 109px solid #01579B;	
+	border-bottom: 109px solid $main-color;	
 	padding-right:110px;
 	width: 100%;
 	float:right;
@@ -37,18 +37,40 @@ body{
 }
 
 .contact-balk{
-	background: #E65100;
-	height: 45px;
+	background: $secondary-color;
+	min-height: 1px;
 }
 
 .contact-balk .contact-info{
-	margin-top: 12px;
-	color: white;
+
+	
 
 	span{
-		color: #01579B;
+		color: $main-color;
 		position: relative;
 		right: 10px;
-		font-weight: 600;		
+		
 	}
+}
+
+
+
+
+.banner{
+	
+	padding-top: 80px;
+	overflow: hidden;
+	height: 440px;
+	position: relative;
+	
+	img{
+
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		z-index: -10;
+
+	}
+
 }

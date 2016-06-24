@@ -1,12 +1,12 @@
 .navbar-default{
-	background-color: #01579B;
-	border-color: #01579B;
+	background-color: $main-color;
+	border-color: $main-color;
 }
 
 
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
-    color: #E65100;
+    color: $secondary-color;
     background-color: transparent;
 }
 
@@ -15,7 +15,7 @@
 
 
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
-    color: #E65100;
+    color: $secondary-color;
     background-color: transparent;
 }
 
