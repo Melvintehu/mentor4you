@@ -1,5 +1,7 @@
  @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
 
-
+@import "reset";
+@import "huisstijl";
+@import "base-rules";
 @import "master";
 @import "navbar";

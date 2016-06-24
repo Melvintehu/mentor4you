@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Candidate;
 use App\Http\Requests;
 
 class CandidatesController extends Controller
@@ -15,7 +16,12 @@ class CandidatesController extends Controller
      */
     public function index()
     {
-        //
+        
+        $data = [
+            'Candidates' => Candidate::all(),
+        ];
+
+        return view('cms.pages.candidates.overzicht', compact('data'));
     }
 
     /**

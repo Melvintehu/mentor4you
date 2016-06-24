@@ -17,4 +17,9 @@ Route::get('/', function () {
 
 Route::group(['prefix' => 'cms'], function () {
 	
+
+	Route::resource('candidate', 'CandidatesController');
+	Route::resource('mentor', 'MentorsController');
+
+
 });
