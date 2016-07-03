@@ -16,7 +16,9 @@
 
     	@include('partials.header')
 
-    	@include('partials.banner')      	
+    	@include('partials.banner')      
+
+    	@yield('content')	
 
     </body>
 

@@ -3,7 +3,8 @@ $main-color : #01569B;
 $secondary-color : #E65100;
 $accent-color : #F1F1F1;
 
-h1 {
+
+h1, h3 {
 	color : $main-color ;
 }
 
@@ -15,16 +16,59 @@ a{
 	color: #111111;
 }
 
+a.white{
+	color: white;
+}
+
+
+
+
+
+
+
 /* buttons */
 
 
-a.btn-orange{
+a.btn-standard{
 	
-	background: $secondary-color;
+	
 	padding: 20px;
 	color: white;
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 14px;
 
+}
+
+a.btn-round{
+	font-weight: 300;
+	span{
+		padding: 3px 10px;
+		padding-bottom: 5px;
+		text-align: center;
+		border-radius: 20000px;
+		margin-left: 20px;
+	}
+
+}
+
+
+/* achtergronden */
+
+
+.bg-main{
+	
+	background: $main-color !important;
+	min-height: 1px;
+}
+
+
+.bg-secondary{
+	background: $secondary-color;
+	min-height: 1px;
+}
+
+.bg-accent{
+	background: $accent-color;
+	min-height: 1px;
 }
