@@ -128,6 +128,15 @@ p .small{
 
 }
 
+
+.push-aside-35{ padding: 0 26px 0 26px; }
+.push-aside-0-35{ padding: 0 0px 0 26px; }
+.push-aside-35-0{ padding: 0 26px 0 0px; }
+
+
+
+
+
 .push-aside-20{
 	padding: 0 8px 0 8px;
 }
@@ -142,6 +151,23 @@ p .small{
 	float: right;
 }
 
+.clear-right{
+	clear: right;
+}
+
+.clear-left{
+	clear: left;
+}
+
+/* margin distance classes */
+
+.push-aside-35-m{ margin: 0 26px 0 26px; }
+.push-aside-0-35-m{ margin: 0 26px 0 0; }
+.push-aside-35-0-m{ margin: 0  0 0 26px; }
+
+.push-aside-75-m{ margin: 0 76px 0 76px; }
+.push-aside-0-75-m{ margin: 0 76px 0 0; }
+.push-aside-75-0-m{ margin: 0  0 0 76px; }
 
 /* images */
 
