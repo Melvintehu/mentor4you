@@ -24,7 +24,7 @@
 
 			<div class="push-20">
 				
-				<a href="#lees-meer" class="button btn-orange"> lees meer  </a>
+				<a href="#lees-meer" class="button btn-standard bg-secondary"> lees meer  </a>
 
 			</div>
 

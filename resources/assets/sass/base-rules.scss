@@ -6,6 +6,19 @@ body{
 
 }
 
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
 span{
 	margin: 0px;
 	padding: 0px;
@@ -20,6 +33,7 @@ h1{
 	padding: 0;
 	margin: 0;
 	text-transform: uppercase;
+	font-weight: 600;
 }
 
 h1.white{
@@ -31,6 +45,7 @@ h2{
 	font-size: 27.5px;
 	padding: 0px;
 	margin: 0;
+	font-weight: 600;
 }
 
 
@@ -38,6 +53,7 @@ h3{
 	font-size: 19px;
 	margin: 0;
 	padding: 0;
+	font-weight: 600;
 }
 
 
@@ -72,34 +88,36 @@ p .small{
 
 /* margin and padding wrappers */
 
-.push-65{
-	
-	margin: 53px 0 53px 0;	
+.push-75{ margin: 76px 0 76px 0;}
+.push-0-75{ margin: 0 0 76px 0;}
+.push-75-0{ margin: 76px 0 0 0;}
 
-}
+
+.push-65{ margin: 56px 0 56px 0;}
+.push-0-65{ margin: 0 0 56px 0;}
+.push-65-0{ margin: 56px 0 0 0;}
+
 
 .push-65-20{
 		
-	margin: 53px 0 8px 0;	
+	margin: 56px 0 11px 0;	
 
 }
 
 
-.push-35{
+.push-35{ margin: 26px 0 26px 0; }
+.push-0-35{ margin: 0 0 26px 0; }
+.push-35-0{ margin: 26px 0 0 0; }
 
-	margin: 23px 0 23px 0;
+.push-20{ margin: 11px 0 11px 0; }
+.push-0-20{ margin: 0 0 11px 0; }
+.push-20-0{ margin: 11px 0 0 0; }
 
-}
 
-.push-20{
-	
-	margin: 8px 0 8px 0;
-
-}
 
 .push-20 a.button{
 
-	margin: 16px 0 16px 0;
+	margin: 18px 0 18px 0;
 
 }
 
@@ -111,13 +129,70 @@ p .small{
 }
 
 .push-aside-20{
-
 	padding: 0 8px 0 8px;
-
 }
 
 
 
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+
+/* images */
+
+
+.image{
+	
+	display: block;
+
+	overflow: hidden;
+	width: 100%;
+
+	img{
+
+		width: 100%;
+
+	}
+
+}
+
+
+.rectangular-img{
+	height: 140px;
+	padding: 20px;
+
+
+	img{
+		height: 90%;
+		width: auto;
+	}
+
+}
+
+.big-img{
+	
+	width: 225px;
+	height: 225px;
+
+}
+
+.small-img{
+	
+	width: 150px;
+	height: 150px;
+
+}
+
+.round{
+	
+	border-radius: 2000px;
+
+}
 
 
 
