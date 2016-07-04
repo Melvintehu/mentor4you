@@ -42,7 +42,7 @@
 .image{
 	
 	display: block;
-
+	position:relative;
 	overflow: hidden;
 	width: 100%;
 
@@ -130,4 +130,31 @@
 .circle-slider:hover{
 	background-color: black;
 	cursor: pointer;
+}
+
+.a-slider{
+	width:40px;
+	font-size:40px;
+	color:white;
+}
+
+.a-slider:hover{
+	color:white;
+}
+
+.slider-arrow{
+	position: absolute;
+	margin: auto;
+	bottom: 45%;
+  	width: 50px;
+	background-color:black;
+	opacity:0.8;
+}
+
+.slider-arrow-left{
+  	left:1%;
+}
+
+.slider-arrow-right{
+	right:1%;
 }
