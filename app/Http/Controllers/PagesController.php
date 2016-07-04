@@ -41,4 +41,14 @@ class PagesController extends Controller
 		return view('pages.over-ons');
 	}
 
+	public function steunons()
+	{
+		return view('pages.steun-ons');
+	}
+
+	public function actueel()
+	{
+		return view('pages.actueel');
+	}
+
 }

@@ -101,23 +101,28 @@
 
 				<div class="col-lg-12 banner push-aside-85">
 						
-				<div class="push-0-20 right">
-					
-					<h1 class="white"> Karin Oldenburger </h1>
-					
-					<p class="white text-right">
+					<div class="push-0-20 right">
 						
-						Non ipsum vulputate condimentum eu id tellus. <br>
-						Praesent commodo arcu quis rhoncus. <br>
-						Suspendisse volutpat, quam eu. <br>
+						<h1 class="white"> Karin Oldenburger </h1>
+						
+						<p class="white text-right">
+							
+							Non ipsum vulputate condimentum eu id tellus. <br>
+							Praesent commodo arcu quis rhoncus. <br>
+							Suspendisse volutpat, quam eu. <br>
 
-					</p>
+						</p>
+
+					</div>
+
+					<img src="images/banner.jpeg" alt='banner image mentor4you' />
 
 				</div>
 
-				<img src="images/banner.jpeg" alt='banner image mentor4you' />
 
-				</div>
+				<div class="slider-arrow slider-arrow-left"> <a class="a a-slider" href="#"> < </a></div>
+
+				<div class="slider-arrow slider-arrow-right"> <a class="a a-slider" href="#"> > </a></div>
 
 			</div>
 
@@ -159,8 +164,8 @@
 
 			<div class="col-lg-12 text-center push-0-35">
 
-				<a class="btn-standard bg-secondary push-aside-0-20-m">Mentor worden?</a>
-				<a class="btn-standard bg-secondary">Aanmelden als jongere?</a>
+				<a class="btn-standard bg-secondary push-aside-0-20-m">Mentor worden</a>
+				<a class="btn-standard bg-secondary">Aanmelden als jongere</a>
 
 			</div>
 
