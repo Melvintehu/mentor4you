@@ -11,9 +11,11 @@ class PagesController extends Controller
     
 	public function index()
 	{
-		
-
 		return view('pages.homepage');
+	}
+
+	public function jongerenAanmelden(){
+		return view('pages.jongeren-aanmelden');
 	}
 
 

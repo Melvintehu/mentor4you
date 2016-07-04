@@ -12,6 +12,8 @@
 */
 
 Route::get('/', 'PagesController@index');
+Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
+
 
 Route::group(['prefix' => 'cms'], function () {
 	

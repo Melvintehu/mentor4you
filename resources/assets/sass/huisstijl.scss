@@ -12,6 +12,16 @@ h1.white{
 	color : white;
 }
 
+
+/* text */
+
+.bold{
+	font-weight: 600;
+}
+
+
+/* buttons */
+
 a{
 	color: #111111;
 }
@@ -19,15 +29,6 @@ a{
 a.white{
 	color: white;
 }
-
-
-
-
-
-
-
-/* buttons */
-
 
 a.btn-standard{
 	
@@ -80,8 +81,12 @@ a.btn-round{
 
 .input{
 	width: 400px;
-	
 }
+
+
+.border-accent{
+		border-color: $accent-color;
+	}
 
 
 
