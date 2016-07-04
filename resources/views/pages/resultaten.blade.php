@@ -31,7 +31,7 @@
 				<!-- Overlay -->
 				<div class="overlay">
 
-					<div class="overlay-resultaten bg-secondary">
+					<div class="overlay-resultaten no-overflow bg-secondary">
 						
 						<div class="col-lg-12 push-aside-65 push-65">
 						
@@ -46,7 +46,7 @@
 
 						<div class="col-lg-9">
 							
-							<p class="text white ">
+							<p class="text white push-0-65 push-aside-65-0">
 								
 								Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, auctor 
 								imperdiet elit felis vel turpis. Ut ac nulla eget neque tincidunt rutrum. Sed varius 
