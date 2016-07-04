@@ -41,6 +41,11 @@
 
 						<div class="col-lg-3">
 							
+							<div class="image small-img circle">
+								
+								<img src="images/">
+
+							</div>
 
 						</div>
 
