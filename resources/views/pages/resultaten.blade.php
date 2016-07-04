@@ -33,7 +33,7 @@
 
 					<div class="overlay-resultaten no-overflow bg-secondary">
 						
-						<div class="col-lg-12 push-aside-65 push-65">
+						<div class="col-lg-12 push-aside-65 push-65-20">
 						
 							<h2 class="white "> MENTOR  </h2>
 
