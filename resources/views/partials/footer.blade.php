@@ -4,15 +4,15 @@
 		
 		<div class="row">
 			
-			<div class="col-lg-12">
+			<div class="col-lg-4 push-35">
+
+				<input class="input push-aside-20 push-aside-0-35-m" type="email" name="email" >
+
+			</div>
+
+			<div class="col-lg-4 push-35">
 				
-				<div class="push-35">
-					
-					<input class="input push-aside-20 push-aside-0-35-m" type="email" name="email" >
-
-					<a class="btn-round white " href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="bg-white black"> > </span></a>
-
-				</div>
+				<a class="btn-round white " href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="bg-white black"> > </span></a>
 
 			</div>
 
