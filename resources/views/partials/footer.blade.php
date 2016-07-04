@@ -8,7 +8,7 @@
 				
 				<div class="push-35">
 					
-					<input class="input  push-aside-20 push-aside-0-35-m" type="email" name="email" >
+					<input class="input push-aside-20 push-aside-0-35-m" type="email" name="email" >
 
 					<a class="btn-round white " href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="bg-white black"> > </span></a>
 

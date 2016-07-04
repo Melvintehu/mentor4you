@@ -21,7 +21,7 @@
 
 			<div class="col-lg-12 col-centered text-center push-0-65">
 				
-				
+				<a href="/aanmelden-als-jongere">
 				<div class="col-lg-4">
 						
 					<div class="card type-1">	
@@ -58,6 +58,8 @@
 					</div>
 
 				</div>
+				</a>
+
 
 				<div class="col-lg-4">
 						
