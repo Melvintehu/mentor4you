@@ -14,9 +14,26 @@ class PagesController extends Controller
 		return view('pages.homepage');
 	}
 
-	public function jongerenAanmelden(){
+	public function jongerenAanmelden()
+	{
 		return view('pages.jongeren-aanmelden');
 	}
 
+	public function contact()
+	{
+		return view('pages.contact');
+	}
+
+	public function mentorenAanmelden()
+	{
+
+		return view('pages.mentor-aanmelden');
+
+	}
+
+	public function resultaten()
+	{
+		return view('pages.resultaten');
+	}
 
 }
