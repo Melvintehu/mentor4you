@@ -37,7 +37,7 @@
 
 				</p>
 
-				<a href="#" class="btn-standard bg-secondary"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="#" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
 
 			</div>
 
@@ -78,20 +78,50 @@
 
 				<div class="col-lg-12"> 
 
-					<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
+					<input class="input border border-accent push-0-35" placeholder="Achternaam" type="text" name="achternaam">
 
 				</div>
 
 
 				<div class="col-lg-12"> 
 
-					<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
+					<input class="input border border-accent push-0-35" placeholder="Telefoonnummer" type="text" name="telefoonnummer">
 
 				</div>
 
 				<div class="col-lg-12"> 
 
-					<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
+					<input class="input border border-accent push-0-35" placeholder="E-mailadres" type="text" name="emailadres">
+
+				</div>
+
+				<div class="col-lg-12"> 
+
+					<input class="input border border-accent push-0-35" placeholder="Geboortedatum" type="text" name="geboortedatum">
+
+				</div>
+
+				<div class="col-lg-12"> 
+
+
+					<textarea class="textarea border border-accent"></textarea>
+
+
+				</div>
+
+				<div class="col-lg-12 push-65-0"> 
+
+					<input class="btn-standard bg-secondary black"  type="submit" name="verzenden">
+
+				</div>
+
+				<div class="col-lg-12 push-65">
+
+					<p class="text ">
+
+						Bedankt voor het aanmelden. Wij nemen zo spoedig mogelijk contact met je op.
+
+					</p>
 
 				</div>
 

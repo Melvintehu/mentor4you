@@ -13,7 +13,7 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
-
+Route::get('/contact', 'PagesController@contact');
 
 Route::group(['prefix' => 'cms'], function () {
 	
