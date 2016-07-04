@@ -77,38 +77,34 @@
 
 </div>
 
-<div class="contact-balk">
+
 	
-	<div class="container-fluid">
+	<div class="container-fluid push-aside-85 bg-secondary">
 
 		<div class="row">
 
-			<div class="col-lg-8"></div>
-							
-				<div class="col-lg-2 contact-info push-20">
-				
-					<p class="white small">
 					
-						<span> T </span> 0612345678
+				
+			<div class="col-lg-4 push-20 right">
+
+					<p class="white size-14 right">
+					
+						<span class="bold color-main  push-aside-20-35"> T </span> 0612345678
 			
 					</p>
 			
-				</div>	
+					<p class="white size-14 right">
 			
-				<div class="col-lg-2 contact-info push-20"> 
-
-					<p class="white small">
-			
-						<span> E </span> 
+						<span class="bold color-main push-aside-20-0"> E </span> 
 						
 						info@mentor4you.nl
 					
 					</p>
 				
-				</div>
+			</div>
 
 		</div>
 
 	</div>
 
-</div>
+

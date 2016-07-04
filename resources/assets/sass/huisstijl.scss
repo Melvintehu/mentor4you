@@ -15,10 +15,18 @@ h1.white{
 
 /* text */
 
-.bold{
+.bold{ 
 	font-weight: 600;
 }
 
+
+.light{
+	font-weight: 300;
+}
+
+.color-main{
+	color: $main-color;
+}
 
 /* buttons */
 
@@ -73,6 +81,9 @@ a.btn-round{
 	background: $accent-color;
 	min-height: 1px;
 }
+
+
+
 
 
 

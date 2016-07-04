@@ -72,6 +72,7 @@ p{
 	padding: 0;
 	color: #111111;
 	font-weight: 300;
+	display: inline-block;
 
 }
 
@@ -81,8 +82,8 @@ p.white{
 
 }
 
-p .small{
-
+p.size-14{
+	
 	font-size: 14px;
 
 }
