@@ -30,7 +30,7 @@ a.white{
 	color: white;
 }
 
-a.btn-standard{
+a.btn-standard, input[type=submit].btn-standard{
 	
 	
 	padding: 20px;
@@ -38,7 +38,7 @@ a.btn-standard{
 	display: inline-block;
 	text-transform: uppercase;
 	font-size: 14px;
-
+	border: none;
 }
 
 a.btn-round{
@@ -80,9 +80,17 @@ a.btn-round{
 
 
 .input{
-	width: 400px;
+	width: 500px;
+	padding: 10px;
 }
 
+.textarea{
+	
+	width: 700px;
+	height: 180px;
+
+
+}
 
 .border-accent{
 		border-color: $accent-color;
