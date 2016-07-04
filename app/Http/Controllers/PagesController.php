@@ -36,4 +36,9 @@ class PagesController extends Controller
 		return view('pages.resultaten');
 	}
 
+	public function overons()
+	{
+		return view('pages.over-ons');
+	}
+
 }

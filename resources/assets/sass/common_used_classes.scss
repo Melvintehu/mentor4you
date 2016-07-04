@@ -124,6 +124,7 @@
 }
 
 
+<<<<<<< HEAD
 
 /* overlay */
 
@@ -134,4 +135,20 @@
 	z-index: 10;
 
 	
+=======
+/* components */
+
+.circle{
+	border-radius:2000px;
+}
+
+.circle-slider{
+	height: 30px;
+	width: 30px;
+}
+
+.circle-slider:hover{
+	background-color: black;
+	cursor: pointer;
+>>>>>>> refs/remotes/origin/Eric
 }
