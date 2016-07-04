@@ -89,7 +89,7 @@
 
 					<p class="white size-14 right">
 					
-						<span class="bold color-main  push-aside-20-35"> T </span> 0612345678
+						<span class="bold color-main  push-aside-35-20-m"> T </span> 0612345678
 			
 					</p>
 			
