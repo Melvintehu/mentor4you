@@ -22,118 +22,127 @@
 			<div class="col-lg-12 col-centered text-center push-0-65">
 				
 				<a href="/aanmelden-als-jongere">
-				<div class="col-lg-4">
-						
-					<div class="card type-1">	
 
-						<div class="push-0-35">
+					<div class="col-lg-4">
 							
-							<div class="image small-img round">
+						<div class="card type-1">	
+
+							<div class="push-0-35">
 								
-								<img src="images/resultaten3.jpeg" alt="aanmelden als jongere">
+								<div class="image small-img round">
+									
+									<img src="images/resultaten3.jpeg" alt="aanmelden als jongere">
+
+								</div>
+
+							</div>
+
+							<div class="push-20">
+									
+								<h3> IK ZOEK EEN MENTOR </h3>
+								
+							</div>
+
+							<div class="push-20">
+
+								<p> 
+
+									Non ipsum vulputate 
+									condimentum eu id tellus. 
+									Praesent commodo arcu quis rhoncus. 
+									Suspendisse volutpat, quam eu.
+
+								</p>
 
 							</div>
 
 						</div>
 
-						<div class="push-20">
-								
-							<h3> IK ZOEK EEN MENTOR </h3>
+					</div>
+
+				</a>
+
+				<a href="/aanmelden-als-mentor">
+
+					<div class="col-lg-4">
 							
-						</div>
+						<div class="card type-1">	
 
-						<div class="push-20">
+							<div class="push-0-35">
+								
+								<div class="image small-img round">
+									
+									<img src="images/resultaten4.jpeg" alt="aanmelden als jongere">
 
-							<p> 
+								</div>
 
-								Non ipsum vulputate 
-								condimentum eu id tellus. 
-								Praesent commodo arcu quis rhoncus. 
-								Suspendisse volutpat, quam eu.
+							</div>
 
-							</p>
+							<div class="push-20">
+									
+								<h3> AANMELDEN ALS MENTOR </h3>
+								
+							</div>
+
+							<div class="push-20">
+								<p> 
+
+									Non ipsum vulputate 
+									condimentum eu id tellus. 
+									Praesent commodo arcu quis rhoncus. 
+									Suspendisse volutpat, quam eu.
+
+								</p>
+
+							</div>
 
 						</div>
 
 					</div>
 
-				</div>
 				</a>
 
 
-				<div class="col-lg-4">
-						
-					<div class="card type-1">	
+				<a href="/behaalde-resultaten">
 
-						<div class="push-0-35">
+					<div class="col-lg-4">
 							
-							<div class="image small-img round">
+						<div class="card type-1">	
+
+							<div class="push-0-35">
 								
-								<img src="images/resultaten4.jpeg" alt="aanmelden als jongere">
+								<div class="image small-img round">
+									
+									<img src="images/resultaten5.jpg" alt="aanmelden als jongere">
+
+								</div>
+
+							</div>
+
+							<div class="push-20">
+									
+								<h3> RESULTATEN </h3>
+								
+							</div>
+
+							<div class="push-20">
+								
+								<p> 
+
+									Non ipsum vulputate 
+									condimentum eu id tellus. 
+									Praesent commodo arcu quis rhoncus. 
+									Suspendisse volutpat, quam eu.
+
+								</p>
 
 							</div>
 
 						</div>
 
-						<div class="push-20">
-								
-							<h3> IK ZOEK EEN MENTOR </h3>
-							
-						</div>
-
-						<div class="push-20">
-							<p> 
-
-								Non ipsum vulputate 
-								condimentum eu id tellus. 
-								Praesent commodo arcu quis rhoncus. 
-								Suspendisse volutpat, quam eu.
-
-							</p>
-
-						</div>
-
 					</div>
-
-				</div>
-
-				<div class="col-lg-4">
-						
-					<div class="card type-1">	
-
-						<div class="push-0-35">
-							
-							<div class="image small-img round">
-								
-								<img src="images/resultaten5.jpg" alt="aanmelden als jongere">
-
-							</div>
-
-						</div>
-
-						<div class="push-20">
-								
-							<h3> IK ZOEK EEN MENTOR </h3>
-							
-						</div>
-
-						<div class="push-20">
-							
-							<p> 
-
-								Non ipsum vulputate 
-								condimentum eu id tellus. 
-								Praesent commodo arcu quis rhoncus. 
-								Suspendisse volutpat, quam eu.
-
-							</p>
-
-						</div>
-
-					</div>
-
-				</div>
 				
+				</a>
 
 			</div>
 
