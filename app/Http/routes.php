@@ -14,6 +14,8 @@
 Route::get('/', 'PagesController@index');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
 Route::get('/contact', 'PagesController@contact');
+Route::get('/aanmelden-als-mentor', 'PagesController@mentorenAanmelden');
+Route::get('/behaalde-resultaten', 'PagesController@resultaten');
 
 Route::group(['prefix' => 'cms'], function () {
 	
