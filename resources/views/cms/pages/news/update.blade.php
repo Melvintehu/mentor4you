@@ -33,34 +33,42 @@
                                                 <thead>
                                                     <tr>    
                                                         <th>
-                                                            {!! Form::label('first_name', ' Voornaam ') !!} 
+                                                            {!! Form::label('title', ' Titel ') !!} 
                                                         </th>
                                                         <td>  
-                                                            {!! Form::textarea('first_name', null, ['class' => 'form-control']); !!}
+                                                            {!! Form::text('title', null, ['class' => 'form-control']); !!}
                                                         </td>
                                                     </tr>    
                                                     <tr>    
                                                         <th>
-                                                            {!! Form::label('last_name', ' Achternaam ') !!} 
+                                                            {!! Form::label('body', ' Tekst ') !!} 
                                                         </th>
                                                         <td>  
-                                                            {!! Form::textarea('last_name', null, ['class' => 'form-control']); !!}
+                                                            {!! Form::textarea('body', null, ['class' => 'form-control']); !!}
                                                         </td>
                                                     </tr>     
                                                     <tr>    
                                                         <th>
-                                                            {!! Form::label('description', ' Beschrijving ') !!} 
+                                                            {!! Form::label('author', ' Auteur ') !!} 
                                                         </th>
                                                         <td>  
-                                                            {!! Form::textarea('description', null, ['class' => 'form-control']); !!}
+                                                            {!! Form::text('author', null, ['class' => 'form-control']); !!}
                                                         </td>
                                                     </tr> 
                                                     <tr>    
                                                         <th>
-                                                            {!! Form::label('date_of_birth', ' Geboortedatum ') !!} 
+                                                            {!! Form::label('publish_date', ' Publicatiedatum ') !!} 
                                                         </th>
                                                         <td>  
-                                                            {!! Form::textarea('date_of_birth', null, ['class' => 'form-control']); !!}
+                                                            {!! Form::date('publish_date', null, ['class' => 'form-control']); !!}
+                                                        </td>
+                                                    </tr> 
+                                                    <tr>    
+                                                        <th>
+                                                            {!! Form::label('occurence_date', ' Datum ') !!} 
+                                                        </th>
+                                                        <td>  
+                                                            {!! Form::date('occurence_date', null, ['class' => 'form-control']); !!}
                                                         </td>
                                                     </tr> 
                                                 </thead>    

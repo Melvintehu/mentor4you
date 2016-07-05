@@ -66,7 +66,7 @@ class NewsController extends Controller
     public function edit($id)
     {
          $data =[
-            'News' => News::find($id),
+            'news' => News::find($id),
         ];
 
         return view('cms.pages.news.update', compact('data'));
