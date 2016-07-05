@@ -1,11 +1,11 @@
 @extends('cms.master')
 
 @section('title')
-    Afdeling
+    Jongeren Overzicht
 @stop
 
 @section('content')
-    <h1> Mentoren overzicht </h1>
+    <h1> Jongeren overzicht </h1>
     <hr>
 
     <div class="row">
@@ -23,7 +23,7 @@
                                         <div class="table-responsive">        
                                             <table class="table table-hover">
                                                 <tr> 
-                                                {!! $data['mentors']->render() !!}
+                                                {!! $data['youth']->render() !!}
                                                 </tr>
                                                 <thead>
                                                     <tr>
@@ -35,7 +35,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach ($data['mentors'] as $object)
+                                                    @foreach ($data['youth'] as $object)
                                                         <tr>
                                                             <td>{{ $object->id }}</td>
                                                             <td>{{ $object->first_name }}</td>
@@ -48,7 +48,7 @@
                                                                  {!! Form::open(
                                                                     array(
                                                                         'method' => 'GET',
-                                                                        'action' => ['MentorsController@edit', $object->id]
+                                                                        'action' => ['YouthController@edit', $object->id]
                                                                         )
                                                                     )
                                                                 !!}
@@ -62,7 +62,7 @@
                                                                  {!! Form::open(
                                                                     array(
                                                                         'method' => 'DELETE',
-                                                                        'action' => ['MentorsController@destroy', $object->id]
+                                                                        'action' => ['YouthController@destroy', $object->id]
                                                                         )
                                                                     )
                                                                 !!}

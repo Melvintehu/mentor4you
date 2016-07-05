@@ -47,7 +47,11 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 	// resources controllers
     Route::resource('candidate', 'CandidatesController');
     Route::resource('mentor', 'MentorsController');
+
     Route::resource('news', 'NewsController');
+
+    Route::resource('youth', 'YouthController');
+
 
 });
 
