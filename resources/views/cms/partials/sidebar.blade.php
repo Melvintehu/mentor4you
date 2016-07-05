@@ -44,8 +44,8 @@
                             class="nav-label">Mentoren</span></a>
                 <ul class="list-styled">
                     <li><strong><a href="#">Pagina's</a></strong></li>
-                    <li><a href="{{ URL::to("cms/mentor") }}"><i class="ion-grid"></i> Overzicht mentoren </a></li>
-                   
+                    <li><a href="{{ URL::to("cms/mentor") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/mentor/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
             </li>        
 

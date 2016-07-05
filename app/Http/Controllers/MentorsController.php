@@ -31,7 +31,8 @@ class MentorsController extends Controller
      */
     public function create()
     {
-        //
+
+        return view('cms.pages.mentors.create');
     }
 
     /**
@@ -42,7 +43,11 @@ class MentorsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
+        $mentor = Mentor::create($request->all());
+        
+        return redirect('mentor');
+
     }
 
     /**
