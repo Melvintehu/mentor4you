@@ -42,6 +42,8 @@
                                                             <td>{{ $object->last_name }}</td>
                                                             <td>{{ $object->description }}</td>
                                                             <td>{{ $object->date_of_birth }}</td> 
+                                                            
+                                                            <!-- Aanpassen form -->
                                                             <td>
                                                                  {!! Form::open(
                                                                     array(
@@ -54,6 +56,22 @@
                                                                 <input type='submit' class='btn btn-primary' value='aanpassen' />
                                                                 {!! Form::close() !!}
                                                             </td>
+
+                                                            <!-- Verwijderen form -->
+                                                            <td>
+                                                                 {!! Form::open(
+                                                                    array(
+                                                                        'method' => 'DELETE',
+                                                                        'action' => ['MentorsController@destroy', $object->id]
+                                                                        )
+                                                                    )
+                                                                !!}
+
+                                                                <input type='submit' class='btn btn-danger' value='verwijderen' />
+                                                                {!! Form::close() !!}
+                                                            </td>
+
+
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
