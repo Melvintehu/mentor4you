@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\TeamMember;
 use App\Http\Requests;
 
 class TeamMembersController extends Controller
@@ -15,7 +16,11 @@ class TeamMembersController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'teammembers' => TeamMember::paginate(20),
+        ];
+
+        return view('cms.pages.teammembers.overzicht', compact('data'));
     }
 
     /**
@@ -25,7 +30,7 @@ class TeamMembersController extends Controller
      */
     public function create()
     {
-        //
+       return view('cms.pages.teammembers.create');
     }
 
     /**
@@ -36,7 +41,9 @@ class TeamMembersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $teammember = TeamMember::create($request->all());
+        
+        return redirect('cms/teammember');
     }
 
     /**
@@ -58,7 +65,11 @@ class TeamMembersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data =[
+            'teammember' => TeamMember::find($id),
+        ];
+
+        return view('cms.pages.teammembers.update', compact('data'));
     }
 
     /**
@@ -70,7 +81,11 @@ class TeamMembersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $teammember = TeamMember::find($id);
+
+        $teammember->update($request->all());
+    
+        return redirect('cms/teammember');
     }
 
     /**
@@ -81,6 +96,9 @@ class TeamMembersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $teammember = TeamMember::find($id);
+        $teammember->delete();
+
+        return redirect('cms/teammember');
     }
 }
