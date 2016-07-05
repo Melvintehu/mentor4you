@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\News;
 use App\Http\Requests;
 
 class NewsController extends Controller
@@ -15,7 +16,11 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'news' => News::paginate(20),
+        ];
+
+        return view('cms.pages.news.overzicht', compact('data'));
     }
 
     /**
@@ -25,7 +30,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('cms.pages.news.create');
     }
 
     /**
@@ -36,7 +41,9 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $news = News::create($request->all());
+        
+        return redirect('cms/news');
     }
 
     /**
@@ -58,7 +65,11 @@ class NewsController extends Controller
      */
     public function edit($id)
     {
-        //
+         $data =[
+            'news' => News::find($id),
+        ];
+
+        return view('cms.pages.news.update', compact('data'));
     }
 
     /**
@@ -70,7 +81,11 @@ class NewsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $news = News::find($id);
+
+        $news->update($request->all());
+    
+        return redirect('cms/news');
     }
 
     /**
@@ -81,6 +96,9 @@ class NewsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $news = News::find($id);
+        $news->delete();
+
+        return redirect('cms/news');
     }
 }
