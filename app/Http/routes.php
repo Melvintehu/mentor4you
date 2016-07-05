@@ -52,6 +52,8 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 
     Route::resource('youth', 'YouthController');
 
+    Route::resource('partner', 'PartnersController');
+
 
 });
 
