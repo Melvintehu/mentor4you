@@ -22,9 +22,9 @@
 
 	<div class="container-fluid push-aside-85 bg-main">
 		
-		<div class="row">
+		<div class="row push-75">
 			
-			<div class="col-lg-2 push-75 push-aside-0-75">
+			<div class="col-lg-3 col-sm-6 col-xs-12  push-aside-0-75">
 				
 				<p class="push-20 white block"> info@mentor4you.nl </p>
 
@@ -40,7 +40,7 @@
 
 			</div>
 
-			<div class="col-lg-4 push-75">
+			<div class="col-lg-4 col-sm-6 col-xs-12 ">
 				
 				<p class="push-20 white block"> Algemene voorwaarden</p>
 
