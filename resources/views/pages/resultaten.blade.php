@@ -41,7 +41,7 @@
 
 						<div class="col-lg-3">
 							
-							<div class="image small-img circle">
+							<div class="image circle circle-lg bg-accent push-35 push-aside-35-0-m">
 								
 								<img src="images/">
 
