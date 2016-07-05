@@ -11,6 +11,8 @@
 |
 */
 
+// website routes
+
 Route::get('/', 'PagesController@index');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
 Route::get('/contact', 'PagesController@contact');
@@ -23,6 +25,9 @@ Route::auth();
 
 Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 
+
+// cms routes
+	
 	// get routes
 	Route::get('/', function(){
         return view('cms.cms');
@@ -33,8 +38,16 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 		Auth::logout();
 		return redirect('/cms');
 	});
+
+
+	Route::get('candidate/mentoren', 'CandidatesController@mentoren');
+	Route::get('candidate/jongeren', 'CandidatesController@jongeren');
+
+
+	// resources controllers
+    Route::resource('candidate', 'CandidatesController');
+    Route::resource('mentor', 'MentorsController');
+
 });
-
-
 
 Route::get('/home', 'HomeController@index');

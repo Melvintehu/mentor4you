@@ -20,7 +20,7 @@ class CreateCandidatesTable extends Migration
             $table->string('email_address', 80)->nullable();
             $table->date('date_of_birth')->nullable();
             $table->text('message')->nullable();
-            $table->enum('choices', ['mentor', 'youth']);
+            $table->enum('choices', ['mentor', 'jongere']);
             $table->timestamps();
         });
     }
