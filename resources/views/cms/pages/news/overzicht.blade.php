@@ -34,6 +34,7 @@
                                                         <th>Publicatiedatum</th>
                                                         <th>Datum</th>
                                                         <th>Aanpassen</th>
+                                                        <th>Verwijderen</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -55,6 +56,19 @@
                                                                 !!}
 
                                                                 <input type='submit' class='btn btn-primary' value='aanpassen' />
+                                                                {!! Form::close() !!}
+                                                            </td>
+                                                            <!-- Verwijderen form -->
+                                                            <td>
+                                                                 {!! Form::open(
+                                                                    array(
+                                                                        'method' => 'DELETE',
+                                                                        'action' => ['NewsController@destroy', $object->id]
+                                                                        )
+                                                                    )
+                                                                !!}
+
+                                                                <input type='submit' class='btn btn-danger' value='verwijderen' />
                                                                 {!! Form::close() !!}
                                                             </td>
                                                         </tr>
