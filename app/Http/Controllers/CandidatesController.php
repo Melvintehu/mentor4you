@@ -17,12 +17,27 @@ class CandidatesController extends Controller
     public function index()
     {
         
-        $data = [
-            'Candidates' => Candidate::all(),
-        ];
+     
 
         return view('cms.pages.candidates.overzicht', compact('data'));
     }
+
+    public function mentoren(){
+        $data = [
+            'candidates' => Candidate::where('choices', '=', 'mentor')->paginate(10),
+        ];
+
+        return view('cms.pages.candidates.overzicht', compact('data'));        
+    }
+
+    public function jongeren(){
+        $data = [
+            'candidates' => Candidate::where('choices', '=', 'jongere')->paginate(10),
+        ];
+
+        return view('cms.pages.candidates.overzicht', compact('data'));        
+    }
+
 
     /**
      * Show the form for creating a new resource.

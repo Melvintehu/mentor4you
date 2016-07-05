@@ -26,7 +26,7 @@ $factory->define(App\Candidate::class, function (Faker\Generator $faker) {
 
 	$choices = [
 		'mentor',
-		'youth'
+		'jongere'
 	];
 
     return [
