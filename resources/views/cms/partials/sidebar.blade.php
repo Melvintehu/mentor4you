@@ -47,6 +47,15 @@
                     <li><a href="{{ URL::to("cms/mentor") }}"><i class="ion-grid"></i> Overzicht </a></li>
                     <li><a href="{{ URL::to("cms/mentor/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
+            </li> 
+            <!-- mentoren -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Nieuws</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/news") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/news/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
+                </ul>
             </li>  
 
             <!-- jongeren -->
@@ -58,6 +67,7 @@
                     <li><a href="{{ URL::to("cms/youth/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
             </li>  
+
 
             <li><a href="{{ URL::to("/logout") }}"><i class="ion-home"></i> <span
                             class="nav-label">Logout</span></a>
