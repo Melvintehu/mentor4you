@@ -26,9 +26,9 @@
 			
 			<div class="col-lg-2 push-75 push-aside-0-75">
 				
-				<p class="push-20 white"> info@mentor4you.nl </p>
+				<p class="push-20 white block"> info@mentor4you.nl </p>
 
-				<p class="push-20 white"> 06 12345678 </p>
+				<p class="push-20 white block"> 06 12345678 </p>
 
 				<p class="push-0-0 white push-aside-35-0 left"> Straatnaam </p>
 
@@ -42,13 +42,13 @@
 
 			<div class="col-lg-4 push-75">
 				
-				<p class="push-20 white"> Algemene voorwaarden</p>
+				<p class="push-20 white block"> Algemene voorwaarden</p>
 
-				<p class="push-20 white"> Sitemap </p>
+				<p class="push-20 white block"> Sitemap </p>
 			
-				<p class="push-20 white"> Mentor worden </p>
+				<p class="push-20 white block"> Mentor worden </p>
 
-				<p class="push-20 white"> Aanmelden als jongere </p>
+				<p class="push-20 white block"> Aanmelden als jongere </p>
 
 			</div>
 

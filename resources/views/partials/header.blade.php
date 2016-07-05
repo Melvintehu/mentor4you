@@ -46,17 +46,17 @@
 
 							      <ul class="nav navbar-nav">
 
-							        <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+							        <li class="active"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
 
-							        <li><a href="#">OVER ONS</a></li>
+							        <li><a href="/over-ons">OVER ONS</a></li>
 
-							       	<li><a href="#">ACTUEEL</a></li>
+							       	<li><a href="/actueel">ACTUEEL</a></li>
 
-							       	<li><a href="#">RESULTATEN</a></li>
+							       	<li><a href="/behaalde-resultaten">RESULTATEN</a></li>
 
-							       	<li><a href="#">STEUN ONS</a></li>
+							       	<li><a href="/steun-ons">STEUN ONS</a></li>
 
-							       	<li><a href="#">CONTACT</a></li>
+							       	<li><a href="/contact">CONTACT</a></li>
 
 							      </ul>
 							      

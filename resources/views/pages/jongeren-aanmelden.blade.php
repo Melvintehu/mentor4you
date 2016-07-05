@@ -37,7 +37,7 @@
 
 				</p>
 
-				<a href="#" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="/over-ons" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
 
 			</div>
 
