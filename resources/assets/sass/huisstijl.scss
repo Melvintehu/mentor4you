@@ -15,10 +15,13 @@ h1.white{
 
 /* text */
 
-.bold{
-	font-weight: 600;
+span.white{
+	color: white;
 }
 
+.color-main{
+	color: $main-color;
+}
 
 /* buttons */
 
@@ -63,7 +66,6 @@ a.btn-round{
 	min-height: 1px;
 }
 
-
 .bg-secondary{
 	background: $secondary-color;
 	min-height: 1px;
@@ -73,6 +75,26 @@ a.btn-round{
 	background: $accent-color;
 	min-height: 1px;
 }
+
+
+	/* background hovers */
+	
+	.hover-black:hover{
+		background: black !important;
+	}
+
+	.hover-main:hover{
+		background: $main-color !important;
+	}
+
+	.hover-secondary{
+		background: $secondary-color !important;
+	}
+
+	.hover-accent{
+		background: $accent-color !important;
+	}
+
 
 
 

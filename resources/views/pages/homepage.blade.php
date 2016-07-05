@@ -29,7 +29,7 @@
 
 							<div class="push-0-35">
 								
-								<div class="image small-img round">
+								<div class="image circle-lg circle circle-lg">
 									
 									<img src="images/resultaten3.jpeg" alt="aanmelden als jongere">
 
@@ -70,7 +70,7 @@
 
 							<div class="push-0-35">
 								
-								<div class="image small-img round">
+								<div class="image circle circle-lg">
 									
 									<img src="images/resultaten4.jpeg" alt="aanmelden als jongere">
 
@@ -111,7 +111,7 @@
 
 							<div class="push-0-35">
 								
-								<div class="image small-img round">
+								<div class="image circle circle-lg">
 									
 									<img src="images/resultaten5.jpg" alt="aanmelden als jongere">
 
@@ -160,7 +160,7 @@
 			<div class="col-lg-12 push-aside-85">
 				<div class="col-lg-4 push-75">
 					
-						<div class="image big-img round">
+						<div class="image circle circle-xl">
 							
 							<img src="images/resultaten4.jpeg" alt="Mentor Sara">
 
@@ -184,7 +184,7 @@
 
 					</p>
 
-					<a href="#verhaal-van-Sara" class="btn-round white"> Bekijk het hele verhaal van Sara hier <span class="bg-secondary"> > </span> </a>
+					<a href="/actueel" class="btn-round white"> Bekijk het hele verhaal van Sara hier <span class="bg-secondary"> > </span> </a>
 
 				</div>
 

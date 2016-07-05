@@ -46,17 +46,17 @@
 
 							      <ul class="nav navbar-nav">
 
-							        <li class="active"><a href="#">HOME <span class="sr-only">(current)</span></a></li>
+							        <li class="active"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
 
-							        <li><a href="#">OVER ONS</a></li>
+							        <li><a href="/over-ons">OVER ONS</a></li>
 
-							       	<li><a href="#">ACTUEEL</a></li>
+							       	<li><a href="/actueel">ACTUEEL</a></li>
 
-							       	<li><a href="#">RESULTATEN</a></li>
+							       	<li><a href="/behaalde-resultaten">RESULTATEN</a></li>
 
-							       	<li><a href="#">STEUN ONS</a></li>
+							       	<li><a href="/steun-ons">STEUN ONS</a></li>
 
-							       	<li><a href="#">CONTACT</a></li>
+							       	<li><a href="/contact">CONTACT</a></li>
 
 							      </ul>
 							      
@@ -77,38 +77,34 @@
 
 </div>
 
-<div class="contact-balk">
+
 	
-	<div class="container-fluid">
+	<div class="container-fluid push-aside-85 bg-secondary">
 
 		<div class="row">
 
-			<div class="col-lg-8"></div>
-							
-				<div class="col-lg-2 contact-info push-20">
-				
-					<p class="white small">
 					
-						<span> T </span> 0612345678
+				
+			<div class="col-lg-4 push-20 right">
+
+					<p class="white size-14 right">
+					
+						<span class="bold color-main  push-aside-35-20-m"> T </span> 0612345678
 			
 					</p>
 			
-				</div>	
+					<p class="white size-14 right">
 			
-				<div class="col-lg-2 contact-info push-20"> 
-
-					<p class="white small">
-			
-						<span> E </span> 
+						<span class="bold color-main push-aside-20-0"> E </span> 
 						
 						info@mentor4you.nl
 					
 					</p>
 				
-				</div>
+			</div>
 
 		</div>
 
 	</div>
 
-</div>
+
