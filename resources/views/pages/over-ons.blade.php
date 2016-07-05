@@ -48,7 +48,7 @@
 
 			</div>
 
-			<div class="col-lg-6  push-0-65">
+			<div class="col-lg-6  push-0-35">
 
 				<h3 class="push-0-20">Wat is ons doel?</h3>
 
@@ -132,7 +132,7 @@
 
 				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
 
-				<div class="col-lg-1 bg-main circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
+				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
 
 				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
 

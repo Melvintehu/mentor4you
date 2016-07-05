@@ -22,9 +22,11 @@ Route::get('/actueel', 'PagesController@actueel');
 
 Route::group(['prefix' => 'cms'], function () {
 	
+	// get routes
+	Route::get('/', function(){
+        return view('cms.cms');
+    });
 
-	Route::resource('candidate', 'CandidatesController');
-	Route::resource('mentor', 'MentorsController');
 
 
 });
