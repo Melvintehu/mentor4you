@@ -54,6 +54,8 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 
     Route::resource('partner', 'PartnersController');
 
+    Route::resource('teammember', 'TeamMembersController');
+
 
 });
 
