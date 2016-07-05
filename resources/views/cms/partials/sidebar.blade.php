@@ -30,7 +30,9 @@
            
 
         
-
+            <li><a href="{{ URL::to("/logout") }}"><i class="ion-home"></i> <span
+                            class="nav-label">Logout</span></a>
+            </li>
         </ul>
     </nav>
 
