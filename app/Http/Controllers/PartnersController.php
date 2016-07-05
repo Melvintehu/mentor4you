@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Partner;
 use App\Http\Requests;
 
 class PartnersController extends Controller
@@ -15,7 +16,11 @@ class PartnersController extends Controller
      */
     public function index()
     {
-        //
+        $data = [
+            'partners' => Partner::paginate(20),
+        ];
+
+        return view('cms.pages.partners.overzicht', compact('data'));
     }
 
     /**
@@ -25,7 +30,7 @@ class PartnersController extends Controller
      */
     public function create()
     {
-        //
+        return view('cms.pages.partners.create');
     }
 
     /**
@@ -36,7 +41,9 @@ class PartnersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $partner = Partner::create($request->all());
+        
+        return redirect('cms/partner');
     }
 
     /**
@@ -58,7 +65,11 @@ class PartnersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data =[
+            'partner' => Partner::find($id),
+        ];
+
+        return view('cms.pages.partners.update', compact('data'));
     }
 
     /**
@@ -70,7 +81,11 @@ class PartnersController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $partner = Partner::find($id);
+
+        $partner->update($request->all());
+    
+        return redirect('cms/partner');
     }
 
     /**
@@ -81,6 +96,9 @@ class PartnersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $partner = Partner::find($id);
+        $partner->delete();
+
+        return redirect('cms/partner');
     }
 }

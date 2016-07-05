@@ -48,13 +48,22 @@
                     <li><a href="{{ URL::to("cms/mentor/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
             </li> 
-            <!-- mentoren -->
+            <!-- news -->
             <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
                             class="nav-label">Nieuws</span></a>
                 <ul class="list-styled">
                     <li><strong><a href="#">Pagina's</a></strong></li>
                     <li><a href="{{ URL::to("cms/news") }}"><i class="ion-grid"></i> Overzicht </a></li>
                     <li><a href="{{ URL::to("cms/news/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
+                </ul>
+            </li>  
+            <!-- partners -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Partners</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/partner") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/partner/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
             </li>  
 
