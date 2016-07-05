@@ -53,6 +53,8 @@
                             class="nav-label">Nieuws</span></a>
                 <ul class="list-styled">
                     <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/news") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/news/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
             </li>  
 
