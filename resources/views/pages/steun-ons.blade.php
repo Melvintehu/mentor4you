@@ -49,13 +49,13 @@
 						<div class="row">
 
 
-							<div class="col-lg-2 push-0-35">
+							<div class="col-lg-2 col-sm-2 col-xs-2 push-0-35">
 								
 								<div class="circle circle-md bg-secondary "> <span class="white"> B </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 push-20">
+							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
 								
 								<p class="text">NL12 INGB 00012345678</p>
 
@@ -72,13 +72,13 @@
 						<div class="row">
 
 
-							<div class="col-lg-2 push-0-35">
+							<div class="col-lg-2 col-sm-2 col-xs-2 push-0-35">
 								
 								<div class="circle circle-md bg-secondary "> <span class="white"> P </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 push-20">
+							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
 								
 								<p class="text">T.A.V. Karin oldenbruger, stichting Spinn</p>
 

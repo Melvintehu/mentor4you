@@ -11,6 +11,8 @@
 |
 */
 
+// website routes
+
 Route::get('/', 'PagesController@index');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
 Route::get('/contact', 'PagesController@contact');
@@ -20,13 +22,25 @@ Route::get('/over-ons', 'PagesController@overons');
 Route::get('/steun-ons', 'PagesController@steunons');
 Route::get('/actueel', 'PagesController@actueel');
 
+
+
+// cms routes
+
 Route::group(['prefix' => 'cms'], function () {
 	
+
 	// get routes
 	Route::get('/', function(){
         return view('cms.cms');
     });
 
 
+	Route::get('candidate/mentoren', 'CandidatesController@mentoren');
+	Route::get('candidate/jongeren', 'CandidatesController@jongeren');
+
+
+	// resources controllers
+    Route::resource('candidate', 'CandidatesController');
+    Route::resource('mentor', 'MentorsController');
 
 });
