@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 
 class Authenticate
 {
+    protected $loginPath = '/cms';
     /**
      * Handle an incoming request.
      *

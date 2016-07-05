@@ -1,7 +1,11 @@
+<?php
+	$user = Auth::user();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-    <title>@yield('title') || HMV Actis</title>
+    <title>@yield('title') || Mentor4you</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    @include('cms.partials.styling')
 </head>
