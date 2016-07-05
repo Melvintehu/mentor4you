@@ -1,6 +1,6 @@
-<div class="container-fluid ">
+<div class="container-fluid no-overflow">
 
-	<div class="row">
+	<div class="row ">
 		
 		<div class="col-lg-12 banner push-aside-85">
 					
@@ -24,7 +24,7 @@
 
 			<div class="push-20">
 				
-				<a href="#lees-meer" class="button btn-standard bg-secondary"> lees meer  </a>
+				<a href="/over-ons" class="button btn-standard bg-secondary"> lees meer  </a>
 
 			</div>
 
