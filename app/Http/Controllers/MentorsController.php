@@ -69,7 +69,12 @@ class MentorsController extends Controller
      */
     public function edit($id)
     {
-        //
+        
+        $data =[
+            'mentor' => Mentor::find($id),
+        ];
+
+        return view('cms.pages.mentors.update', compact('data'));
     }
 
     /**
@@ -81,7 +86,12 @@ class MentorsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $mentor = Mentor::find($id);
+
+        $mentor->update($request->all());
+    
+        return redirect('cms/mentor');
+
     }
 
     /**
