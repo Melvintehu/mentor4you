@@ -81,18 +81,6 @@
 
 }
 
-.round{
-	
-	border-radius: 2000px;
-
-}
-
-
-/* shapes */
-
-.circle{
-	border-radius: 2000px;
-}
 
 
 
@@ -134,51 +122,57 @@
 	bottom: 0;
 	z-index: 10;
 }
+
 	
 
-/* components */
+/* shapes 
+
+	Afmetingen voor cirkels, rechthoeken etc
+
+
+*/
+
 
 .circle{
 	border-radius:2000px;
+	text-align: center;
 }
 
-.circle-steun-ons{
-	width:50px;
-	height:50px;
-	color:white;
-	background-color:#E65100;
-	line-height:50px;
-}
-
-steun-ons-text{
-
-}
-
-.circle-slider{
-	height: 30px;
+.circle-sm{
 	width: 30px;
-}
-
-.circle-paginate{
 	height: 30px;
-	width: 30px;
+	line-height: 30px;
 }
 
-.circle-paginate:hover{
-	background:black;
-}
 
-.circle-slider:hover{
-	background-color: black;
-	cursor: pointer;
-
+.circle-md{
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
 
 }
+
+.circle-lg{
+	width: 150px;
+	height: 150px;
+
+}
+
+
+.circle-xl{
+	width: 225px;
+	height: 225px;
+}
+
+
+
+
+/* slider */
 
 .a-slider{
-	width:40px;
-	font-size:40px;
-	color:white;
+	width: 40px;
+	font-size: 40px;
+	color: white;
 }
 
 .a-slider:hover{
@@ -190,15 +184,16 @@ steun-ons-text{
 	margin: auto;
 	bottom: 45%;
   	width: 50px;
-	background-color:black;
+	background-color: black;
 	opacity:0.8;
 }
 
 .slider-arrow-left{
-  	left:1%;
+  	left: 1%;
 }
 
 .slider-arrow-right{
-	right:1%;
+	right: 1%;
 }
+
 

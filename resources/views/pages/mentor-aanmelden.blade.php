@@ -18,7 +18,7 @@
 				
 				<div class="image aanmelden-foto">
 					
-					<img src="images/foto1.jpg" alt="jongere die zich wil aanmelden">
+					<img src="images/foto1.jpg" alt="mentor die zich wil aanmelden">
 
 				</div>
 
@@ -37,7 +37,7 @@
 
 				</p>
 
-				<a href="#" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="/over-ons" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
 
 			</div>
 
