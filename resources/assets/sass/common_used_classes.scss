@@ -34,7 +34,29 @@
 }
 
 
+@media (max-width: 768px) { 
+	
+	.input{
+		width: 100% !important;
+	}
 
+	.textarea{
+		width: 100% !important;
+	}
+
+}
+
+@media (min-width: 768px) and (max-width: 970px) { 
+	
+	.input{
+		width: 100% !important;
+	}
+
+	.textarea{
+		width: 100% !important;
+	}
+
+ }
 
 /* images */
 
