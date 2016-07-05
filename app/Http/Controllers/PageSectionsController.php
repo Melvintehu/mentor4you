@@ -5,55 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Section;
 use App\Page;
 
-class PagesController extends Controller
+class PageSectionsController extends Controller
 {
-    
-	public function indexHome()
-	{
-		return view('pages.homepage');
-	}
-
-	public function jongerenAanmelden()
-	{
-		return view('pages.jongeren-aanmelden');
-	}
-
-	public function contact()
-	{
-		return view('pages.contact');
-	}
-
-	public function mentorenAanmelden()
-	{
-
-		return view('pages.mentor-aanmelden');
-
-	}
-
-	public function resultaten()
-	{
-		return view('pages.resultaten');
-	}
-
-	public function overons()
-	{
-		return view('pages.over-ons');
-	}
-
-	public function steunons()
-	{
-		return view('pages.steun-ons');
-	}
-
-	public function actueel()
-	{
-		return view('pages.actueel');
-	}
-
-
-	    /**
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -61,10 +18,10 @@ class PagesController extends Controller
     public function index()
     {
         $data = [
-            'pages' => Page::paginate(20),
+            'sections' => Section::paginate(20),
         ];
 
-        return view('cms.pages.pages.overzicht', compact('data'));
+        return view('cms.pages.sections.overzicht', compact('data'));
     }
 
     /**
@@ -74,8 +31,12 @@ class PagesController extends Controller
      */
     public function create()
     {
+        $data = [
+            'pages' => Page::lists('name', 'id'),
+        ];
 
-        return view('cms.pages.pages.create');
+
+        return view('cms.pages.sections.create', compact('data'));
     }
 
     /**
@@ -87,9 +48,9 @@ class PagesController extends Controller
     public function store(Request $request)
     {
         
-        $page = Page::create($request->all());
+        $section = Section::create($request->all());
         
-        return redirect('cms/page');
+        return redirect('cms/section');
 
     }
 
@@ -114,10 +75,11 @@ class PagesController extends Controller
     {
         
         $data =[
-            'page' => Page::find($id),
+            'section' => Section::find($id),
+            'pages' => Page::lists('name', 'id'),
         ];
 
-        return view('cms.pages.pages.update', compact('data'));
+        return view('cms.pages.sections.update', compact('data'));
     }
 
     /**
@@ -129,11 +91,11 @@ class PagesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $page = Page::find($id);
+        $section = Section::find($id);
 
-        $page->update($request->all());
+        $section->update($request->all());
     
-        return redirect('cms/page');
+        return redirect('cms/section');
 
     }
 
@@ -145,12 +107,9 @@ class PagesController extends Controller
      */
     public function destroy($id)
     {
-        $page = Page::find($id);
-        $page->delete();
+        $section = Section::find($id);
+        $section->delete();
 
-        return redirect('cms/page');
+        return redirect('cms/section');
     }
-
-
-
 }

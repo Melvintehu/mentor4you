@@ -13,7 +13,7 @@
 
 // website routes
 
-Route::get('/', 'PagesController@index');
+Route::get('/', 'PagesController@indexHome');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
 Route::get('/contact', 'PagesController@contact');
 Route::get('/aanmelden-als-mentor', 'PagesController@mentorenAanmelden');
@@ -51,6 +51,8 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
     Route::resource('news', 'NewsController');
 
     Route::resource('youth', 'YouthController');
+    Route::resource('page', 'PagesController');
+    Route::resource('section', 'PageSectionsController');   
 
     Route::resource('partner', 'PartnersController');
 
