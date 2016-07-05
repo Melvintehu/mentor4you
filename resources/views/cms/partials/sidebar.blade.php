@@ -47,8 +47,13 @@
                     <li><a href="{{ URL::to("cms/mentor") }}"><i class="ion-grid"></i> Overzicht </a></li>
                     <li><a href="{{ URL::to("cms/mentor/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
                 </ul>
-            </li>        
+            </li>  
 
+
+            <li><a href="{{ URL::to("/logout") }}"><i class="ion-home"></i> <span
+                            class="nav-label">Logout</span></a>
+            </li>      
+            
         </ul>
     </nav>
 

@@ -21,18 +21,23 @@ Route::get('/behaalde-resultaten', 'PagesController@resultaten');
 Route::get('/over-ons', 'PagesController@overons');
 Route::get('/steun-ons', 'PagesController@steunons');
 Route::get('/actueel', 'PagesController@actueel');
+Route::auth();
 
+Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 
 
 // cms routes
-
-Route::group(['prefix' => 'cms'], function () {
 	
-
 	// get routes
 	Route::get('/', function(){
         return view('cms.cms');
     });
+
+    Route::get('/logout', function()
+	{
+		Auth::logout();
+		return redirect('/cms');
+	});
 
 
 	Route::get('candidate/mentoren', 'CandidatesController@mentoren');
@@ -44,3 +49,5 @@ Route::group(['prefix' => 'cms'], function () {
     Route::resource('mentor', 'MentorsController');
 
 });
+
+Route::get('/home', 'HomeController@index');
