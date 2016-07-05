@@ -42,6 +42,18 @@
                                                             <td>{{ $object->last_name }}</td>
                                                             <td>{{ $object->description }}</td>
                                                             <td>{{ $object->date_of_birth }}</td> 
+                                                            <td>
+                                                                 {!! Form::open(
+                                                                    array(
+                                                                        'method' => 'GET',
+                                                                        'action' => ['MentorsController@edit', $object->id]
+                                                                        )
+                                                                    )
+                                                                !!}
+
+                                                                <input type='submit' class='btn btn-primary' value='aanpassen' />
+                                                                {!! Form::close() !!}
+                                                            </td>
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
