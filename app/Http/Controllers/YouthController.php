@@ -17,10 +17,10 @@ class YouthController extends Controller
     public function index()
     {
         $data = [
-            'youth' => Youth::all(),
+            'youth' => Youth::paginate(10),
         ];
 
-        return view('cms.pages.youth.overview', compact('data'));
+        return view('cms.pages.youth.overzicht', compact('data'));
     }
 
     /**
@@ -30,7 +30,7 @@ class YouthController extends Controller
      */
     public function create()
     {
-        //
+        return view('cms.pages.mentors.create');
     }
 
     /**
@@ -41,7 +41,9 @@ class YouthController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $youth = Youth::create($request->all());
+        
+        return redirect('cms/youth');
     }
 
     /**
@@ -63,7 +65,11 @@ class YouthController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data =[
+            'youth' => Youth::find($id),
+        ];
+
+        return view('cms.pages.youth.update', compact('data'));
     }
 
     /**
@@ -75,7 +81,11 @@ class YouthController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $youth = Youth::find($id);
+
+        $youth->update($request->all());
+    
+        return redirect('cms/youth');
     }
 
     /**
@@ -86,6 +96,9 @@ class YouthController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $youth = Youth::find($id);
+        $youth->delete();
+
+        return redirect('cms/youth');
     }
 }

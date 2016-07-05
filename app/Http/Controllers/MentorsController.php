@@ -46,7 +46,7 @@ class MentorsController extends Controller
         
         $mentor = Mentor::create($request->all());
         
-        return redirect('mentor');
+        return redirect('cms/mentor');
 
     }
 

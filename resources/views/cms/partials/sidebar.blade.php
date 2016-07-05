@@ -49,6 +49,15 @@
                 </ul>
             </li>  
 
+            <!-- jongeren -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Jongeren</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/youth") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/youth/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
+                </ul>
+            </li>  
 
             <li><a href="{{ URL::to("/logout") }}"><i class="ion-home"></i> <span
                             class="nav-label">Logout</span></a>
