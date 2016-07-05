@@ -15,6 +15,7 @@
     <nav class="navigation">
         <ul class="list-unstyled">
 
+            <!-- pages en sections -->
             <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
                             class="nav-label">Pagina beheer</span></a>
                 <ul class="list-styled">
@@ -27,9 +28,26 @@
 
                 </ul>
             </li>
-           
 
-        
+            <!-- candidates -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Aanmeldingen</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/candidate/mentoren") }}"><i class="ion-grid"></i> Aanmeldingen mentoren </a></li>
+                    <li><a href="{{ URL::to("cms/candidate/jongeren") }}"><i class="ion-grid"></i> Aanmeldingen jongeren </a></li>
+                </ul>
+            </li>
+
+            <!-- mentoren -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Mentoren</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/mentor") }}"><i class="ion-grid"></i> Overzicht mentoren </a></li>
+                   
+                </ul>
+            </li>        
 
         </ul>
     </nav>

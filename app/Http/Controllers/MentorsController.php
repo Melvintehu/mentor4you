@@ -18,7 +18,7 @@ class MentorsController extends Controller
     public function index()
     {
         $data = [
-            'mentors' => Mentor::all(),
+            'mentors' => Mentor::paginate(20),
         ];
 
         return view('cms.pages.mentors.overzicht', compact('data'));
