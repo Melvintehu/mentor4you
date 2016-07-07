@@ -184,7 +184,7 @@
 
 					</p>
 
-					<a href="/actueel" class="btn-round white"> Bekijk het hele verhaal van Sara hier <span class="bg-secondary"> > </span> </a>
+					<a href="/actueel" class="btn-round white"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary"> > </span> </a>
 
 				</div>
 
