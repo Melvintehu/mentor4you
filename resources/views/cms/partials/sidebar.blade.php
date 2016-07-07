@@ -67,6 +67,16 @@
                 </ul>
             </li>  
 
+            <!-- partners -->
+            <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
+                            class="nav-label">Teammembers</span></a>
+                <ul class="list-styled">
+                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <li><a href="{{ URL::to("cms/teammember") }}"><i class="ion-grid"></i> Overzicht </a></li>
+                    <li><a href="{{ URL::to("cms/teammember/create") }}"><i class="ion-grid"></i> Toevoegen </a></li>
+                </ul>
+            </li> 
+
             <!-- jongeren -->
             <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
                             class="nav-label">Jongeren</span></a>
