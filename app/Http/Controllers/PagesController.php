@@ -13,7 +13,15 @@ class PagesController extends Controller
     
 	public function indexHome()
 	{
-		return view('pages.homepage');
+        $data = [
+            'titel' => Section::where('id', 1)->first(),
+            'zoekmentor' => Section::where('id', 2)->first(),
+            'aanmeldenmentor' => Section::where('id', 3)->first(),
+            'resultaten' => Section::where('id', 4)->first(),
+            'actueeltitel' => Section::where('id', 5)->first(),
+            'partnerstitel' => Section::where('id', 6)->first(),
+        ];
+		return view('pages.homepage', compact('data'));
 	}
 
 	public function jongerenAanmelden()
@@ -23,7 +31,13 @@ class PagesController extends Controller
 
 	public function contact()
 	{
-		return view('pages.contact');
+        $data = [
+            'titel' => Section::where('id', 22)->first(),
+            'bold' => Section::where('id', 23)->first(),
+            'vestiging' => Section::where('id', 24)->first(),
+        ];
+
+		return view('pages.contact', compact('data'));
 	}
 
 	public function mentorenAanmelden()
@@ -35,20 +49,36 @@ class PagesController extends Controller
 
 	public function resultaten()
 	{
-		return view('pages.resultaten');
+        $data = [
+            'titel' => Section::where('id', 15)->first(),
+        ];
+		return view('pages.resultaten', compact('data'));
 	}
 
 	public function overons()
 	{
-		return view('pages.over-ons');
+        $data = [
+            'titel' => Section::where('id', 7)->first(),
+            'kop1' => Section::where('id', 8)->first(),
+            'kop2' => Section::where('id', 9)->first(),
+            'kop3' => Section::where('id', 10)->first(),
+            'kop4' => Section::where('id', 11)->first(),
+            'hetteam' => Section::where('id', 12)->first(),
+            'aanmeldbox' => Section::where('id', 13)->first(),
+        ];
+		return view('pages.over-ons', compact('data'));
 	}
 
 	public function steunons()
 	{
-		$data = [
-			'eerste_kop' => Section::where('id', 1)->first(),
-            'tweede_kop' => Section::where('id', 2)->first(),
-		];
+        $data = [
+            'titel' => Section::where('id', 16)->first(),
+            'eerste_kop' => Section::where('id', 17)->first(),
+            'tweede_kop' => Section::where('id', 18)->first(),
+            'rekeningnummer' => Section::where('id', 19)->first(),
+            'tav' => Section::where('id', 20)->first(),
+            'uitleg' => Section::where('id', 21)->first(),
+        ];
 
 
 		return view('pages.steun-ons', compact('data'));
@@ -56,7 +86,10 @@ class PagesController extends Controller
 
 	public function actueel()
 	{
-		return view('pages.actueel');
+        $data = [
+            'titel' => Section::where('id', 14)->first(),
+        ];
+		return view('pages.actueel', compact('data'));
 	}
 
 

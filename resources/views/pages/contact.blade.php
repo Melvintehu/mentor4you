@@ -10,7 +10,7 @@
 			
 			<div class="col-lg-12 push-0-65">
 			
-				<h1> CONTACT </h1>	
+				<h1> {{ $data['titel']->title }} </h1>	
 
 			</div>
 
@@ -18,13 +18,7 @@
 
 				<p class="text">
 
-					Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, auctor imperdiet elit felis vel turpis.
-
-					Ut ac nulla eget neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque lorem pharetra eu. Ut pellentesque,
-
-					diam vitae consequat elementum, ligula ipsum viverra elit, sed pharetra nunc purus sit amet dolor. Nulla facilisi.
-
-					Aliquam rutrum orci ut turpis laoreet, eget convallis tellus ornare. Maecenas at magna quis turpis posuere varius.
+					{{ $data['titel']->body }} 
 
 				</p>
 
@@ -34,7 +28,7 @@
 				
 				<p class="text bold">
 					
-					U kan met ons contact opnemen via het onderstaande formulier
+					{{ $data['bold']->title }} 
 
 				</p>
 
@@ -99,7 +93,7 @@
 			
 			<div class="col-lg-2 push-0-65">
 			
-				<h3> Onze vestiging</h3>	
+				<h3> {{ $data['vestiging']->title }} </h3>	
 
 			</div>
 
@@ -107,7 +101,7 @@
 			
 				<p class="text">
 						
-						Rodenburg 1b Leek
+						{{ $data['vestiging']->body }} 
 
 				</p>	
 

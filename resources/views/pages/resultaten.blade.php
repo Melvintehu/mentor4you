@@ -11,7 +11,7 @@
 
 			<div class="col-lg-12 text-center push-65">
 				
-				<h1> resultaten </h1>
+				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
