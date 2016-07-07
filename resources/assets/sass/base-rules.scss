@@ -1,3 +1,75 @@
+$dist-sm : 8px;
+$dist-md : 26px;
+$dist-lg : 56px;
+$dist-xl : 76px;
+
+$dist-side : 85px;
+
+
+/* padding wrapper classes */
+
+.push-aside-85{ padding: 0 $dist-side 0 $dist-side; }
+.push-aside-0-85{ padding: 0 0 0 $dist-side;  }
+.push-aside-85-0{ padding: 0 $dist-side 0 0;  }
+
+.push-aside-65{ padding: 0 $dist-lg 0 $dist-lg; }
+.push-aside-0-65{ padding: 0 0 0 $dist-lg; }
+.push-aside-65-0{ padding: 0 $dist-lg 0 0; }
+
+.push-aside-35{ padding: 0 $dist-md 0 $dist-md; }
+.push-aside-0-35{ padding: 0 0px 0 $dist-md; }
+.push-aside-35-0{ padding: 0 $dist-md 0 0px; }
+
+.push-aside-20{ padding: 0 $dist-sm 0 $dist-sm; }
+.push-aside-0-20{ padding: 0 0 0 $dist-sm; }
+.push-aside-20-0{ padding: 0 $dist-sm 0 0; }
+
+.push-20 a.button{ margin: 18px 0 18px 0; }
+
+/* margin wrapper classes */
+
+.push-75{ margin: $dist-xl 0 $dist-xl 0;}
+.push-0-75{ margin: 0 0 $dist-xl 0;}
+.push-75-0{ margin: $dist-xl 0 0 0;}
+
+.push-65{ margin: $dist-lg 0 $dist-lg 0;}
+.push-0-65{ margin: 0 0 $dist-lg 0;}
+.push-65-0{ margin: $dist-lg 0 0 0;}
+
+.push-65-20{ margin: $dist-lg 0 $dist-sm 0; }
+
+.push-35{ margin: $dist-md 0 $dist-md 0; }
+.push-0-35{ margin: 0 0 $dist-md 0; }
+.push-35-0{ margin: $dist-md 0 0 0; }
+.push-35-20{ margin: $dist-md 0 $dist-sm 0; }
+.push-35-65{ margin: $dist-md 0 $dist-lg 0; }
+
+
+.push-20{ margin: $dist-sm 0 $dist-sm 0; }
+.push-0-20{ margin: 0 0 $dist-sm 0; }
+.push-20-0{ margin: $dist-sm 0 0 0; }
+.push-20-35{ margin: $dist-sm 0 $dist-md 0; }
+
+
+
+
+.push-aside-35-m{ margin: 0 $dist-md 0 $dist-md; }
+.push-aside-0-35-m{ margin: 0 $dist-md 0 0; }
+.push-aside-35-0-m{ margin: 0  0 0 $dist-md; }
+.push-aside-35-20-m{ margin: 0  $dist-sm 0 $dist-md; }
+
+.push-aside-75-m{ margin: 0 $dist-xl 0 $dist-xl; }
+.push-aside-0-75-m{ margin: 0 $dist-xl 0 0; }
+.push-aside-75-0-m{ margin: 0  0 0 $dist-xl; }
+
+
+
+.push-aside-20-m{ margin: 0 $dist-sm 0 $dist-sm; }
+.push-aside-0-20-m{ margin: 0 $dist-sm 0 0; }
+.push-aside-20-0-m{ margin: 0 $dist-sm 0 0; }
+
+.auto{ margin: 0 auto; }
+
 body{
 	background: white;
 	margin: 0;
@@ -23,7 +95,6 @@ span{
 	margin: 0px;
 	padding: 0px;
 }
-
 
 
 /* headings */
@@ -62,68 +133,36 @@ h3{
 }
 
 
-
-
 /* text */
 
 .bold{ 
 	font-weight: 600;
 }
 
-
 .light{
 	font-weight: 300;
 }
 
-
 p{
-
 	margin: 0;
 	padding: 0;
 	color: #111111;
 	font-weight: 300;
 	display: inline-block;
-
 }
 
 p.white{
-
 	color: white;
-
 }
 
 p.size-14{
-	
 	font-size: 14px;
-
 }
 
 
 
-/* padding wrapper classes */
 
 
-
-
-
-.push-aside-85{ padding: 0 85px 0 85px; }
-.push-aside-0-85{ padding: 0 0 0 85px;  }
-.push-aside-85-0{ padding: 0 85px 0 0;  }
-
-.push-aside-65{ padding: 0 65px 0 65px; }
-.push-aside-0-65{ padding: 0 0 0 65px; }
-.push-aside-65-0{ padding: 0 65px 0 0; }
-
-.push-aside-35{ padding: 0 26px 0 26px; }
-.push-aside-0-35{ padding: 0 0px 0 26px; }
-.push-aside-35-0{ padding: 0 26px 0 0px; }
-
-.push-aside-20{ padding: 0 8px 0 8px; }
-.push-aside-0-20{ padding: 0 0 0 8px; }
-.push-aside-20-0{ padding: 0 8px 0 0; }
-
-
-.push-20 a.button{ margin: 18px 0 18px 0; }
 
 /* positioning */
 
@@ -158,46 +197,9 @@ p.size-14{
 }
 
 
-/* margin wrapper classes */
-
-.push-75{ margin: 76px 0 76px 0;}
-.push-0-75{ margin: 0 0 76px 0;}
-.push-75-0{ margin: 76px 0 0 0;}
-
-.push-65{ margin: 56px 0 56px 0;}
-.push-0-65{ margin: 0 0 56px 0;}
-.push-65-0{ margin: 56px 0 0 0;}
-
-.push-65-20{ margin: 56px 0 11px 0; }
-
-.push-35{ margin: 26px 0 26px 0; }
-.push-0-35{ margin: 0 0 26px 0; }
-.push-35-0{ margin: 26px 0 0 0; }
-.push-35-20{ margin: 26px 0 11px 0; }
-.push-35-65{ margin: 26px 0 56px 0; }
-
-
-.push-20{ margin: 11px 0 11px 0; }
-.push-0-20{ margin: 0 0 11px 0; }
-.push-20-0{ margin: 11px 0 0 0; }
-.push-20-35{ margin: 11px 0 26px 0; }
 
 
 
 
-.push-aside-35-m{ margin: 0 26px 0 26px; }
-.push-aside-0-35-m{ margin: 0 26px 0 0; }
-.push-aside-35-0-m{ margin: 0  0 0 26px; }
-.push-aside-35-20-m{ margin: 0  8px 0 26px; }
-
-.push-aside-75-m{ margin: 0 76px 0 76px; }
-.push-aside-0-75-m{ margin: 0 76px 0 0; }
-.push-aside-75-0-m{ margin: 0  0 0 76px; }
-
-.push-aside-20-m{ margin: 0 8px 0 8px; }
-.push-aside-0-20-m{ margin: 0 8px 0 0; }
-.push-aside-20-0-m{ margin: 0 8px 0 0; }
-
-.auto{ margin: 0 auto; }
 
 

@@ -26,35 +26,33 @@
                                                  {!! Form::model($data['section'],
                                                     array(
                                                         'method' => 'PUT',
-                                                        'action' => ['PagesController@update', $data['section']->id]
+                                                        'action' => ['PageSectionsController@update', $data['section']->id]
                                                         )
                                                     )
                                                 !!}
-                                                <thead>
-                                                    <tr>
-                                                           <td>
-                                                                {!! Form::label('title', ' De titel die weergegeven wordt op de website ') !!} 
-                                                                {!! Form::text('title', null, ['class' => 'form-control']); !!} 
-                                                           </td>
-                                                        </tr>
+                                                    <thead>
                                                         <tr>
-                                                           <td>
-                                                                {!! Form::label('body', ' De text die weergegeven wordt op de website ') !!} 
-                                                                {!! Form::textarea('body', null, ['class' => 'form-control']); !!} 
-                                                           </td>
-                                                        </tr>
-                                                        <tr>
-                                                           <td>
-                                                                {!! Form::label('page_id', 'Waarop komt deze sectie ?') !!} 
-                                                                {!! Form::select('page_id', $data['pages'], null, ['class' => 'form-control']); !!} 
-                                                           </td>
-                                                        </tr> 
-                                                   
-                                                </thead>    
+                                                               <td>
+                                                                    {!! Form::label('title', ' De titel die weergegeven wordt op de website ') !!} 
+                                                                    {!! Form::text('title', null, ['class' => 'form-control']); !!} 
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                    {!! Form::label('body', ' De text die weergegeven wordt op de website ') !!} 
+                                                                    {!! Form::textarea('body', null, ['class' => 'form-control']); !!} 
+                                                               </td>
+                                                            </tr>
+                                                            <tr>
+                                                               <td>
+                                                                    {!! Form::label('page_id', 'Waarop komt deze sectie ?') !!} 
+                                                                    {!! Form::select('page_id', $data['pages'], null, ['class' => 'form-control']); !!} 
+                                                               </td>
+                                                            </tr> 
+                                                       
+                                                    </thead>    
 
-
-                                               
-                                                    
+                                                                                                        
                                                     <div class='form-group'>
                                                         <input type='submit' class='btn btn-primary' value='aanpassen' />
                                                     </div>

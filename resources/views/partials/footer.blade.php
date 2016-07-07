@@ -12,7 +12,7 @@
 
 			<div class="col-lg-4 push-35">
 				
-				<a class="btn-round white " href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="bg-white black"> > </span></a>
+				<a class="btn-round white " href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="circle circle-sm bg-white black"> > </span></a>
 
 			</div>
 
