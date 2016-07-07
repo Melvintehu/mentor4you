@@ -18,5 +18,8 @@ class DatabaseSeeder extends Seeder
          $this->call(PartnersTableSeeder::class);
          $this->call(TeamMembersTableSeeder::class);
          $this->call(YouthTableSeeder::class);
+
+         $this->call(PageSeeder::class);
+         $this->call(SectionSeeder::class);
     }
 }

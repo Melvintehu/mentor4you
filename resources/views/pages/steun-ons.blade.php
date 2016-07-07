@@ -10,7 +10,7 @@
 
 			<div class="col-lg-12 push-0-65 text-center">
 
-				<h1>STEUN ONS</h1>
+				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
@@ -24,12 +24,11 @@
 
 				</p>
 
-				<h3 class="push-0-35">Help en doneer</h3>
+				<h3 class="push-0-35">{{ $data['tweede_kop']->title }}</h3>
 
 				<p class="text">
 					
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
+					{{ $data['tweede_kop']->title }}
 				
 				</p>
 
@@ -53,7 +52,7 @@
 
 							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
 								
-								<p class="text">NL12 INGB 00012345678</p>
+								<p class="text">{{ $data['rekeningnummer']->body }}</p>
 
 							</div>
 
@@ -76,7 +75,7 @@
 
 							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
 								
-								<p class="text">T.A.V. Karin oldenbruger, stichting Spinn</p>
+								<p class="text">{{ $data['tav']->body }}</p>
 
 							</div>
 
@@ -89,8 +88,7 @@
 						
 						<p class="text">
 
-							Morbi elementum, quam ut suscipit elementum, risus libero
-							tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
+							{{ $data['uitleg']->body }}
 
 						</p>
 						

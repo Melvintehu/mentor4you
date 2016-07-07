@@ -10,7 +10,7 @@
 			
 			<div class="col-lg-12 push-0-65 text-center">
 
-				<h1>WAT IS MENTOR4YOU</h1>
+				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
@@ -22,56 +22,40 @@
 
 			<div class="col-lg-6">
 
-				<h3 class="push-0-20">Wat doen wij?</h3>
+				<h3 class="push-0-20">{{ $data['kop1']->title }}</h3>
 
 				<p class="text push-0-35">
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
-					neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat
-					elementum, ligula ipsum viverra elit,
+					{{ $data['kop1']->body }}
 				</p>
 
 			</div>
 
 			<div class="col-lg-6">
 
-				<h3 class="push-0-20">Voor wie?</h3>
+				<h3 class="push-0-20">{{ $data['kop2']->title }}</h3>
 
 				<p class="text push-0-35">
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
-					neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat
-					elementum, ligula ipsum viverra elit,
+					{{ $data['kop2']->body }}
 				</p>
 
 			</div>
 
 			<div class="col-lg-6  push-0-35">
 
-				<h3 class="push-0-20">Wat is ons doel?</h3>
+				<h3 class="push-0-20">{{ $data['kop3']->title }}</h3>
 
 				<p class="text">
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
-					neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat
-					elementum, ligula ipsum viverra elit,
+					{{ $data['kop3']->body }}
 				</p>
 
 			</div>
 
 			<div class="col-lg-6  push-0-65">
 
-				<h3 class="push-0-20">Waar staan wij in de toekomst?</h3>
+				<h3 class="push-0-20">{{ $data['kop4']->title }}</h3>
 
 				<p class="text">
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
-					neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat
-					elementum, ligula ipsum viverra elit,
+					{{ $data['kop4']->body }}
 				</p>
 
 			</div>
@@ -93,7 +77,7 @@
 			
 			<div class="col-lg-12 push-0-65 text-center">
 
-				<h1>HET TEAM</h1>
+				<h1>{{ $data['hetteam']->title }}</h1>
 
 			</div>			
 
@@ -150,14 +134,14 @@
 
 			<div class="col-lg-12 push-35-20 ">
 
-				<h3 class="text-center">Ben je enthousiast geworden na het zien van onze website?</h3>
+				<h3 class="text-center">{{ $data['aanmeldbox']->title }}</h3>
 
 			</div>
 
 			<div class="col-lg-4 col-centered push-0-35">
 
 				<p class="text-center">
-					Meld je dan nu aan als mentor of jongere door op één van de onderstaande knoppen te drukken
+					{{ $data['aanmeldbox']->body }}
 				</p>
 
 			</div>

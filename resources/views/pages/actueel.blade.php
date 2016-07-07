@@ -10,7 +10,7 @@
 
 			<div class="col-lg-12 push-0-65 text-center">
 
-				<h1>ACTUEEL</h1>
+				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 

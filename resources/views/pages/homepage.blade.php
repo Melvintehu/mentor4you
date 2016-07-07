@@ -13,7 +13,7 @@
 				
 				<div class="push-65">
 					
-					<h1> aanmelden </h1>
+					<h1>{{ $data['titel']->title }}</h1>
 
 				</div>
 
@@ -39,7 +39,7 @@
 
 							<div class="push-20">
 									
-								<h3> IK ZOEK EEN MENTOR </h3>
+								<h3> {{ $data['zoekmentor']->title }} </h3>
 								
 							</div>
 
@@ -47,10 +47,7 @@
 
 								<p> 
 
-									Non ipsum vulputate 
-									condimentum eu id tellus. 
-									Praesent commodo arcu quis rhoncus. 
-									Suspendisse volutpat, quam eu.
+									{{ $data['zoekmentor']->body }}
 
 								</p>
 
@@ -80,17 +77,14 @@
 
 							<div class="push-20">
 									
-								<h3> AANMELDEN ALS MENTOR </h3>
+								<h3> {{ $data['aanmeldenmentor']->title }} </h3>
 								
 							</div>
 
 							<div class="push-20">
 								<p> 
 
-									Non ipsum vulputate 
-									condimentum eu id tellus. 
-									Praesent commodo arcu quis rhoncus. 
-									Suspendisse volutpat, quam eu.
+									{{ $data['aanmeldenmentor']->body }}
 
 								</p>
 
@@ -121,7 +115,7 @@
 
 							<div class="push-20">
 									
-								<h3> RESULTATEN </h3>
+								<h3> {{ $data['resultaten']->title }} </h3>
 								
 							</div>
 
@@ -129,10 +123,7 @@
 								
 								<p> 
 
-									Non ipsum vulputate 
-									condimentum eu id tellus. 
-									Praesent commodo arcu quis rhoncus. 
-									Suspendisse volutpat, quam eu.
+									{{ $data['resultaten']->body }}
 
 								</p>
 
@@ -205,7 +196,7 @@
 				
 				<div class="push-65">
 					
-					<h1> ACTUEEL </h1>
+					<h1> {{ $data['actueeltitel']->title }} </h1>
 
 				</div>
 
@@ -252,7 +243,7 @@
 				
 				<div class="push-65">
 					
-					<h1> PARTNERS </h1>
+					<h1> {{ $data['partnerstitel']->title }} </h1>
 
 				</div>
 
