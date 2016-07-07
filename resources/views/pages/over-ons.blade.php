@@ -164,8 +164,9 @@
 
 			<div class="col-lg-12 text-center push-0-35">
 
-				<a href="/aanmelden-als-mentor" class="btn-standard bg-secondary push-aside-0-20-m">Mentor worden</a>
-				<a href="/aanmelden-als-jongere" class="btn-standard bg-secondary">Aanmelden als jongere</a>
+				<a href="/aanmelden-als-mentor" class="btn-standard bg-secondary push-0-35 ">Mentor worden</a>
+
+				<a href="/aanmelden-als-jongere"  class="push-aside-20-m btn-standard bg-secondary ">Aanmelden als jongere</a>
 
 			</div>
 

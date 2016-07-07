@@ -70,59 +70,64 @@
 
 			<div class="col-lg-12 push-35">
 				
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
-
-				</div>
-
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Achternaam" type="text" name="achternaam">
-
-				</div>
-
-
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Telefoonnummer" type="text" name="telefoonnummer">
-
-				</div>
-
-				<div class="col-lg-12"> 
+				<div class="row">
+						
 					
-					<input class="input border border-accent push-0-35" placeholder="E-mailadres" type="text" name="emailadres">
+					<div class="col-lg-12"> 
 
-				</div>
+						<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
 
-				<div class="col-lg-12"> 
+					</div>
 
-					<input class="input border border-accent push-0-35" placeholder="Geboortedatum" type="text" name="geboortedatum">
+					<div class="col-lg-12"> 
 
-				</div>
+						<input class="input border border-accent push-0-35" placeholder="Achternaam" type="text" name="achternaam">
 
-				<div class="col-lg-12"> 
-
-
-					<textarea class="textarea border border-accent"></textarea>
+					</div>
 
 
-				</div>
+					<div class="col-lg-12"> 
 
-				<div class="col-lg-12 push-65-0"> 
+						<input class="input border border-accent push-0-35" placeholder="Telefoonnummer" type="text" name="telefoonnummer">
 
-					<input class="btn-standard bg-secondary black"  type="submit" name="verzenden">
+					</div>
 
-				</div>
+					<div class="col-lg-12"> 
+						
+						<input class="input border border-accent push-0-35" placeholder="E-mailadres" type="text" name="emailadres">
 
-				<div class="col-lg-12 push-65">
+					</div>
 
-					<p class="text ">
+					<div class="col-lg-12"> 
 
-						Bedankt voor het aanmelden. Wij nemen zo spoedig mogelijk contact met je op.
+						<input class="input border border-accent push-0-35" placeholder="Geboortedatum" type="text" name="geboortedatum">
 
-					</p>
+					</div>
 
+					<div class="col-lg-12"> 
+
+
+						<textarea class="textarea border border-accent"></textarea>
+
+
+					</div>
+
+					<div class="col-lg-12 push-65-0"> 
+
+						<input class="btn-standard bg-secondary black"  type="submit" name="verzenden">
+
+					</div>
+
+					<div class="col-lg-12 push-65">
+
+						<p class="text ">
+
+							Bedankt voor het aanmelden. Wij nemen zo spoedig mogelijk contact met je op.
+
+						</p>
+
+					</div>
+					
 				</div>
 
 			</div>

@@ -46,11 +46,8 @@ a.btn-standard, input[type=submit].btn-standard{
 
 a.btn-round{
 	font-weight: 300;
+
 	span{
-		padding: 3px 10px;
-		padding-bottom: 5px;
-		text-align: center;
-		border-radius: 20000px;
 		margin-left: 20px;
 	}
 
@@ -114,11 +111,22 @@ a.btn-round{
 
 }
 
+
+/* borders */
+
 .border-accent{
 		border-color: $accent-color;
 	}
 
 
+
+.border-secondary{
+	border-color: $secondary-color;
+}
+
+.border-main{
+	border-color: $main-color;
+}
 
 
 
