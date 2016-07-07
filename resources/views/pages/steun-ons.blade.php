@@ -16,15 +16,11 @@
 
 			<div class="col-lg-8 push-0-65">
 
-				<h3 class="push-0-35">Non-profit organisatie</h3>
+				<h3 class="push-0-35">{{ $data['eerste_kop']->title }}</h3>
 
 				<p class="text push-0-65">
 					
-					Morbi elementum, quam ut suscipit elementum, risus libero
-					tincidunt est, auctor imperdiet elit felis vel turpis. Ut ac nulla eget
-					neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat
-					elementum, ligula ipsum viverra elit,
+					{{ $data['eerste_kop']->body }}
 
 				</p>
 

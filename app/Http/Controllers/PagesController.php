@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Section;
 use App\Page;
 
 class PagesController extends Controller
@@ -44,7 +45,13 @@ class PagesController extends Controller
 
 	public function steunons()
 	{
-		return view('pages.steun-ons');
+		$data = [
+			'eerste_kop' => Section::where('id', 1)->first(),
+            'tweede_kop' => Section::where('id', 2)->first(),
+		];
+
+
+		return view('pages.steun-ons', compact('data'));
 	}
 
 	public function actueel()
