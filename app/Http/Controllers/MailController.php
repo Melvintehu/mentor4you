@@ -8,11 +8,6 @@ use App\Http\Requests;
 
 class MailController extends Controller
 {
-   public function lidWorden()
-   {
-
-   }
-
    public function contactMail(Request $request)
    {
    		$name = $request->input('naam');
@@ -26,7 +21,7 @@ class MailController extends Controller
 	        {
 	            $message
 	                ->from($email, $name)
-	                ->to('e.landheer@mentechmedia.nl', 'Eric Landheer')
+	                ->to('info@mentor4you.nl', 'Mentor4you')
 	                ->subject('Contactbericht van ' . $name);
 	        });
 
@@ -56,7 +51,7 @@ class MailController extends Controller
            {
                $message
                    ->from($email, $name)
-                   ->to('e.landheer@mentechmedia.nl', 'Eric Landheer')
+                   ->to('info@mentor4you.nl', 'Mentor4you')
                    ->subject('Aanmelding jongere van: ' . $name);
            });
 
@@ -86,9 +81,18 @@ class MailController extends Controller
            {
                $message
                    ->from($email, $name)
-                   ->to('e.landheer@mentechmedia.nl', 'Eric Landheer')
+                   ->to('info@mentor4you.nl', 'Mentor4you')
                    ->subject('Aanmelding mentor van: ' . $name);
            });
+
+        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+          $beautymail->send('emails.bevestiging', [], function($message) use ($name, $email)
+          {
+              $message
+                  ->from('info@mentor4you.nl', 'Mentor4you')
+                  ->to($email, $name)
+                  ->subject('Mentor4you bevestiging van bericht');
+          });
 
            return redirect('/');   
    }
