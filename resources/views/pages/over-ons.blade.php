@@ -34,7 +34,7 @@
 
 					</div>					
 
-					<div class="col-lg-12">
+					<div class="col-lg-8">
 
 						<h3 class="space-outside-down-sm">{{ $data['kop3']->title }}</h3>
 

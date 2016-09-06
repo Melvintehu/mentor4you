@@ -52,7 +52,7 @@
 
 							       	<li><a href="/actueel">ACTUEEL</a></li>
 
-							       	<li><a href="/behaalde-resultaten">RESULTATEN</a></li>
+							       <!-- 	<li><a href="/behaalde-resultaten">RESULTATEN</a></li> -->
 
 							       	<li><a href="/steun-ons">STEUN ONS</a></li>
 
