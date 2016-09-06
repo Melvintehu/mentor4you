@@ -32,4 +32,14 @@ class MailController extends Controller
 
 	        return redirect('/');
    }
+
+   public function jongereMail(Request $request)
+   {
+
+   }
+
+   public function mentorMail(Request $request)
+   {
+   
+   }
 }
