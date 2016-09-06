@@ -75,6 +75,7 @@ $circle-dist-xl: 225px;
 @media (min-width: 1200px) {
 	
 
+
 	/* resets */
 
 	.lg-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
@@ -243,9 +244,11 @@ $circle-dist-xl: 225px;
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-
+	
 	/* resets */
 	
+	
+
 	.xs-space-inside-xl-none{ padding-top: 0; padding-bottom: 0; }
 	.xs-space-inside-sides-xl-none{ padding-left: 0; padding-right: 0; }
 	.xs-space-inside-down-xl-none{  padding-bottom: 0; }
@@ -1356,7 +1359,7 @@ overlap-content{
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-
+	.xs-clear-float{ float : none; }
 	.xs-circle-xl{
 		width: $circle-dist-xl;
 		height: $circle-dist-xl;
