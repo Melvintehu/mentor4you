@@ -4,12 +4,11 @@
 @section('content')
 
 	
-	<section class="container-fluid push-aside-85">
+	<section class="container-fluid space-inside-sides-xl push-aside-85">
 		
 		<div class="row">
 			
-
-			<div class="col-lg-12 text-center push-65">
+			<div class="col-lg-12 space-outside-lg text-center ">
 				
 				<h1>{{ $data['titel']->title }}</h1>
 
@@ -17,15 +16,24 @@
 
 			<div class="col-lg-12 no-overflow ">
 
-				<input class="input border border-accent right" type="text" placeholder="filteren" >
+				<div class="row">
+	
+					<div class="col-lg-3 right space-outside-down-sm">
+						
+						<input class="input border border-accent right" type="text" placeholder="filteren" >
+
+					</div>
+
+				</div>
+
 
 			</div>
 
-			<div class="col-lg-3 push-35 relative ">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm relative ">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 				<!-- Overlay -->
@@ -33,17 +41,17 @@
 
 					<div class="overlay-resultaten no-overflow bg-secondary">
 						
-						<div class="col-lg-12 push-aside-65 push-65-20">
+						<div class="col-lg-12 space-inside-sides-lg space-outside-up-lg space-outside-down-sm">
 						
-							<h2 class="white "> MENTOR  </h2>
+							<h2 class="text-color-light "> MENTOR  </h2>
 
 						</div>
 
-						<div class="col-lg-3">
+						<div class="col-lg-3 reset-padding space-inside-sides-sm  text-center">
 							
-							<div class="image circle circle-lg bg-accent push-35 push-aside-35-0-m">
+							<div class="image circle circle-lg bg-accent space-outside-md space-outside-left-md ">
 								
-								<img src="images/">
+								<img src="images/resultaten5.jpg">
 
 							</div>
 
@@ -51,7 +59,7 @@
 
 						<div class="col-lg-9">
 							
-							<p class="text white push-0-65 push-aside-65-0">
+							<p class=" text-color-light font-sm space-outside-down-lg space-inside-right-md">
 								
 								Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, auctor 
 								imperdiet elit felis vel turpis. Ut ac nulla eget neque tincidunt rutrum. Sed varius 
@@ -74,91 +82,91 @@
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3 push-35">
+			<div class="col-lg-3 reset-padding space-inside-sides-sm space-outside-sm">
 				
 				<div class="image">
 					
-					<img src="images/resultaten5.jpg" alt="leerling">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="leerling">
 
 				</div>
 

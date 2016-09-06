@@ -3,28 +3,28 @@
 
 @section('content')
 
-	<section class="container-fluid push-65 push-aside-85">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 			
 		<div class="row">
 
-			<div class="col-lg-12 push-0-65 text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center">
 
 				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
-			<div class="col-lg-8 push-0-65">
+			<div class="col-lg-8 space-outside-down-lg">
 
-				<h3 class="push-0-35">{{ $data['eerste_kop']->title }}</h3>
+				<h3 class="space-outside-down-md ">{{ $data['eerste_kop']->title }}</h3>
 
-				<p class="text push-0-65">
+				<p class="space-outside-down-lg space-inside-right-lg">
 					
 					{{ $data['eerste_kop']->body }}
 
 				</p>
 
-				<h3 class="push-0-35">{{ $data['tweede_kop']->title }}</h3>
+				<h3 class="space-outside-down-md">{{ $data['tweede_kop']->title }}</h3>
 
 				<p class="text">
 					
@@ -34,23 +34,23 @@
 
 			</div>
 
-			<div class="col-lg-4 push-0-65 push-aside-35  bg-accent">
+			<div class="col-lg-4 space-outside-down-lg space-inside-md  space-inside-sides-md  bg-accent">
 
 				<div class="row">
 					
 
-					<div class="col-lg-12 push-35-0">
+					<div class="col-lg-12 ">
 								
 						<div class="row">
 
 
-							<div class="col-lg-2 col-sm-2 col-xs-2 push-0-35">
+							<div class="col-lg-2 col-sm-2 col-xs-2 space-outside-down-sm">
 								
-								<div class="circle circle-md bg-secondary "> <span class="white"> B </span></div>	
+								<div class="circle circle-md bg-secondary "> <span class="text-color-light"> B </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
+							<div class="col-lg-10 col-sm-10 col-xs-10 space-outside-sm">
 								
 								<p class="text">{{ $data['rekeningnummer']->body }}</p>
 
@@ -62,20 +62,20 @@
 					</div>
 
 
-					<div class="col-lg-12 push-35-0">
+					<div class="col-lg-12 space-outside-up-sm">
 								
 						<div class="row">
 
 
-							<div class="col-lg-2 col-sm-2 col-xs-2 push-0-35">
+							<div class="col-lg-2 col-sm-2 col-xs-2 space-outside-down-sm">
 								
-								<div class="circle circle-md bg-secondary "> <span class="white"> P </span></div>	
+								<div class="circle circle-md bg-secondary "> <span class="text-color-light light"> P </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 col-sm-10 col-xs-10 push-20">
+							<div class="col-lg-10 col-sm-10 col-xs-10 space-outside-sm">
 								
-								<p class="text">{{ $data['tav']->body }}</p>
+								<p class="">{{ $data['tav']->body }}</p>
 
 							</div>
 
@@ -84,7 +84,7 @@
 
 					</div>
 			
-					<div class="col-lg-12 push-35-65">
+					<div class="col-lg-12 space-outside-up-md space-outside-down-lg">
 						
 						<p class="text">
 
@@ -94,9 +94,9 @@
 						
 					</div>
 
-					<div class="col-lg-12 push-0-35">
+					<div class="col-lg-12 ">
 
-						<a href="/contact" class="btn-standard bg-secondary ">PARTNER WORDEN</a>
+						<a href="/contact" class="btn-standard lowercase bg-secondary light text-color-light">PARTNER WORDEN</a>
 
 					</div>
 

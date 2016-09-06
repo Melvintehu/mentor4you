@@ -21,6 +21,7 @@ Route::get('/behaalde-resultaten', 'PagesController@resultaten');
 Route::get('/over-ons', 'PagesController@overons');
 Route::get('/steun-ons', 'PagesController@steunons');
 Route::get('/actueel', 'PagesController@actueel');
+Route::get('/actueel/{title}-{id}', 'PagesController@doorklikActueel');
 Route::auth();
 
 Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
@@ -47,17 +48,20 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 	// resources controllers
     Route::resource('candidate', 'CandidatesController');
     Route::resource('mentor', 'MentorsController');
-
     Route::resource('news', 'NewsController');
-
     Route::resource('youth', 'YouthController');
     Route::resource('page', 'PagesController');
     Route::resource('section', 'PageSectionsController');   
-
     Route::resource('partner', 'PartnersController');
-
     Route::resource('teammember', 'TeamMembersController');
 
+
+    // photo upload routes
+    Route::post('/partner/{id}/photos', 'PartnersController@addPhoto');
+    Route::post('/section/{id}/photos', 'PageSectionsController@addPhoto');
+    Route::post('/news/{id}/photos', 'NewsController@addPhoto');
+    Route::post('/youth/{id}/photos', 'YouthController@addPhoto');
+    Route::post('/mentor/{id}/photos', 'MentorsController@addPhoto');
 
 });
 
