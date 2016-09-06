@@ -188,5 +188,29 @@ class SectionSeeder extends Seeder
 			                'body' => 'Non ipsum vulputate condimentum eu id tellus. Praesent commodo arcu quis rhoncus. Suspendisse volutpat, quam eu. ',
 			                'page_id' => '7',
 			            ]);
+
+			            // maken van alle sections op de aanmelden als jongere pagina
+
+			        	
+			            DB::table('sections')->insert([
+			                'title' => 'Ik zoek een mentor',
+			                'body' => 'Mentor4You is er voor jongeren tussen de 12* en 23 jaar (*vanaf groep 8). Er gebeurt veel in deze jaren, je moet beslissingen nemen rondom school, resultaten halen, je wilt misschien een bijbaantje zoeken, je ontmoet nieuwe mensen, soms is de band met ouders lastiger, weet je niet goed wat je wel en niet wilt, of juist weet je wel wat je wilt en lukt alles niet zo goed. Soms helpt de omgeving niet mee, hebben je ouders problemen en/of zijn er weinig mensen in je omgeving waar jij een beroep op kunt doen. Mentor4You kan jou helpen met het uitzoeken van wat jij wilt, de dingen wat helderder krijgen, kijken wat bij jou wel werkt en ook kunnen we ondersteuning bieden bij de stappen die gezet moeten worden. Belangrijk is dat jij een vraag hebt, weet wat je anders wilt of weet wat niet zo goed gaat. 
+
+								We werken met vrijwilligers, zij maken speciaal tijd voor je vrij, daarom is het ook belangrijk dat jij wel op dat steuntje in de rug zit te wachten. Hulp en ondersteuning vragen is niet altijd makkelijk of leuk, maar soms is het fijn als er iemand voor jou is, jou een steuntje in de rug geeft. Je hoeft het namelijk niet alleen te doen. Ook kan het soms juist heel leuk zijn, dat er iemand voor jou is. Omdat er een klik is tussen jou en de vrijwilliger, kun je ook leuke dingen samen doen, bijvoorbeeld om een succesje te vieren!
+',
+			                'page_id' => '32',
+			            ]);
+			            DB::table('sections')->insert([
+			                'title' => 'tekst boven aanmeldformulier',
+			                'body' => 'Je kunt jezelf aanmelden door het contactformulier op de website in te vullen. Dit kun je ook samen met je ouders of een professional doen. Met sommige organisaties hebben we een samenwerkingsafspraak, zij kunnen dan samen met jou een aanmeldformulier invullen en mailen dit ons. Na je aanmelding nemen wij contact met jou op en bespreken we de vervolgstappen, samen met jou en zo nodig met 1 van je ouders/verzorgers. Dit doen we als je tussen de 12 en 16 jaar bent.',
+			                'page_id' => '32',
+			            ]);
+
+			            
+
+
+
+
+
     }
 }

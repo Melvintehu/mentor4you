@@ -28,7 +28,7 @@
 
 				<p class="text">
 					
-					{{ $data['tweede_kop']->title }}
+					{{ $data['tweede_kop']->body }}
 				
 				</p>
 
