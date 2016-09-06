@@ -43,7 +43,7 @@ class MailController extends Controller
        $bericht = $request->input('bericht');
 
        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
-           $beautymail->send('emails.contact', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
+           $beautymail->send('email.aanmelding-jongere', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
            {
                $message
                    ->from($email, $name)
@@ -64,7 +64,7 @@ class MailController extends Controller
        $bericht = $request->input('bericht');
 
        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
-           $beautymail->send('emails.contact', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
+           $beautymail->send('emails.aanmelding-mentor', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
            {
                $message
                    ->from($email, $name)
