@@ -3,17 +3,13 @@
 @section('content')
 
     @include ('beautymail::templates.sunny.heading' , [
-        'heading' => 'Er is contact opgenomen via het contactformulier',
+        'heading' => 'Bedankt voor uw bericht.',
         'level' => 'h1',
     ])
 
     @include('beautymail::templates.sunny.contentStart')
 
-        <p>De persoon heeft het volgende bericht achtergelaten</p>
-
-        <p>Telefoonnummer: {{ $telefoonnummer }}</p>
-
-        <p>{{ $bericht }}</p>
+        <p>Wij proberen zo spoedig mogelijk contact op te nemen.</p>
 
     @include('beautymail::templates.sunny.contentEnd')
 

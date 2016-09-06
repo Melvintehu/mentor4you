@@ -30,6 +30,15 @@ class MailController extends Controller
 	                ->subject('Contactbericht van ' . $name);
 	        });
 
+      $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+          $beautymail->send('emails.bevestiging', [], function($message) use ($name, $email)
+          {
+              $message
+                  ->from('info@mentor4you.nl', 'Mentor4you')
+                  ->to($email, $name)
+                  ->subject('Mentor4you bevestiging van bericht');
+          });
+
 	        return redirect('/');
    }
 
@@ -43,13 +52,22 @@ class MailController extends Controller
        $bericht = $request->input('bericht');
 
        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
-           $beautymail->send('emails.contact', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
+           $beautymail->send('emails.aanmelding-jongere', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
            {
                $message
                    ->from($email, $name)
                    ->to('e.landheer@mentechmedia.nl', 'Eric Landheer')
                    ->subject('Aanmelding jongere van: ' . $name);
            });
+
+        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
+          $beautymail->send('emails.bevestiging', [], function($message) use ($name, $email)
+          {
+              $message
+                  ->from('info@mentor4you.nl', 'Mentor4you')
+                  ->to($email, $name)
+                  ->subject('Mentor4you bevestiging van bericht');
+          });
 
            return redirect('/');
    }
@@ -64,7 +82,7 @@ class MailController extends Controller
        $bericht = $request->input('bericht');
 
        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
-           $beautymail->send('emails.contact', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
+           $beautymail->send('emails.aanmelding-mentor', ['geboortedatum' => $birthdate, 'telefoonnummer' => $telefoonnummer, 'bericht' => $bericht], function($message) use ($name, $email)
            {
                $message
                    ->from($email, $name)
