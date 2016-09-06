@@ -45,6 +45,7 @@ class PagesController extends Controller
          $data = [
             'sliders' => $this->getSliders(),
             'aanmeldenJongeren' => Section::where('id', 32)->first(),
+            'aanmelden' => Section::where('id', 34)->first(),
             'title' => Section::where('id', 32)->first(),
         ];
 		return view('pages.jongeren-aanmelden', compact('data'));
@@ -65,7 +66,8 @@ class PagesController extends Controller
 	public function mentorenAanmelden()
 	{
          $data = [
-            'aanmeldenMentoren' => Section::where('id', 31)->first(),
+            'aanmeldenMentoren' => Section::where('id', 33)->first(),
+            'aanmelden' => Section::where('id', 35)->first(),
             'sliders' => $this->getSliders(),
         ];
 

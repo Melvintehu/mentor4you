@@ -48,9 +48,16 @@
 			
 			<div class="col-lg-12 space-outside-down-lg">
 			
-				<h1> AANMELDEN </h1>	
+				<h1> {{ $data['aanmelden']->title }}	 </h1>	
 
 			</div>
+
+			<div class="col-lg-8 space-outside-down-md">
+				
+				<p>{!! nl2br($data['aanmelden']->body) !!}	</p>
+
+			</div>
+
 
 			<div class="col-lg-12">
 				
