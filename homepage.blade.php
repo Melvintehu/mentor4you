@@ -5,7 +5,7 @@
 		
 
 	<!-- Section waar het aanmelden gepromoot wordt.  -->
-	<section class="container-fluid xs-space-inside-sides-xsspace-inside-sides-xl no-overflow">
+	<section class="container-fluid space-inside-sides-xl ">
 
 		<div class="row row-centered"> 
 
@@ -23,7 +23,7 @@
 				
 				<a href="/aanmelden-als-jongere">
 
-					<div class="col-lg-4 col-xs-12">
+					<div class="col-lg-4">
 							
 						<div class="card type-1">	
 
@@ -31,19 +31,21 @@
 								
 								<div class="image circle-lg circle circle-lg">
 									
+
+
 									<img class="width-auto" src="{{ $data['zoekmentor']->photos->first()['path'] }}" alt="aanmelden als jongere">
 
 								</div>
 
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-sm-none ">
+							<div class=" space-outside-sm ">
 									
 								<h3> {{ $data['zoekmentor']->title }} </h3>
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-sm ">
 
 								<p> 
 
@@ -81,7 +83,7 @@
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-sm ">
 								<p> 
 
 									{{ $data['aanmeldenmentor']->body }}
@@ -143,14 +145,13 @@
 
 
 	<!-- Section waar blogverhalen weergegeven worden -->
-	<section class="container-fluid space-inside-sides-xl xs-space-inside-sides-xl-none bg-main space-outside-up-lg no-overflow">
+	<section class="container-fluid space-inside-sides-xl bg-main space-outside-up-lg">
 		
 		<div class="row"> 
 			
 			<!-- Ronde foto  -->
-			<div class="col-lg-12 xs-space-inside-sides-xl-none space-inside-sides-xl xs-space-inside-sides-xs">
-
-				<div class="col-lg-4 col-xs-12 xs-space-outside-down-xs space-outside-xl xs-text-center sm-text-center">
+			<div class="col-lg-12 space-inside-sides-xl ">
+				<div class="col-lg-4 space-outside-xl xs-text-center sm-text-center">
 					
 						<div class="image circle circle-xl">
 							
@@ -158,35 +159,17 @@
 
 						</div>
 					
-				</div>	
-
+				</div>			
 				<!-- Titel, tekst en link bij foto  -->
-				<div class="col-lg-8 col-xs-12 space-outside-xl xs-space-outside-up-lg xs-text-center">
+				<div class="col-lg-8 space-outside-xl">
 
-				<div class="row">
-					
-					<div class="col-lg-9 col-xs-12">
-					
-						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> SARA </h1>
+					<h1 class="text-color-light left space-outside-down-md "> SARA </h1>
 
-					</div>
-
-					<div class="col-lg-3 col-xs-12 xs-text-center">
-						
-						<p class="text-color-light  "> HAVO - Meppel </p>
-
-					</div>
-
-
-				</div>
-
-					
-
-					
+					<p class="text-color-light right "> HAVO - Meppel </p>
 
 					<div class="divider bg-secondary space-outside-md" ></div>
 
-					<p class="text-color-light space-outside-down-md xs-space-inside-sides-sm">
+					<p class="text-color-light space-outside-down-md">
 						
 						Doordat ik mijzelf aangemeld heb bij mentor4you,  non ipsum vulputate 
 						condimentum eu id tellus. Praesent commodo arcu quis rhoncus. 
@@ -194,19 +177,7 @@
 
 					</p>
 
-					<div class="row">
-						
-						<div class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
-
-							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
-
-							<a class="btn-standard visible-xs bg-secondary light text-color-light" href="/actueel">MEER LEZEN</a>
-							
-						</div>
-						
-					</div>
-
-
+					<a href="/actueel" class="btn-round light text-color-light"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
 
 				</div>
 
@@ -218,7 +189,7 @@
 
 
 	<!-- Section voor promotie video en twitter -->
-	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl no-overflow">
+	<section class="container-fluid space-inside-sides-xl">
 
 		<div class="row row-centered"> 
 
@@ -245,7 +216,11 @@
 			
 			<div class="col-lg-6 space-outside-down-lg" >
 				
-				<a class="twitter-timeline" data-lang="nl" data-height="540" data-theme="light" data-link-color="#01569B" href="https://twitter.com/M4YDrenthe">Tweets by M4YDrenthe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				<div class="image">
+					
+					<a class="twitter-timeline" data-lang="nl" data-height="540" data-theme="light" data-link-color="#01569B" href="https://twitter.com/M4YDrenthe">Tweets by M4YDrenthe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+					
+				</div>	
 
 			</div>
 
@@ -261,7 +236,7 @@
 
 
 	<!-- Section voor partners -->
-	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl xs-space-outside-xs space-outside-lg no-overflow">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 		<div class="row row-centered"> 
 
