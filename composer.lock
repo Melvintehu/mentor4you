@@ -4,9 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "18edf0e64c41de8491576c04c00af6a9",
-    "content-hash": "3bb1c8254568a89fdbb4a18145342270",
-
+    "hash": "c7e8d846438da8f6512b79576fc21e78",
+    "content-hash": "e610e7a9c424aa1cad90e6ae990cc2de",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -1130,7 +1129,6 @@
             "time": "2016-03-18 20:34:03"
         },
         {
-<<<<<<< HEAD
             "name": "pelago/emogrifier",
             "version": "V1.0.0",
             "source": {
@@ -1152,41 +1150,16 @@
                 "phpunit/phpunit": "4.8.11",
                 "squizlabs/php_codesniffer": "2.3.4",
                 "typo3-ci/typo3sniffpool": "2.1.1"
-=======
-            "name": "psr/http-message",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
->>>>>>> refs/remotes/origin/master
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
                     "dev-master": "1.1.x-dev"
-=======
-                    "dev-master": "1.0.x-dev"
->>>>>>> refs/remotes/origin/master
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
                     "Pelago\\": "Classes/"
-=======
-                    "Psr\\Http\\Message\\": "src/"
->>>>>>> refs/remotes/origin/master
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1195,7 +1168,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
                     "name": "John Reeve",
                     "email": "jreeve@pelagodesign.com"
                 },
@@ -1217,7 +1189,41 @@
             "description": "Converts CSS styles into inline style attributes in your HTML code",
             "homepage": "http://www.pelagodesign.com/sidecar/emogrifier/",
             "time": "2015-10-14 22:22:15"
-=======
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
                     "name": "PHP-FIG",
                     "homepage": "http://www.php-fig.org/"
                 }
@@ -1233,7 +1239,6 @@
                 "response"
             ],
             "time": "2016-08-06 14:39:51"
->>>>>>> refs/remotes/origin/master
         },
         {
             "name": "psr/log",
