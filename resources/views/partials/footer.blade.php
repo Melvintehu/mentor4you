@@ -28,7 +28,7 @@
 				
 				<p class=" space-outside-xs text-color-light block"> info@mentor4you.nl </p>
 
-				<p class="space-outside-down-xs text-color-light block"> 06 12345678 </p>
+				<p class="space-outside-down-xs text-color-light block"> 06-24967211 </p>
 
 				<p class="space-outside-down-xs space-inside-right-md text-color-light left"> Straatnaam </p>
 

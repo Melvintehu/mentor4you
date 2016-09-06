@@ -16,7 +16,7 @@
 
 			<div class="col-lg-12 space-outside-down-sm text-center">
 
-				<a class="btn-round col-centered" href="#"><span class=" circle circle-sm bg-accent text-color-dark"> < </span></a>
+				<!-- <a class="btn-round col-centered" href="#"><span class=" circle circle-sm bg-accent text-color-dark"> < </span></a>
 
 				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> 1 </span></a>
 
@@ -28,7 +28,9 @@
 
 				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> 5 </span></a>
 
-				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> > </span></a>
+				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> > </span></a> -->
+
+				{{ $data['nieuwsberichten']->links() }}
 
 			</div>
 
@@ -61,7 +63,7 @@
 
 						<p class="space-outside-md">
 
-							{{ $nieuwsbericht->body }}
+							{!! $nieuwsbericht->body !!}
 
 						</p>
 
@@ -83,7 +85,7 @@
 
 			<div class="col-lg-12 space-outside-sm text-center">
 
-				<a class="btn-round col-centered" href="#"><span class=" circle circle-sm bg-accent text-color-dark"> < </span></a>
+				<!-- <a class="btn-round col-centered" href="#"><span class=" circle circle-sm bg-accent text-color-dark"> < </span></a>
 
 				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> 1 </span></a>
 
@@ -95,8 +97,10 @@
 
 				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> 5 </span></a>
 
-				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> > </span></a>
+				<a class="btn-round col-centered" href="#"><span class="circle circle-sm  bg-accent text-color-dark"> > </span></a> -->
 
+				{{ $data['nieuwsberichten']->links() }}
+				
 			</div>
 
 		</div>
