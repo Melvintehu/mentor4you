@@ -86,7 +86,7 @@
 
 				<p class="text-color-light font-xs right">
 				
-					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 0612345678
+					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 06-24967211
 		
 				</p>
 		
