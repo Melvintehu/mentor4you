@@ -7,12 +7,24 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Section;
 use App\Page;
+use App\News;
+use App\Partner;
 
 class PagesController extends Controller
 {
     
+    private function getSliders()
+    {
+        return Section::where('page_id', Page::where('name', 'Slider')->first()->id)->get();
+    }
+
+
 	public function indexHome()
 	{
+
+
+       
+       
         $data = [
             'titel' => Section::where('id', 1)->first(),
             'zoekmentor' => Section::where('id', 2)->first(),
@@ -20,13 +32,21 @@ class PagesController extends Controller
             'resultaten' => Section::where('id', 4)->first(),
             'actueeltitel' => Section::where('id', 5)->first(),
             'partnerstitel' => Section::where('id', 6)->first(),
+            'sliders' => $this->getSliders(),
+            'partners' => Partner::take(4)->get(),
         ];
+
+      
 		return view('pages.homepage', compact('data'));
 	}
 
 	public function jongerenAanmelden()
 	{
-		return view('pages.jongeren-aanmelden');
+         $data = [
+            'sliders' => $this->getSliders(),
+            'title' => Section::where('id', 32)->first(),
+        ];
+		return view('pages.jongeren-aanmelden', compact('data'));
 	}
 
 	public function contact()
@@ -35,6 +55,7 @@ class PagesController extends Controller
             'titel' => Section::where('id', 22)->first(),
             'bold' => Section::where('id', 23)->first(),
             'vestiging' => Section::where('id', 24)->first(),
+            'sliders' => $this->getSliders(),
         ];
 
 		return view('pages.contact', compact('data'));
@@ -42,8 +63,12 @@ class PagesController extends Controller
 
 	public function mentorenAanmelden()
 	{
+         $data = [
+            
+            'sliders' => $this->getSliders(),
+        ];
 
-		return view('pages.mentor-aanmelden');
+		return view('pages.mentor-aanmelden', compact('data'));
 
 	}
 
@@ -51,6 +76,7 @@ class PagesController extends Controller
 	{
         $data = [
             'titel' => Section::where('id', 15)->first(),
+            'sliders' => $this->getSliders(),
         ];
 		return view('pages.resultaten', compact('data'));
 	}
@@ -65,6 +91,7 @@ class PagesController extends Controller
             'kop4' => Section::where('id', 11)->first(),
             'hetteam' => Section::where('id', 12)->first(),
             'aanmeldbox' => Section::where('id', 13)->first(),
+            'sliders' => $this->getSliders(),
         ];
 		return view('pages.over-ons', compact('data'));
 	}
@@ -78,6 +105,7 @@ class PagesController extends Controller
             'rekeningnummer' => Section::where('id', 19)->first(),
             'tav' => Section::where('id', 20)->first(),
             'uitleg' => Section::where('id', 21)->first(),
+            'sliders' => $this->getSliders(),
         ];
 
 
@@ -88,10 +116,22 @@ class PagesController extends Controller
 	{
         $data = [
             'titel' => Section::where('id', 14)->first(),
+            'nieuwsberichten' => News::paginate(10),
+            'sliders' => $this->getSliders(),
         ];
 		return view('pages.actueel', compact('data'));
 	}
 
+
+    public function doorklikActueel($title, $id){
+        $data = [
+             'news' => News::find($id),
+            'sliders' => $this->getSliders(),
+            'aanmeldbox' => Section::where('id', 13)->first(),
+        ];
+       
+        return view('pages.news.doorklik', compact('data'));
+    }
 
 	    /**
      * Display a listing of the resource.

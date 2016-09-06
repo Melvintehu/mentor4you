@@ -5,13 +5,13 @@
 		
 
 	<!-- Section waar het aanmelden gepromoot wordt.  -->
-	<section class="container-fluid push-aside-85">
+	<section class="container-fluid space-inside-sides-xl ">
 
 		<div class="row row-centered"> 
 
 			<div class="col-lg-12 text-center">
 				
-				<div class="push-65">
+				<div class=" space-outside-lg ">
 					
 					<h1>{{ $data['titel']->title }}</h1>
 
@@ -19,7 +19,7 @@
 
 			</div>
 
-			<div class="col-lg-12 col-centered text-center push-0-65">
+			<div class="col-lg-12 col-centered text-center space-outside-down-lg">
 				
 				<a href="/aanmelden-als-jongere">
 
@@ -27,23 +27,25 @@
 							
 						<div class="card type-1">	
 
-							<div class="push-0-35">
+							<div class="space-outside-down-md ">
 								
 								<div class="image circle-lg circle circle-lg">
 									
-									<img src="images/resultaten3.jpeg" alt="aanmelden als jongere">
+
+
+									<img class="width-auto" src="{{ $data['zoekmentor']->photos->first()['path'] }}" alt="aanmelden als jongere">
 
 								</div>
 
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 									
 								<h3> {{ $data['zoekmentor']->title }} </h3>
 								
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 
 								<p> 
 
@@ -65,23 +67,23 @@
 							
 						<div class="card type-1">	
 
-							<div class="push-0-35">
+							<div class="space-outside-down-md">
 								
 								<div class="image circle circle-lg">
 									
-									<img src="images/resultaten4.jpeg" alt="aanmelden als jongere">
+									<img class="width-auto" src="{{ $data['aanmeldenmentor']->photos->first()['path'] }}" alt="aanmelden als jongere">
 
 								</div>
 
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 									
 								<h3> {{ $data['aanmeldenmentor']->title }} </h3>
 								
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 								<p> 
 
 									{{ $data['aanmeldenmentor']->body }}
@@ -103,23 +105,23 @@
 							
 						<div class="card type-1">	
 
-							<div class="push-0-35">
+							<div class="space-outside-down-md">
 								
 								<div class="image circle circle-lg">
 									
-									<img src="images/resultaten5.jpg" alt="aanmelden als jongere">
+									<img class="width-auto" src="{{ $data['resultaten']->photos->first()['path'] }}" alt="aanmelden als jongere">
 
 								</div>
 
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 									
 								<h3> {{ $data['resultaten']->title }} </h3>
 								
 							</div>
 
-							<div class="push-20">
+							<div class=" space-outside-sm ">
 								
 								<p> 
 
@@ -143,31 +145,31 @@
 
 
 	<!-- Section waar blogverhalen weergegeven worden -->
-	<section class="container-fluid push-aside-85 bg-main push-65-0">
+	<section class="container-fluid space-inside-sides-xl bg-main space-outside-up-lg">
 		
 		<div class="row"> 
 			
 			<!-- Ronde foto  -->
-			<div class="col-lg-12 push-aside-85">
-				<div class="col-lg-4 push-75">
+			<div class="col-lg-12 space-inside-sides-xl ">
+				<div class="col-lg-4 space-outside-xl xs-text-center sm-text-center">
 					
 						<div class="image circle circle-xl">
 							
-							<img src="images/resultaten4.jpeg" alt="Mentor Sara">
+							<img class="width-auto" src="images/resultaten4.jpeg" alt="Mentor Sara">
 
 						</div>
 					
 				</div>			
 				<!-- Titel, tekst en link bij foto  -->
-				<div class="col-lg-8 push-75">
+				<div class="col-lg-8 space-outside-xl">
 
-					<h1 class="white left push-0-35"> SARA </h1>
+					<h1 class="text-color-light left space-outside-down-md "> SARA </h1>
 
-					<p class="right white"> HAVO - Meppel </p>
+					<p class="text-color-light right "> HAVO - Meppel </p>
 
-					<div class="divider bg-secondary push-35" ></div>
+					<div class="divider bg-secondary space-outside-md" ></div>
 
-					<p class="text white push-0-35">
+					<p class="text-color-light space-outside-down-md">
 						
 						Doordat ik mijzelf aangemeld heb bij mentor4you,  non ipsum vulputate 
 						condimentum eu id tellus. Praesent commodo arcu quis rhoncus. 
@@ -175,7 +177,7 @@
 
 					</p>
 
-					<a href="/actueel" class="btn-round white"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary"> > </span> </a>
+					<a href="/actueel" class="btn-round light text-color-light"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
 
 				</div>
 
@@ -187,14 +189,14 @@
 
 
 	<!-- Section voor promotie video en twitter -->
-	<section class="container-fluid push-aside-85">
+	<section class="container-fluid space-inside-sides-xl">
 
 		<div class="row row-centered"> 
 
 
 			<div class="col-lg-12 text-center">
 				
-				<div class="push-65">
+				<div class="space-outside-lg">
 					
 					<h1> {{ $data['actueeltitel']->title }} </h1>
 
@@ -202,21 +204,21 @@
 
 			</div>
 
-			<div class="col-lg-6 push-0-65">
+			<div class="col-lg-6 space-outside-down-lg">
 				
 				<div class="image">
 					
-					<img class="" src="images/resultaten4.jpeg" alt="actueel nieuws over mentor4you" />
+					<img class="height-auto" src="{{ $data['actueeltitel']->photos->first()['path'] }}" alt="actueel nieuws over mentor4you" />
 
 				</div>	
 
 			</div>
 			
-			<div class="col-lg-6 push-0-65" >
+			<div class="col-lg-6 space-outside-down-lg" >
 				
 				<div class="image">
 					
-					<img class="" src="images/resultaten4.jpeg" alt="actueel nieuws over mentor4you" />
+					<img class="height-auto" src="images/resultaten4.jpeg" alt="actueel nieuws over mentor4you" />
 					
 				</div>	
 
@@ -234,14 +236,13 @@
 
 
 	<!-- Section voor partners -->
-	<section class="container-fluid push-aside-85 push-65">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 		<div class="row row-centered"> 
 
-
 			<div class="col-lg-12 text-center">
 				
-				<div class="push-65">
+				<div class="space-outside-lg">
 					
 					<h1> {{ $data['partnerstitel']->title }} </h1>
 
@@ -249,46 +250,23 @@
 
 			</div>
 
+			@foreach($data['partners'] as $partner)
+
+
 
 			<div class="col-lg-3">
 				
 				<div class="image rectangular-img ">
 					
-					<img  src="images/spinn-logo-email.png" />
+					<img class="height-auto" src="{{ $partner->photos->first()['path'] }}"   />
 
 				</div>
 
 			</div>
 
-			<div class="col-lg-3">
-				
-				<div class="image rectangular-img ">
-					
-					<img src="images/Logo full width.png" />
+			
 
-				</div>
-				
-			</div>
-
-			<div class="col-lg-3">
-				
-				<div class="image rectangular-img ">
-					
-					<img src="images/Logo-Oranje-Fonds.jpg" />
-
-				</div>
-				
-			</div>
-
-			<div class="col-lg-3">
-				
-				<div class="image rectangular-img ">
-					
-					<img src="images/Logo full width.png" />
-
-				</div>
-				
-			</div>
+			@endforeach
 
 		</div>
 		<!-- Einde van de row -->

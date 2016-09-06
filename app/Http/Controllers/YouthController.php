@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
 use App\Youth;
+use App\Photo;
+use App\Http\Requests;
 
 class YouthController extends Controller
 {
@@ -100,5 +101,31 @@ class YouthController extends Controller
         $youth->delete();
 
         return redirect('cms/youth');
+    }
+
+    public function addPhoto($id, Request $request)
+    {   
+
+        // check of er een foto bestaat voor dit nieuws id
+        $youth = Youth::findOrFail($id);
+
+        $photos  = $youth->photos;
+
+        if(!$photos->isEmpty()){
+            $photos->first()->delete();
+        }
+
+        $file =  $request->file('file');
+        
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('youth/photos', $name);
+           
+        // create a new photo    
+
+        $photo = Photo::create(['path' => "/youth/photos/{$name}"]);
+        
+        $youth->photos()->attach($photo->id, ['type' => 'original']);
+        return 'done';
     }
 }

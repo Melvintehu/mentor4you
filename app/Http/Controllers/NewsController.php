@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\News;
+use App\Photo;
 use App\Http\Requests;
 
 class NewsController extends Controller
@@ -101,4 +102,31 @@ class NewsController extends Controller
 
         return redirect('cms/news');
     }
+
+    public function addPhoto($id, Request $request)
+    {   
+
+        // check of er een foto bestaat voor dit nieuws id
+        $news = News::findOrFail($id);
+
+        $photos  = $news->photos;
+
+        if(!$photos->isEmpty()){
+            $photos->first()->delete();
+        }
+
+        $file =  $request->file('file');
+        
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('news/photos', $name);
+           
+        // create a new photo    
+
+        $photo = Photo::create(['path' => "/news/photos/{$name}"]);
+        
+        $news->photos()->attach($photo->id, ['type' => 'original']);
+        return 'done';
+    } 
+
 }

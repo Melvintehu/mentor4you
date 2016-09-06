@@ -13,4 +13,10 @@ class News extends Model
     	'publish_date',
     	'occurence_date'
     ];
+
+
+    public function photos(){
+        return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
+    } 
+    
 }

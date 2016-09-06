@@ -3,30 +3,30 @@
 
 @section('content')
 	
-	<section class="container-fluid push-aside-85">
+	<section class="container-fluid space-inside-sides-xl ">
 		
 
 		<div class="row">
 
-			<div class="col-lg-12 push-65"> 
+			<div class="col-lg-12 space-outside-lg"> 
 
 				<h1>IK ZOEK EEN MENTOR</h1>
 
 			</div>
 
-			<div class="col-lg-5 push-0-65">
+			<div class="col-lg-5 space-outside-down-lg">
 				
 				<div class="image aanmelden-foto">
 					
-					<img src="images/resultaten5.jpg" alt="jongere die zich wil aanmelden">
+					<img class="height-auto" src="images/resultaten5.jpg" alt="jongere die zich wil aanmelden">
 
 				</div>
 
 			</div>
 			
-			<div class="col-lg-7 push-aside-35">
+			<div class="col-lg-7 space-inside-sides-md">
 				
-				<p class="text push-0-65 ">
+				<p class="text space-outside-down-lg ">
 					Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, 
 					auctor imperdiet elit felis vel turpis. 
 					Ut ac nulla eget neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque 
@@ -37,7 +37,7 @@
 
 				</p>
 
-				<a href="/over-ons" class="btn-standard bg-secondary push-0-65"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="/over-ons" class="btn-standard bg-secondary text-color-light light space-outside-down-lg"> WAT HOUDT MENTOR4YOU IN ? </a>
 
 			</div>
 
@@ -47,12 +47,12 @@
 
 	</section>
 
-	<section class="container-fluid push-65 push-aside-85">
+	<section class="container-fluid space-outside-lg space-outside-sides-xl">
 
 			
 		<div class="row">
 			
-			<div class="col-lg-12 push-0-65">
+			<div class="col-lg-12 space-outside-down-lg">
 			
 				<h1> AANMELDEN </h1>	
 
@@ -68,56 +68,56 @@
 
 			</div>
 
-			<div class="col-lg-12 push-35">
+			<div class="col-lg-12 space-outside-md">
 				
-				<div class="col-lg-12"> 
+				<div class="col-lg-5 "> 
 
-					<input class="input border border-accent push-0-35" placeholder="Voornaam" type="text" name="voornaam">
-
-				</div>
-
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Achternaam" type="text" name="achternaam">
+					<input class="input border border-accent space-outside-xs" placeholder="Voornaam" type="text" name="voornaam">
 
 				</div>
 
+				<div class="col-lg-5 clear-left"> 
 
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Telefoonnummer" type="text" name="telefoonnummer">
-
-				</div>
-
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="E-mailadres" type="text" name="emailadres">
+					<input class="input border border-accent space-outside-xs" placeholder="Achternaam" type="text" name="achternaam">
 
 				</div>
 
-				<div class="col-lg-12"> 
 
-					<input class="input border border-accent push-0-35" placeholder="Geboortedatum" type="text" name="geboortedatum">
+				<div class="col-lg-5 clear-left"> 
 
-				</div>
-
-				<div class="col-lg-12"> 
-
-
-					<textarea class="textarea border border-accent"></textarea>
-
+					<input class="input border border-accent space-outside-xs" placeholder="Telefoonnummer" type="text" name="telefoonnummer">
 
 				</div>
 
-				<div class="col-lg-12 push-65-0"> 
+				<div class="col-lg-5 clear-left"> 
 
-					<input class="btn-standard bg-secondary black"  type="submit" name="verzenden">
+					<input class="input border border-accent space-outside-xs" placeholder="E-mailadres" type="text" name="emailadres">
 
 				</div>
 
-				<div class="col-lg-12 push-65">
+				<div class="col-lg-5 clear-left	"> 
 
-					<p class="text ">
+					<input class="input border border-accent space-outside-xs" placeholder="Geboortedatum" type="text" name="geboortedatum">
+
+				</div>
+
+				<div class="col-lg-7 clear-left"> 
+
+
+					<textarea class="textarea border border-accent space-outside-xs"></textarea>
+
+
+				</div>
+
+				<div class="col-lg-12 space-outside-md"> 
+
+					<input class="btn-standard bg-secondary text-color-light light"  type="submit" name="verzenden">
+
+				</div>
+
+				<div class="col-lg-12 ">
+
+					<p >
 
 						Bedankt voor het aanmelden. Wij nemen zo spoedig mogelijk contact met je op.
 

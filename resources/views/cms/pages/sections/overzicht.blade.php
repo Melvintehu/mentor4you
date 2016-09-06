@@ -10,7 +10,8 @@
 
     <div class="row">
         <div class="col-lg-12"> 
-            
+            @foreach($data['pages'] as $page) 
+            <h1> Pagina {{ $page->name }} </h1>
             <hr>
             <div class="row">
                     <div class="col-md-12">
@@ -20,11 +21,10 @@
                                 
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
+                                        @if(!$page->sections->isEmpty())
                                         <div class="table-responsive">        
                                             <table class="table table-hover">
-                                                <tr> 
-                                                {!! $data['sections']->render() !!}
-                                                </tr>
+                                               
                                                 <thead>
                                                     <tr>
                                                         <th>#<span class='ion-arrow-down-b table-head'></span></th>
@@ -35,7 +35,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    @foreach ($data['sections'] as $object)
+                                                    @foreach ($page->sections as $object)
                                                         <tr>
                                                             <td>{{ $object->id }}</td>
                                                             <td>{{ $object->title }}</td>
@@ -76,6 +76,13 @@
                                                 </tbody>
                                             </table>
                                         </div>
+                                        @else
+                                                        <tr>
+                                                            <td>
+                                                              <p> Er zijn nog geen secties toegevoegd aan deze pagina. Klik <a href="/cms/pageSections/create"> hier </a> om een sectie aan deze pagina toe te voegen. </p>
+                                                              </td>
+                                                        </tr>
+                                                    @endif
                                        
                                     </div>
                                 </div>
@@ -85,7 +92,7 @@
                     </div>
 
                 </div> <!-- End row -->
-                
+                @endForeach
 
 
 

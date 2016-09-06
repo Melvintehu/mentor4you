@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 
 use App\Mentor;
+use App\Photo;
 use App\Http\Requests;
 
 class MentorsController extends Controller
@@ -107,4 +108,31 @@ class MentorsController extends Controller
 
         return redirect('cms/mentor');
     }
+
+    public function addPhoto($id, Request $request)
+    {   
+
+        // check of er een foto bestaat voor dit nieuws id
+        $mentor = Mentor::findOrFail($id);
+
+        $photos  = $mentor->photos;
+
+        if(!$photos->isEmpty()){
+            $photos->first()->delete();
+        }
+
+        $file =  $request->file('file');
+        
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('mentor/photos', $name);
+           
+        // create a new photo    
+
+        $photo = Photo::create(['path' => "/mentor/photos/{$name}"]);
+        
+        $mentor->photos()->attach($photo->id, ['type' => 'original']);
+        return 'done';
+    }      
+
 }
