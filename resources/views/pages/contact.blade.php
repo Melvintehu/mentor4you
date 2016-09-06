@@ -33,39 +33,38 @@
 				</p>
 
 			</div>
+		
+		{!! Form::open(['method' => 'POST', 'action' => 'MailController@contactMail']) !!}
 
-			<div class="col-lg-12 space-outside-sm">
+		{{ csrf_field() }}
+
+		<div class="col-lg-12 space-outside-sm">
+
+			<div class="col-lg-5 clear-left"> 
+    			{!! Form::text('naam', null, ['required', 'placeholder' => 'Uw volledige naam', 'class' => 'input border border-accent space-outside-xs']) !!}
+    		</div>
+
+			<div class="col-lg-5 clear-left"> 
 				
-				<div class="col-lg-5 clear-left"> 
+				{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
+			</div>
 
-					<input class="input border border-accent space-outside-xs" placeholder="Uw volledige naam" type="text" name="voornaam">
+			<div class="col-lg-7 clear-left"> 
+				{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
+			</div>
+				
+			<div class="col-lg-7 clear-left"> 	
 
-				</div>
+				{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
+			</div>
 
-				<div class="col-lg-5 clear-left"> 
+			<div class="col-lg-12 space-outside-sm"> 
+				 {!! Form::submit('Verzenden', ['class' => 'btn-standard bg-secondary light text-color-light']) !!}
+			</div>
 
-					<input class="input border border-accent space-outside-xs" placeholder="Uw e-mailadres*" type="text" name="voornaam">
+		</div>
 
-				</div>
-
-
-				<div class="col-lg-5 clear-left"> 
-
-					<input class="input border border-accent space-outside-xs" placeholder="Uw telefoonnummer*" type="text" name="voornaam">
-
-				</div>
-
-				<div class="col-lg-7 clear-left"> 
-
-					<textarea class="textarea border border-accent space-outside-xs" placeholder="Bericht of opmerking"></textarea>
-
-				</div>
-
-				<div class="col-lg-12 space-outside-sm"> 
-
-					<input class="btn-standard bg-secondary light text-color-light" value="VERZENDEN" type="submit" name="verzenden">
-
-				</div>
+			{!! Form::close() !!}
 
 				<div class="col-lg-12 space-outside-xs">
 				
