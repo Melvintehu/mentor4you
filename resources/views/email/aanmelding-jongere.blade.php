@@ -12,6 +12,8 @@
         <p>De persoon heeft het volgende bericht achtergelaten</p>
 
         <p>Telefoonnummer: {{ $telefoonnummer }}</p>
+        <p>Geboortedatum: {{ $geboortedatum }}</p>
+
 
         <p>{{ $bericht }}</p>
 
