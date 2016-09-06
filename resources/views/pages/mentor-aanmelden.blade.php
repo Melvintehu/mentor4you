@@ -10,7 +10,7 @@
 
 			<div class="col-lg-12 space-outside-lg"> 
 
-				<h1>Aanmelden als mentor</h1>
+				<h1>{{ $data['aanmeldenMentoren']->title }}</h1>
 
 			</div>
 
@@ -31,7 +31,7 @@
 
 				</p>
 
-				<a href="/over-ons" class="btn-standard bg-secondary text-color-light light space-outside-down-lg"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="/over-ons" class="btn-standard bg-secondary text-color-light light space-outside-down-lg"> MEER OVER MENTOR4YOU </a>
 
 			</div>
 
@@ -48,7 +48,13 @@
 			
 			<div class="col-lg-12 space-outside-down-lg">
 			
-				<h1> AANMELDEN </h1>	
+				<h1> {{ $data['aanmelden']->title }}	 </h1>	
+
+			</div>
+
+			<div class="col-lg-8 space-outside-down-md">
+				
+				<p>{!! nl2br($data['aanmelden']->body) !!}	</p>
 
 			</div>
 

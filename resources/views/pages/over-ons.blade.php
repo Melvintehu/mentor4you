@@ -20,45 +20,62 @@
 
 			</div>
 
-			<div class="col-lg-6">
+			<div class="row">
+				
+				<div class="col-lg-12 space-outside-down-md">
 
-				<h3 class=" space-outside-down-sm">{{ $data['kop1']->title }}</h3>
+					<div class="col-lg-12 space-outside-down-lg">
 
-				<p class="space-outside-down-md ">
-					{!! nl2br($data['kop1']->body) !!}
-				</p>
+						<h3 class="space-outside-down-sm ">{{ $data['kop1']->title }}</h3>
 
-			</div>
+						<p class=" ">
+							{!! nl2br($data['kop1']->body) !!}
+						</p>
 
-			<div class="col-lg-6">
+					</div>					
 
-				<h3 class="space-outside-down-sm">{{ $data['kop2']->title }}</h3>
+					<div class="col-lg-12">
 
-				<p class="space-outside-down-md">
-					{{ $data['kop2']->body }}
-				</p>
+						<h3 class="space-outside-down-sm">{{ $data['kop3']->title }}</h3>
 
-			</div>
+						<p class="">
+							{!! nl2br($data['kop3']->body) !!}
+						</p>
 
-			<div class="col-lg-6 space-outside-down-md">
+					</div>
 
-				<h3 class="space-outside-down-sm ">{{ $data['kop3']->title }}</h3>
 
-				<p>
-					{{ $data['kop3']->body }}
-				</p>
 
-			</div>
+				</div>
 
-			<div class="col-lg-6 space-outside-down-lg">
+				<!-- <div class="col-lg-12 space-outside-down-lg">
+							
+					<div class="col-lg-6">
 
-				<h3 class="space-outside-down-sm ">{{ $data['kop4']->title }}</h3>
+						<h3 class="space-outside-down-sm">{{ $data['kop3']->title }}</h3>
 
-				<p >
-					{{ $data['kop4']->body }}
-				</p>
+						<p>
+						{!! nl2br($data['kop3']->body) !!}
+						</p>
 
-			</div>
+					</div>
+
+					<div class="col-lg-6 ">
+
+						<h3 class="space-outside-down-sm ">{{ $data['kop4']->title }}</h3>
+
+						<p >
+							{!! nl2br($data['kop4']->body) !!}
+						</p>
+
+					</div>
+
+				</div>
+
+			</div> -->
+
+
+
 
 			<div class="col-lg-12">
 

@@ -19,7 +19,7 @@
 				
 				<p>
 					
-					{{ $data['news']->body }}
+					{!! $data['news']->body !!}
 
 				</p>
 
