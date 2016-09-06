@@ -27,13 +27,7 @@
 			<div class="col-lg-7 space-inside-sides-md">
 				
 				<p class="text space-outside-down-lg ">
-					Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, 
-					auctor imperdiet elit felis vel turpis. 
-					Ut ac nulla eget neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque 
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat elementum, ligula 
-					ipsum viverra elit, sed pharetra nunc purus sit amet dolor. 
-					Nulla facilisi. 
-					Aliquam rutrum orci ut turpis laoreet, eget convallis tellus ornare. 	
+					{!! nl2br($data['aanmeldenMentoren']->body) !!}		
 
 				</p>
 

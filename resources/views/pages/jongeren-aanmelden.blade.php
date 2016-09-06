@@ -10,7 +10,7 @@
 
 			<div class="col-lg-12 space-outside-lg"> 
 
-				<h1>IK ZOEK EEN MENTOR</h1>
+				<h1>{{ $data['aanmeldenJongeren']->title }}</h1>
 
 			</div>
 
@@ -27,17 +27,11 @@
 			<div class="col-lg-7 space-inside-sides-md">
 				
 				<p class="text space-outside-down-lg ">
-					Morbi elementum, quam ut suscipit elementum, risus libero tincidunt est, 
-					auctor imperdiet elit felis vel turpis. 
-					Ut ac nulla eget neque tincidunt rutrum. Sed varius dictum elit, ac scelerisque 
-					lorem pharetra eu. Ut pellentesque, diam vitae consequat elementum, ligula 
-					ipsum viverra elit, sed pharetra nunc purus sit amet dolor. 
-					Nulla facilisi. 
-					Aliquam rutrum orci ut turpis laoreet, eget convallis tellus ornare. 	
+					{!! nl2br($data['aanmeldenJongeren']->body) !!}	
 
 				</p>
 
-				<a href="/over-ons" class="btn-standard bg-secondary text-color-light light space-outside-down-lg"> WAT HOUDT MENTOR4YOU IN ? </a>
+				<a href="/over-ons" class="btn-standard bg-secondary text-color-light light space-outside-down-lg"> MEER OVER MENTOR4YOU</a>
 
 			</div>
 
