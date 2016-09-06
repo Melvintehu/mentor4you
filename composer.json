@@ -9,7 +9,12 @@
         "laravel/framework": "5.2.*",
         "laravelcollective/html": "^5.2",
         "twbs/bootstrap": "^3.3",
-        "snowfire/beautymail": "dev-master"
+
+        "snowfire/beautymail": "dev-master",
+
+        "hieu-le/active": "^3.0",
+        "intervention/image": "^2.3",
+        "guzzlehttp/guzzle": "~5.3|~6.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

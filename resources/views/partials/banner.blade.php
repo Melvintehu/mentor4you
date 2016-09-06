@@ -1,37 +1,85 @@
-<div class="container-fluid no-overflow">
+<div class="container-fluid no-overflow hidden-xs">
 
 	<div class="row ">
-		
-		<div class="col-lg-12 banner push-aside-85">
+	
+		<div class="col-lg-12  banner ">
 					
-			<div class="push-20">
-				
-				<h1 class="white"> mentor en leerling </h1>
-
-			</div>
-
-			<div class="push-20">
-				
-				<p class="white">
+			<section  class="cd-hero">
+				<ul style="list-style:none;padding:0;" class="cd-hero-slider autoplay">
 					
-					Non ipsum vulputate condimentum eu id tellus. <br>
-					Praesent commodo arcu quis rhoncus. <br>
-					Suspendisse volutpat, quam eu. <br>
+				<?php 
 
-				</p>
+					$first = true;
 
-			</div>
+				?>
+					@foreach($data['sliders'] as $slider)
 
-			<div class="push-20">
+						@if($first == true)
+							<li class="selected space-inside-sides-xl space-inside-lg">
+							<?php 
+								$first = false;
+
+							?>
+						@else
+							<li class=" space-inside-sides-xl space-inside-lg">
+
+						@endif
+							<div class="cd-full-width">
+								<div class="space-inside-sm">
+					
+								<h1 class="text-color-light uppercase">{{ $slider->title }} </h1>
+
+							</div>
+
+							<div class="space-inside-sm">
+								
+								<p class="text-color-light">
+									
+									{{ $slider->body }}
+
+								</p>
+
+							</div>
+
+							<div class="space-inside-sm">
+								
+								<a href="/over-ons" class="btn-standard bg-secondary light text-color-light"> lees meer  </a>
+
+							</div>
+							<div class="overlay-banner"></div>
+							<img class="responsive-image" src="{{ $slider->photos->first()['path'] }}" alt='banner image mentor4you' />
+
+							</div> <!-- .cd-full-width -->
+						</li>
+
+						
+
+					@endforeach
+
+					<!-- othe slides here -->
+
+				</ul> <!-- .cd-hero-slider -->
+				<!-- <div  class="cd-slider-nav">
+
+					<nav>
+			
+						<ul  style="list-style:none;z-index:10;">
+							<li  class="selected"><a href="#0">Intro</a></li>
+							<li><a href="#0">Tech 1</a></li>
+							<!-- other navigation items here -->
+						</ul>
+
+					</nav> 
+
+				</div> <!-- .cd-slider-nav --> 
 				
-				<a href="/over-ons" class="button btn-standard bg-secondary"> lees meer  </a>
-
-			</div>
-
-			<img src="images/banner.jpeg" alt='banner image mentor4you' />
+			</section> <!-- .cd-hero -->
+			
 
 		</div>
+
 
 	</div>	
 
 </div>
+

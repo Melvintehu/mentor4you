@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests;
-use App\Section;
 use App\Page;
+use App\Photo;
+use App\Section;
+use App\Http\Requests;
 
 class PageSectionsController extends Controller
 {
@@ -18,7 +19,7 @@ class PageSectionsController extends Controller
     public function index()
     {
         $data = [
-            'sections' => Section::paginate(20),
+            'pages' => Page::paginate(20),
         ];
 
         return view('cms.pages.sections.overzicht', compact('data'));
@@ -112,4 +113,31 @@ class PageSectionsController extends Controller
 
         return redirect('cms/section');
     }
+
+    public function addPhoto($id, Request $request)
+    {   
+
+        // check of er een foto bestaat voor dit nieuws id
+        $section = Section::findOrFail($id);
+
+        $photos  = $section->photos;
+
+        if(!$photos->isEmpty()){
+            $photos->first()->delete();
+        }
+
+        $file =  $request->file('file');
+        
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('section/photos', $name);
+           
+        // create a new photo    
+
+        $photo = Photo::create(['path' => "/section/photos/{$name}"]);
+        
+        $section->photos()->attach($photo->id, ['type' => 'original']);
+        return 'done';
+    }    
+
 }

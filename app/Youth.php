@@ -15,4 +15,9 @@ class Youth extends Model
      	'description',
      	'date_of_birth'
      ];
+
+    public function photos(){
+        return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
+    }  
+     
 }

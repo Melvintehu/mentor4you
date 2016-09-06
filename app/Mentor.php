@@ -13,4 +13,9 @@ class Mentor extends Model
     	'date_of_birth'
 
     ];
+
+    public function photos(){
+        return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
+    } 
+    
 }

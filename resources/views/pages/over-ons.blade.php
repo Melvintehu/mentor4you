@@ -3,18 +3,18 @@
 
 @section('content')
 
-	<section class="container-fluid push-65 push-aside-85">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 			
 		<div class="row">
 			
-			<div class="col-lg-12 push-0-65 text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center">
 
 				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
-			<div class="col-lg-12 push-0-65 ">
+			<div class="col-lg-12 space-outside-down-lg ">
 
 				<div class="divider bg-accent"></div>
 
@@ -22,39 +22,39 @@
 
 			<div class="col-lg-6">
 
-				<h3 class="push-0-20">{{ $data['kop1']->title }}</h3>
+				<h3 class=" space-outside-down-sm">{{ $data['kop1']->title }}</h3>
 
-				<p class="text push-0-35">
-					{{ $data['kop1']->body }}
+				<p class="space-outside-down-md ">
+					{!! nl2br($data['kop1']->body) !!}
 				</p>
 
 			</div>
 
 			<div class="col-lg-6">
 
-				<h3 class="push-0-20">{{ $data['kop2']->title }}</h3>
+				<h3 class="space-outside-down-sm">{{ $data['kop2']->title }}</h3>
 
-				<p class="text push-0-35">
+				<p class="space-outside-down-md">
 					{{ $data['kop2']->body }}
 				</p>
 
 			</div>
 
-			<div class="col-lg-6  push-0-35">
+			<div class="col-lg-6 space-outside-down-md">
 
-				<h3 class="push-0-20">{{ $data['kop3']->title }}</h3>
+				<h3 class="space-outside-down-sm ">{{ $data['kop3']->title }}</h3>
 
-				<p class="text">
+				<p>
 					{{ $data['kop3']->body }}
 				</p>
 
 			</div>
 
-			<div class="col-lg-6  push-0-65">
+			<div class="col-lg-6 space-outside-down-lg">
 
-				<h3 class="push-0-20">{{ $data['kop4']->title }}</h3>
+				<h3 class="space-outside-down-sm ">{{ $data['kop4']->title }}</h3>
 
-				<p class="text">
+				<p >
 					{{ $data['kop4']->body }}
 				</p>
 
@@ -75,21 +75,21 @@
 			
 		<div class="row row-centered">
 			
-			<div class="col-lg-12 push-0-65 text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center">
 
 				<h1>{{ $data['hetteam']->title }}</h1>
 
 			</div>			
 
-			<div class="image push-0-35">
+			<div class="image space-outside-down-md">
 
-				<div class="col-lg-12 banner push-aside-85">
+				<div class="col-lg-12 banner space-inside-sides-xl">
 						
-					<div class="push-0-20 right">
+					<div class="space-outside-down-md space-inside-up-xl right">
 						
-						<h1 class="white"> Karin Oldenburger </h1>
+						<h1 class="text-color-light uppercase space-outside-down-sm"> Karin Oldenburger </h1>
 						
-						<p class="white text-right">
+						<p class="text-color-light text-right">
 							
 							Non ipsum vulputate condimentum eu id tellus. <br>
 							Praesent commodo arcu quis rhoncus. <br>
@@ -99,7 +99,7 @@
 
 					</div>
 
-					<img src="images/banner.jpeg" alt='banner image mentor4you' />
+					<img  src="images/banner.jpeg" alt='banner image mentor4you' />
 
 				</div>
 
@@ -110,15 +110,15 @@
 
 			</div>
 
-			<div class="col-lg-12 push-0-20 text-center">
+			<div class="col-lg-12 space-outside-down-sm text-center">
 
-				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
+				<div class="col-lg-1 bg-accent circle circle-sm hover-dark col-centered space-outside-left-sm"></div>
 
-				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
+				<div class="col-lg-1 bg-accent circle circle-sm hover-dark col-centered space-outside-left-sm"></div>
 
-				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
+				<div class="col-lg-1 bg-accent circle circle-sm hover-dark col-centered space-outside-left-sm"></div>
 
-				<div class="col-lg-1 bg-accent circle circle-sm hover-black col-centered push-aside-0-20-m"></div>
+				<div class="col-lg-1 bg-accent circle circle-sm hover-dark col-centered space-outside-left-sm"></div>
 
 			</div>
 
@@ -127,18 +127,18 @@
 
 	</section>
 
-	<section class="container-fluid push-65 bg-accent">
+	<section class="container-fluid space-outside-lg bg-accent">
 
-		<div class="row-centered push-aside-85 ">
+		<div class="row-centered space-inside-sides-lg ">
 
 
-			<div class="col-lg-12 push-35-20 ">
+			<div class="col-lg-12 space-outside-up-md space-outside-down-sm ">
 
 				<h3 class="text-center">{{ $data['aanmeldbox']->title }}</h3>
 
 			</div>
 
-			<div class="col-lg-4 col-centered push-0-35">
+			<div class="col-lg-4 col-centered space-outside-down-md">
 
 				<p class="text-center">
 					{{ $data['aanmeldbox']->body }}
@@ -146,11 +146,11 @@
 
 			</div>
 
-			<div class="col-lg-12 text-center push-0-35">
+			<div class="col-lg-12 text-center space-outside-down-md">
 
-				<a href="/aanmelden-als-mentor" class="btn-standard bg-secondary push-0-35 ">Mentor worden</a>
+				<a href="/aanmelden-als-mentor" class="btn-standard bg-secondary text-color-light light space-outside-down-md ">Mentor worden</a>
 
-				<a href="/aanmelden-als-jongere"  class="push-aside-20-m btn-standard bg-secondary ">Aanmelden als jongere</a>
+				<a href="/aanmelden-als-jongere"  class="space-outside-left-sm text-color-light light btn-standard bg-secondary ">Aanmelden als jongere</a>
 
 			</div>
 

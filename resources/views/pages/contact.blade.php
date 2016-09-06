@@ -3,18 +3,18 @@
 
 @section('content')
 
-	<section class="container-fluid push-65 push-aside-85">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 			
 		<div class="row">
 			
-			<div class="col-lg-12 push-0-65">
+			<div class="col-lg-12 space-outside-down-lg">
 			
 				<h1> {{ $data['titel']->title }} </h1>	
 
 			</div>
 
-			<div class="col-lg-12 push-0-65">
+			<div class="col-lg-12 space-outside-down-lg">
 
 				<p class="text">
 
@@ -24,7 +24,7 @@
 
 			</div>
 
-			<div class="col-lg-12 push-0-35">
+			<div class="col-lg-12 space-outside-down-msm">
 				
 				<p class="text bold">
 					
@@ -34,40 +34,40 @@
 
 			</div>
 
-			<div class="col-lg-12 push-35">
+			<div class="col-lg-12 space-outside-sm">
 				
-				<div class="col-lg-12"> 
+				<div class="col-lg-5 clear-left"> 
 
-					<input class="input border border-accent push-0-35" placeholder="Uw volledige naam" type="text" name="voornaam">
-
-				</div>
-
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Uw e-mailadres*" type="text" name="voornaam">
+					<input class="input border border-accent space-outside-xs" placeholder="Uw volledige naam" type="text" name="voornaam">
 
 				</div>
 
+				<div class="col-lg-5 clear-left"> 
 
-				<div class="col-lg-12"> 
-
-					<input class="input border border-accent push-0-35" placeholder="Uw telefoonnummer*" type="text" name="voornaam">
-
-				</div>
-
-				<div class="col-lg-12"> 
-
-					<textarea class="textarea border border-accent push-0-65" placeholder="Bericht of opmerking"></textarea>
+					<input class="input border border-accent space-outside-xs" placeholder="Uw e-mailadres*" type="text" name="voornaam">
 
 				</div>
 
-				<div class="col-lg-12 push-0-35"> 
 
-					<input class="btn-standard bg-secondary" value="VERZENDEN" type="submit" name="verzenden">
+				<div class="col-lg-5 clear-left"> 
+
+					<input class="input border border-accent space-outside-xs" placeholder="Uw telefoonnummer*" type="text" name="voornaam">
 
 				</div>
 
-				<div class="col-lg-12 push-0-35">
+				<div class="col-lg-7 clear-left"> 
+
+					<textarea class="textarea border border-accent space-outside-xs" placeholder="Bericht of opmerking"></textarea>
+
+				</div>
+
+				<div class="col-lg-12 space-outside-sm"> 
+
+					<input class="btn-standard bg-secondary light text-color-light" value="VERZENDEN" type="submit" name="verzenden">
+
+				</div>
+
+				<div class="col-lg-12 space-outside-xs">
 				
 					<p class="text">
 						
@@ -86,18 +86,18 @@
 
 	</section>
 
-	<section class="container-fluid push-65 push-aside-85">
+	<section class="container-fluid space-inside-sides-xl space-outside-lg">
 
 			
 		<div class="row">
 			
-			<div class="col-lg-2 push-0-65">
+			<div class="col-lg-2 space-outside-down-lg">
 			
 				<h3> {{ $data['vestiging']->title }} </h3>	
 
 			</div>
 
-			<div class="col-lg-8 push-0-65">
+			<div class="col-lg-8 space-outside-down-lg">
 			
 				<p class="text">
 						
@@ -107,11 +107,11 @@
 
 			</div>
 
-			<div class="col-lg-12 push-0-35">
+			<div class="col-lg-12 space-outside-down-md">
 
-				<div class="image google-maps-contact-foto">
+				<div class="image ">
 
-					<img src="images/maps.jpg" alt="Google maps locatie Mentor4you">
+					<img class="height-auto" src="images/maps.jpg" alt="Google maps locatie Mentor4you">
 
 				</div>
 

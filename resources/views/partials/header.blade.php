@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 main-logo">
 
-					<img class="main-logo" src='images/mentor4you-logo.jpg' />
+					<img class="main-logo" src='../images/mentor4you-logo.jpg' />
 
 				</div>
 			<!-- Columns voor content indelingen -->
@@ -78,33 +78,30 @@
 </div>
 
 
-	
-	<div class="container-fluid push-aside-85 bg-secondary">
+<section class="container-fluid space-inside-sides-xl bg-secondary">
 
-		<div class="row">
+	<div class="row">
 
-					
+		<div class="col-lg-4 space-inside-sm right">
+
+				<p class="text-color-light font-xs right">
 				
-			<div class="col-lg-4 push-20 right">
-
-					<p class="white size-14 right">
+					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 0612345678
+		
+				</p>
+		
+				<p class="text-color-light font-xs right">
+		
+					<span class="bold text-color-main space-inside-left-md space-inside-right-sm"> E </span> 
 					
-						<span class="bold color-main  push-aside-35-20-m"> T </span> 0612345678
-			
-					</p>
-			
-					<p class="white size-14 right">
-			
-						<span class="bold color-main push-aside-20-0"> E </span> 
-						
-						info@mentor4you.nl
-					
-					</p>
+					info@mentor4you.nl
 				
-			</div>
-
+				</p>
+			
 		</div>
 
 	</div>
+
+</section>
 
 

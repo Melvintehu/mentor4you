@@ -18,5 +18,9 @@ class Section extends Model
     	return $this->belongsTo('App\Page');
     }
 
+    public function photos(){
+        return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
+    } 
+
 
 }

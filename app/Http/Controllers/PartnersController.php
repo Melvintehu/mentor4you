@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Photo;
 use App\Partner;
 use App\Http\Requests;
 
@@ -101,4 +102,33 @@ class PartnersController extends Controller
 
         return redirect('cms/partner');
     }
+
+
+
+    public function addPhoto($id, Request $request)
+    {   
+
+        // check of er een foto bestaat voor dit nieuws id
+        $partner = Partner::findOrFail($id);
+
+        $photos  = $partner->photos;
+
+        if(!$photos->isEmpty()){
+            $photos->first()->delete();
+        }
+
+        $file =  $request->file('file');
+        
+        $name = time() . $file->getClientOriginalName();
+
+        $file->move('partner/photos', $name);
+           
+        // create a new photo    
+
+        $photo = Photo::create(['path' => "/partner/photos/{$name}"]);
+        
+        $partner->photos()->attach($photo->id, ['type' => 'original']);
+        return 'done';
+    }
+
 }

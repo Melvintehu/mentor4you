@@ -11,4 +11,11 @@ class Partner extends Model
     	'description',
     	'date_started'
     ];
+
+
+
+    public function photos(){
+        return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
+    }  
+
 }
