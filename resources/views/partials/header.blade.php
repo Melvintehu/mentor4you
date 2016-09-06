@@ -46,17 +46,19 @@
 
 							      <ul class="nav navbar-nav">
 
-							        <li class="active"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
+							        <li class="{{ active_class(if_route(['home']) || if_uri(['/'])) }}"><a href="{{ URL::to('/') }}"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
 
-							        <li><a href="/over-ons">OVER ONS</a></li>
+							        <li><a href="{{ active_class(if_route(['over-ons']) || if_uri(['over-ons'])) }}"><a href="{{ URL::to('over-ons') }}">OVER ONS</a></li>
 
-							       	<li><a href="/actueel">ACTUEEL</a></li>
+							       	<li><a href="{{ active_class(if_route(['actueel']) || if_uri(['actueel'])) }}"><a href="{{ URL::to('actueel') }}">ACTUEEL</a></li>
 
 							       <!-- 	<li><a href="/behaalde-resultaten">RESULTATEN</a></li> -->
 
-							       	<li><a href="/steun-ons">STEUN ONS</a></li>
 
-							       	<li><a href="/contact">CONTACT</a></li>
+
+							       	<li><a href="{{ active_class(if_route(['steun-ons']) || if_uri(['steun-ons'])) }}"><a href="{{ URL::to('steun-ons') }}">STEUN ONS</a></li>
+
+							       	<li><a href="{{ active_class(if_route(['contact']) || if_uri(['contact'])) }}"><a href="{{ URL::to('contact') }}">CONTACT</a></li>
 
 							      </ul>
 							      
@@ -86,7 +88,7 @@
 
 				<p class="text-color-light font-xs right">
 				
-					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 0612345678
+					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 06-24967211
 		
 				</p>
 		
