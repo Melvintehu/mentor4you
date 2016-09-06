@@ -45,7 +45,7 @@
 
 			@foreach($data['nieuwsberichten'] as $nieuwsbericht)
 
-				<div class="col-lg-4 col-xs-12 space-outside-up-lg">
+				<div class="col-lg-4 col-xs-12 space-outside-up-lg xs-space-inside-sides-sm xs-text-center">
 
 					<div class="image lg-rect-xl">
 
@@ -57,7 +57,7 @@
 
 				<div class="col-lg-8 col-xs-12 space-outside-up-lg">
 
-					<div class=" xs-space-outside-sides-xs space-outside-left-md">
+					<div class=" xs-space-outside-sides-sm space-outside-left-md">
 
 						<h2 class="text-center">{{ $nieuwsbericht->title }}</h2>
 
