@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl space-outside-lg no-overflow">
 
 			
 		<div class="row">
@@ -45,7 +45,7 @@
 
 			@foreach($data['nieuwsberichten'] as $nieuwsbericht)
 
-				<div class="col-lg-4 space-outside-up-lg">
+				<div class="col-lg-4 col-xs-12 space-outside-up-lg">
 
 					<div class="image lg-rect-xl">
 
@@ -55,19 +55,21 @@
 
 				</div>
 
-				<div class="col-lg-8 space-outside-up-lg">
+				<div class="col-lg-8 col-xs-12 space-outside-up-lg">
 
-					<div class=" space-outside-left-md">
+					<div class=" xs-space-outside-sides-xs space-outside-left-md">
 
-						<h2>{{ $nieuwsbericht->title }}</h2>
+						<h2 class="text-center">{{ $nieuwsbericht->title }}</h2>
 
-						<p class="space-outside-md">
+						<p class="space-outside-md ">
 
 							{!! $nieuwsbericht->body !!}
 
 						</p>
 
-						<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-round space-outside-down-sm"> Meer lezen <span class="circle circle-sm  bg-secondary text-color-light"> > </span> </a>
+						<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-round space-outside-down-sm hidden-xs"> Meer lezen <span class="circle circle-sm hidden-xs  bg-secondary text-color-light"> > </span> </a>
+
+						<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-standard text-center visible-xs bg-secondary space-outside-down-sm text-color-light light"> Meer lezen  </a>
 
 					</div>
 
