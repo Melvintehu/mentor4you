@@ -66,3 +66,5 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 });
 
 Route::get('/home', 'HomeController@index');
+
+Route::post('/mail/contact-mail', 'MailController@contactMail');
