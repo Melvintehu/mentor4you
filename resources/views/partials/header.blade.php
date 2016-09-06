@@ -1,13 +1,14 @@
 <!-- background -->
-<div class="header"> 
+<div class="header no-overflow"> 
 	
 <!-- Container voor centreren van content -->
 	
 		<div class="container-fluid">
 			
 		<!-- Row wrapper voor content -->
-			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 main-logo">
+			<div class="row ">
+
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 main-logo hidden-xs ">
 
 					<img class="main-logo" src='../images/mentor4you-logo.jpg' />
 
@@ -16,18 +17,18 @@
 
 			<!-- navigatie -->
 		
-				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-9">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					
 					<div class="placeholder-nav"> 
 
 					<!-- navbar -->
-							<nav class="navbar navbar-default navbar-right"> 
+							<nav class="navbar navbar-default navbar-right xs-clear-float"> 
 
 							  <div class="container-fluid">
 							    <!-- Brand and toggle get grouped for better mobile display -->
 							    <div class="navbar-header">
 
-							      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							      <button type="button" class="navbar-toggle collapsed xs-space-outside-right-sm" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 
 							        <span class="sr-only">Toggle navigation</span>
 
@@ -44,7 +45,7 @@
 							    <!-- Collect the nav links, forms, and other content for toggling -->
 							    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-							      <ul class="nav navbar-nav">
+							      <ul class="nav navbar-nav xs-text-center xs-space-inside-down-sm">
 
 							        <li class="{{ active_class(if_route(['home']) || if_uri(['/'])) }}"><a href="{{ URL::to('/') }}"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
 
@@ -52,7 +53,9 @@
 
 							       	<li><a href="{{ active_class(if_route(['actueel']) || if_uri(['actueel'])) }}"><a href="{{ URL::to('actueel') }}">ACTUEEL</a></li>
 
-							       	<!-- <li><a href="/behaalde-resultaten">RESULTATEN</a></li> -->
+							       <!-- 	<li><a href="/behaalde-resultaten">RESULTATEN</a></li> -->
+
+
 
 							       	<li><a href="{{ active_class(if_route(['steun-ons']) || if_uri(['steun-ons'])) }}"><a href="{{ URL::to('steun-ons') }}">STEUN ONS</a></li>
 
@@ -78,25 +81,41 @@
 </div>
 
 
-<section class="container-fluid space-inside-sides-xl bg-secondary">
+<section class="container-fluid xs-space-inside-sides-xs space-inside-sides-xl bg-secondary no-overflow">
 
 	<div class="row">
 
-		<div class="col-lg-4 space-inside-sm right">
+		<div class="col-lg-4  space-inside-sm xs-clear-float right">
 
-				<p class="text-color-light font-xs right">
-				
-					<span class="bold text-color-main space-inside-left-md space-inside-right-sm "> T </span> 06-24967211
-		
-				</p>
-		
-				<p class="text-color-light font-xs right">
-		
-					<span class="bold text-color-main space-inside-left-md space-inside-right-sm"> E </span> 
+				<div class="row">
 					
-					info@mentor4you.nl
+					<div class="col-lg-6 col-xs-12 ">
+						
+						<p class="text-color-light font-xs xs-clear-float  right">
 				
-				</p>
+							<span class="bold text-color-main xs-space-inside-left-xs space-inside-left-md space-inside-right-sm xs-space-insi "> T </span> 06-24967211
+				
+						</p>
+
+					</div>
+
+					<div class="col-lg-6 col-xs-12 xs-space-outside-down-xs">
+						
+						<p class="text-color-light font-xs xs-clear-float  right">
+		
+							<span class="bold text-color-main xs-space-inside-left-xs space-inside-left-md space-inside-right-sm "> E </span> 
+							
+							info@mentor4you.nl
+						
+						</p>
+						
+					</div>
+
+				</div>
+
+				
+		
+				
 			
 		</div>
 
