@@ -3,12 +3,12 @@
 
 @section('content')
 	
-	<section class="container-fluid space-inside-sides-xl">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl">
 		
 
 		<div class="row">
 
-			<div class="col-lg-12 space-outside-lg"> 
+			<div class="col-lg-12 space-outside-lg xs-text-center"> 
 
 				<h1>{{ $data['aanmeldenMentoren']->title }}</h1>
 
@@ -41,18 +41,18 @@
 
 	</section>
 
-	<section class="container-fluid space-outside-lg space-outside-sides-xl">
+	<section class="container-fluid space-outside-lg xs-space-inside-sides-sm space-inside-sides-xl">
 
 			
 		<div class="row">
 			
-			<div class="col-lg-12 space-outside-down-lg">
+			<div class="col-lg-12 xs-text-center space-outside-down-lg">
 			
 				<h1> {{ $data['aanmelden']->title }}	 </h1>	
 
 			</div>
 
-			<div class="col-lg-8 space-outside-down-md">
+			<div class="col-lg-8 xs-space-inside-sides-md space-outside-down-md">
 				
 				<p>{!! nl2br($data['aanmelden']->body) !!}	</p>
 
@@ -60,7 +60,7 @@
 
 			<div class="col-lg-12">
 				
-				<p class="text bold">
+				<p class="text bold xs-space-inside-sides-sm">
 					
 					Vul het onderstaand formulier in
 
@@ -74,36 +74,41 @@
 
 		<div class="col-lg-12 space-outside-md">
 
-			<div class="col-lg-5"> 
-    			{!! Form::text('voornaam', null, ['required', 'placeholder' => 'Voornaam', 'class' => 'input border border-accent space-outside-xs']) !!}
-    		</div>
+			<div class="row">
+					
 
-    		<div class="col-lg-5 clear-left"> 
-    			{!! Form::text('achternaam', null, ['required', 'placeholder' => 'Achternaam', 'class' => 'input border border-accent space-outside-xs']) !!}
-    		</div>
+				<div class="col-lg-5"> 
+	    			{!! Form::text('voornaam', null, ['required', 'placeholder' => 'Voornaam', 'class' => 'input border border-accent space-outside-xs']) !!}
+	    		</div>
+
+	    		<div class="col-lg-5 clear-left"> 
+	    			{!! Form::text('achternaam', null, ['required', 'placeholder' => 'Achternaam', 'class' => 'input border border-accent space-outside-xs']) !!}
+	    		</div>
 
 
-			<div class="col-lg-5 clear-left"> 
-				{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
-			</div>
+				<div class="col-lg-5 clear-left"> 
+					{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
 
-			<div class="col-lg-5 clear-left"> 
+				<div class="col-lg-5 clear-left"> 
+					
+					{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
+
+				<div class="col-lg-5 clear-left"> 
+					
+					{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
+					
+				<div class="col-lg-7 clear-left"> 	
+
+					{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
+				</div>
+
+				<div class="col-lg-12 space-outside-sm"> 
+					 {!! Form::submit('Verzenden', ['class' => 'btn-standard bg-secondary text-color-light light']) !!}
+				</div>
 				
-				{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
-			</div>
-
-			<div class="col-lg-5 clear-left"> 
-				
-				{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs']) !!}
-			</div>
-				
-			<div class="col-lg-7 clear-left"> 	
-
-				{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
-			</div>
-
-			<div class="col-lg-12 space-outside-sm"> 
-				 {!! Form::submit('Verzenden', ['class' => 'btn-standard bg-secondary text-color-light light']) !!}
 			</div>
 
 		</div>

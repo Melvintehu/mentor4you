@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg">
 
 			
 		<div class="row">
@@ -40,26 +40,30 @@
 
 		<div class="col-lg-12 space-outside-sm">
 
-			<div class="col-lg-5 clear-left"> 
-    			{!! Form::text('naam', null, ['required', 'placeholder' => 'Uw volledige naam', 'class' => 'input border border-accent space-outside-xs']) !!}
-    		</div>
-
-			<div class="col-lg-5 clear-left"> 
+			<div class="row">
 				
-				{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
-			</div>
 
-			<div class="col-lg-7 clear-left"> 
-				{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
-			</div>
-				
-			<div class="col-lg-7 clear-left"> 	
+				<div class="col-lg-5 clear-left"> 
+	    			{!! Form::text('naam', null, ['required', 'placeholder' => 'Uw volledige naam', 'class' => 'input border border-accent space-outside-xs']) !!}
+	    		</div>
 
-				{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
-			</div>
+				<div class="col-lg-5 clear-left"> 
+					
+					{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
 
-			<div class="col-lg-12 space-outside-sm"> 
-				 {!! Form::submit('Verzenden', ['class' => 'btn-standard bg-secondary light text-color-light']) !!}
+				<div class="col-lg-7 clear-left"> 
+					{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
+					
+				<div class="col-lg-7 clear-left"> 	
+
+					{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
+				</div>
+
+				<div class="col-lg-12 space-outside-sm"> 
+					 {!! Form::submit('Verzenden', ['class' => 'btn-standard bg-secondary light text-color-light']) !!}
+				</div>
 			</div>
 
 		</div>
@@ -85,7 +89,7 @@
 
 	</section>
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg xs-space-outside-down-xs">
 
 			
 		<div class="row">
@@ -106,7 +110,7 @@
 
 			</div>
 
-			<div class="col-lg-12 space-outside-down-md">
+			<div class="col-lg-12 space-outside-down-md xs-space-outside-down-xs">
 
 				<div class="image hidden-xs hidden-sm">
 

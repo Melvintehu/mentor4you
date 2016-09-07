@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-sm  space-inside-sides-xl space-outside-lg xs-space-outside-down-sm">
 
 			
 		<div class="row">
@@ -14,11 +14,11 @@
 
 			</div>
 
-			<div class="col-lg-8 space-outside-down-lg">
+			<div class="col-lg-8 col-xs-12 space-outside-down-lg xs-text-center">
 
 				<h3 class="space-outside-down-md ">{{ $data['eerste_kop']->title }}</h3>
 
-				<p class="space-outside-down-lg space-inside-right-lg">
+				<p class="space-outside-down-lg xs-space-inside-right-lg-none space-inside-right-lg">
 					
 					{{ $data['eerste_kop']->body }}
 
@@ -34,23 +34,23 @@
 
 			</div>
 
-			<div class="col-lg-4 space-outside-down-lg space-inside-md  space-inside-sides-md  bg-accent">
+			<div class="col-lg-4 col-xs-12 xs-space-outside-down-lg-none space-outside-down-lg space-inside-md  space-inside-sides-md  bg-accent">
 
 				<div class="row">
 					
 
-					<div class="col-lg-12 ">
+					<div class="col-lg-12 xs-text-center">
 								
 						<div class="row">
 
 
-							<div class="col-lg-2 col-sm-2 col-xs-2 space-outside-down-sm">
+							<div class="col-lg-2 col-sm-2 col-xs-12 space-outside-down-sm">
 								
 								<div class="circle circle-md bg-secondary "> <span class="text-color-light"> B </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 col-sm-10 col-xs-10 space-outside-sm">
+							<div class="col-lg-10 col-sm-10 col-xs-12 space-outside-sm">
 								
 								<p class="text">{{ $data['rekeningnummer']->body }}</p>
 
@@ -62,18 +62,18 @@
 					</div>
 
 
-					<div class="col-lg-12 space-outside-up-sm">
+					<div class="col-lg-12 space-outside-up-sm xs-text-center">
 								
 						<div class="row">
 
 
-							<div class="col-lg-2 col-sm-2 col-xs-2 space-outside-down-sm">
+							<div class="col-lg-2 col-sm-2 col-xs-12 space-outside-down-sm">
 								
 								<div class="circle circle-md bg-secondary "> <span class="text-color-light light"> P </span></div>	
 
 							</div>
 
-							<div class="col-lg-10 col-sm-10 col-xs-10 space-outside-sm">
+							<div class="col-lg-10 col-sm-10 col-xs-12 space-outside-sm">
 								
 								<p class="">{{ $data['tav']->body }}</p>
 
@@ -84,7 +84,7 @@
 
 					</div>
 			
-					<div class="col-lg-12 space-outside-up-md space-outside-down-lg">
+					<div class="col-lg-12 space-outside-up-md  space-outside-down-lg xs-text-center">
 						
 						<p class="text">
 
@@ -96,7 +96,7 @@
 
 					<div class="col-lg-12 ">
 
-						<a href="/contact" class="btn-standard lowercase bg-secondary light text-color-light">PARTNER WORDEN</a>
+						<a href="/contact" class="btn-standard xs-text-center font-sm lowercase bg-secondary light text-color-light">PARTNER WORDEN</a>
 
 					</div>
 

@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl space-outside-lg no-overflow">
 
 			
 		<div class="row">
@@ -20,9 +20,9 @@
 
 			</div>
 
-			<div class="row">
+			<div class="row xs-space-inside-sides-xs">
 				
-				<div class="col-lg-12 space-outside-down-md">
+				<div class="col-lg-12 space-outside-down-md xs-text-center">
 
 					<div class="col-lg-12 space-outside-down-lg">
 
@@ -34,7 +34,7 @@
 
 					</div>					
 
-					<div class="col-lg-12">
+					<div class="col-lg-8">
 
 						<h3 class="space-outside-down-sm">{{ $data['kop3']->title }}</h3>
 
@@ -87,7 +87,7 @@
 
 	</section>
 
-	<section class="container-fluid no-overflow push-65">
+	<section class="container-fluid xs-space-inside-sides-xl-none no-overflow push-65">
 
 			
 		<div class="row row-centered">
@@ -100,7 +100,7 @@
 
 			<div class="image space-outside-down-md">
 
-				<div class="col-lg-12 banner space-inside-sides-xl">
+				<div class="col-lg-12 banner xs-space-inside-sides-xl-none space-inside-sides-xl">
 						
 					<div class="space-outside-down-md space-inside-up-xl right">
 						
@@ -144,9 +144,9 @@
 
 	</section>
 
-	<section class="container-fluid space-outside-lg bg-accent">
+	<section class="container-fluid  space-outside-lg bg-accent">
 
-		<div class="row-centered space-inside-sides-lg ">
+		<div class="row-centered xs-space-inside-sides-lg-none space-inside-sides-lg ">
 
 
 			<div class="col-lg-12 space-outside-up-md space-outside-down-sm ">

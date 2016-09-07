@@ -2,7 +2,7 @@
 
 	<div class="row ">
 	
-		<div class="col-lg-12  banner ">
+		<div class="col-lg-12 reset-padding banner ">
 					
 			<section  class="cd-hero">
 				<ul style="list-style:none;padding:0;" class="cd-hero-slider autoplay">

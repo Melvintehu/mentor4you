@@ -32,7 +32,109 @@
 
 
 
-.navbar{
-	position:relative;
-	top: 29px;
+
+
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+    .placeholder-nav{
+    
+        height: 0;
+        position:relative;
+        right: 109px;
+        display: inline-block;
+        border-left: 109px solid transparent;
+        border-bottom: 109px solid $main-color; 
+        padding-right:110px;
+        width: 100%;
+        float:right;
+        position: relative;
+        left: 55px;
+    }
+
+    .navbar{
+        position:relative;
+        top: 29px;
+    }
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .placeholder-nav{
+    
+        height: 0;
+        position:relative;
+        right: 109px;
+        display: inline-block;
+        border-left: 109px solid transparent;
+        border-bottom: 109px solid $main-color; 
+        padding-right:110px;
+        width: 100%;
+        float:right;
+        position: relative;
+        left: 55px;
+    }
+
+    .navbar{
+        position:relative;
+        top: 29px;
+    }
+
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .placeholder-nav{
+    
+        height: 0;
+        position:relative;
+        right: 109px;
+        display: inline-block;
+        border-left: 109px solid transparent;
+        border-bottom: 109px solid $main-color; 
+        padding-right:110px;
+        width: 100%;
+        float:right;
+        position: relative;
+        left: 55px;
+    }
+
+    .navbar{
+        position:relative;
+        top: 29px;
+    }
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+    .navbar{
+        margin-bottom: 0 !important;
+
+    }
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+    
+    .placeholder-nav{
+    
+        
+        
+    }
+
+    .navbar{
+        margin-bottom: 0 !important;
+
+    }
+
+
 }

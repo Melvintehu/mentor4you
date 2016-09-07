@@ -5,17 +5,17 @@
 
 @section('content')
 
-	<section class="container-fluid space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg">
 			
 		<div class="row">
 			
-			<div class="col-lg-6 space-outside-down-md">
+			<div class="col-lg-6 space-outside-down-md text-center">
 				
 				<h1 >{{ $data['news']->title }} </h1>
 
 			</div>
 
-			<div class="col-lg-7 space-outside-down-lg space-inside-right-lg">
+			<div class="col-lg-7 xs-space-inside-sides-md space-outside-down-lg space-inside-right-lg">
 				
 				<p>
 					
@@ -41,7 +41,7 @@
 
 	<section class="container-fluid space-outside-lg bg-accent">
 
-		<div class="row-centered space-inside-sides-lg ">
+		<div class="row-centered xs-space-inside-sides-sm space-inside-sides-lg ">
 
 
 			<div class="col-lg-12 space-outside-up-md space-outside-down-sm ">
@@ -60,9 +60,9 @@
 
 			<div class="col-lg-12 text-center space-outside-down-md">
 
-				<a href="/aanmelden-als-mentor" class="btn-standard bg-secondary text-color-light light space-outside-down-md ">Mentor worden</a>
+				<a href="/aanmelden-als-mentor" class="btn-standard font-sm bg-secondary text-color-light light space-outside-down-md ">Mentor worden</a>
 
-				<a href="/aanmelden-als-jongere"  class="space-outside-left-sm text-color-light light btn-standard bg-secondary ">Aanmelden als jongere</a>
+				<a href="/aanmelden-als-jongere"  class="space-outside-left-sm font-sm text-color-light light btn-standard bg-secondary ">Aanmelden als jongere</a>
 
 			</div>
 
