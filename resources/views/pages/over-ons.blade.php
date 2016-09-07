@@ -3,7 +3,7 @@
 
 @section('content')
 
-	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-xl-none space-inside-sides-xl space-outside-lg no-overflow">
 
 			
 		<div class="row">
