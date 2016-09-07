@@ -97,7 +97,7 @@
 
 				<div class="col-lg-5 clear-left"> 
 					
-					{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs']) !!}
+					{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs font-xs']) !!}
 				</div>
 					
 				<div class="col-lg-7 clear-left"> 	

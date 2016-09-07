@@ -64,11 +64,12 @@ class MailController extends Controller
                   ->subject('Mentor4you bevestiging van bericht');
           });
 
-           return redirect('/');
+          return redirect()->action('CandidatesWebsiteController@createJongere', [ $request]);
    }
 
    public function mentorMail(Request $request)
    {
+
        $name = $request->input('voornaam') . " " . $request->input('achternaam');
        $email = $request->input('emailadres');
        $birthdate = $request->input('geboortedatum');
@@ -94,6 +95,6 @@ class MailController extends Controller
                   ->subject('Mentor4you bevestiging van bericht');
           });
 
-           return redirect('/');   
+          return redirect()->action('CandidatesWebsiteController@createMentoren', [$request]);   
    }
 }
