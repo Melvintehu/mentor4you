@@ -191,15 +191,16 @@ a.btn-standard, input[type=submit].btn-standard, button.btn-standard{
 	display: inline-block;
 }
 
-a.btn-round{
+a.btn-round, input[type=submit].btn-round, button.btn-round{
 	font-weight: 300;
-	
+	border: none;
+	background: transparent;
 
 	span{
 		margin-left: 20px;
 	}
-
 }
+
 
 
 
