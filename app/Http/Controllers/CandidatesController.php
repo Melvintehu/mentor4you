@@ -9,6 +9,11 @@ use App\Http\Requests;
 
 class CandidatesController extends Controller
 {
+
+
+    
+    
+
     /**
      * Display a listing of the resource.
      *
@@ -16,9 +21,6 @@ class CandidatesController extends Controller
      */
     public function index()
     {
-        
-     
-
         return view('cms.pages.candidates.overzicht', compact('data'));
     }
 
@@ -44,9 +46,10 @@ class CandidatesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
-    {
-        //
+    public function create(Request $request)
+    {   
+
+   
     }
 
     /**

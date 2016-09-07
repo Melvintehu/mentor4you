@@ -30,9 +30,7 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 // cms routes
 	
 	// get routes
-	Route::get('/', function(){
-        return view('cms.cms');
-    });
+	Route::get('/', function(){ return view('cms.cms'); });
 
     Route::get('/logout', function()
 	{
@@ -72,3 +70,7 @@ Route::post('/mail/jongere-mail', 'MailController@jongereMail');
 Route::post('/mail/mentor-mail', 'MailController@mentorMail');
 
 Route::post('/newsletters/subscribe', 'NewslettersWebsiteController@addEmail');
+
+Route::get('/aanmeldingen/nieuwe-jongere-aanmelding', 'CandidatesWebsiteController@createJongere');
+Route::get('/aanmeldingen/nieuwe-mentor-aanmelding', 'CandidatesWebsiteController@createMentoren');
+

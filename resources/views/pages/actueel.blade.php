@@ -65,7 +65,7 @@ Actueel
 
 							<div class=" xs-space-outside-sides-sm space-outside-left-md">
 
-								<h2 class="text-center">{{ $nieuwsbericht->title }}</h2>
+								<h2 class="xs-text-center">{{ $nieuwsbericht->title }}</h2>
 
 								<p class="space-outside-md ">
 
@@ -77,7 +77,7 @@ Actueel
 									
 									<div class="col-lg-12">
 										
-										<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-round space-outside-down-sm hidden-xs"> Meer lezen <span class="circle circle-sm hidden-xs  bg-secondary text-color-light"> > </span> </a>
+										<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-round space-outside-down-sm block hidden-xs"> Meer lezen <span class="circle circle-sm hidden-xs  bg-secondary text-color-light"> > </span> </a>
 
 										<a href="/actueel/{{ $nieuwsbericht->title }}-{{$nieuwsbericht->id}}" class="btn-standard text-center visible-xs bg-secondary space-outside-down-sm text-color-light light"> Meer lezen  </a>
 										

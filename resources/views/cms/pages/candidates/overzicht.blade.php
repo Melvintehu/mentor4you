@@ -20,11 +20,17 @@
                                 
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <h2> {{ $data['candidates']->first()->choices }} </h2>
+                                            @if(!$data['candidates']->isEmpty())
+                                            <h2> {{ $data['candidates']->first()->choices }} </h2>
+                                            @endif
                                         <div class="table-responsive">        
                                             <table class="table table-hover">
-                                                <tr> 
-                                                {!! $data['candidates']->render() !!}
+                                                <tr>
+                                                @if(!$data['candidates']->isEmpty())
+
+                                                    {!! $data['candidates']->render() !!}
+
+                                                @endif
                                                 </tr>
                                                 <thead>
                                                     <tr>
