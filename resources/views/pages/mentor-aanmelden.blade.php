@@ -6,7 +6,7 @@ Aanmelden als mentor
 
 @section('content')
 	
-	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl fadeInDown wow">
 		
 
 		<div class="row">
@@ -56,7 +56,7 @@ Aanmelden als mentor
 
 	</section>
 
-	<section class="container-fluid space-outside-lg xs-space-inside-sides-sm space-inside-sides-xl">
+	<section class="container-fluid space-outside-lg xs-space-inside-sides-sm space-inside-sides-xl fadeInDown wow">
 
 			
 		<div class="row">

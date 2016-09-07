@@ -20,7 +20,7 @@
 
 				
 
-				<a class="btn-standard text-center text-color-light visible-xs bg-main light " href="#nieuwsbrief">Abbonneer op de nieuwsbrief</a>
+				<button class="btn-standard text-center text-color-light visible-xs bg-main light " href="#nieuwsbrief">Abbonneer op de nieuwsbrief</button>
 
 			</div>
 

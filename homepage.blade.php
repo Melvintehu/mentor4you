@@ -23,7 +23,7 @@
 				
 				<a href="/aanmelden-als-jongere">
 
-					<div class="col-lg-4">
+					<div class="col-lg-4 ">
 							
 						<div class="card type-1">	
 

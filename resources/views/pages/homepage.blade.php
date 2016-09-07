@@ -22,7 +22,7 @@ Homepage
 
 			</div>
 
-			<div class="col-lg-12 col-centered text-center space-outside-down-lg">
+			<div class="col-lg-12 col-centered text-center space-outside-down-lg wow fadeInDown">
 				
 				<a href="/aanmelden-als-jongere">
 
@@ -146,7 +146,7 @@ Homepage
 
 
 	<!-- Section waar blogverhalen weergegeven worden -->
-	<section class="container-fluid space-inside-sides-xl xs-space-inside-sides-xl-none bg-main space-outside-up-lg no-overflow">
+	<section class="container-fluid space-inside-sides-xl xs-space-inside-sides-xl-none bg-main space-outside-up-lg no-overflow ">
 		
 		<div class="row"> 
 			
@@ -155,28 +155,28 @@ Homepage
 
 				<div class="col-lg-4 col-xs-12 xs-space-outside-down-xs space-outside-xl xs-text-center sm-text-center">
 					
-						<div class="image circle circle-xl">
+						<div class="image circle circle-xl wow fadeInDown">
 							
-							<img class="width-auto" src="images/resultaten4.jpeg" alt="Mentor Sara">
+							<img class="width-auto " src="images/boy.jpg" alt="Mentor Sara">
 
 						</div>
 					
 				</div>	
 
 				<!-- Titel, tekst en link bij foto  -->
-				<div class="col-lg-8 col-xs-12 space-outside-xl xs-space-outside-up-lg xs-text-center">
+				<div class="col-lg-8 col-xs-12 space-outside-xl xs-space-outside-up-lg xs-text-center wow fadeInDown">
 
-				<div class="row">
+				<div class="row ">
 					
 					<div class="col-lg-9 col-xs-12">
 					
-						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> SARA </h1>
+						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> JERRY </h1>
 
 					</div>
 
 					<div class="col-lg-3 col-xs-12 xs-text-center">
 						
-						<p class="text-color-light  "> HAVO - Meppel </p>
+						<p class="text-color-light  "> ESDAL COLLEGE - Emmen </p>
 
 					</div>
 
@@ -191,15 +191,21 @@ Homepage
 
 					<p class="text-color-light space-outside-down-md xs-space-inside-sides-sm">
 						
-						Doordat ik mijzelf aangemeld heb bij mentor4you,  non ipsum vulputate 
-						condimentum eu id tellus. Praesent commodo arcu quis rhoncus. 
-						Suspendisse volutpat, quam eu
+						 Jerry is 13 jaar en zit in de eerste
+							klas van het Esdal College in Emmen en houdt
+							van voetbal en gamen op de computer. Frans is
+							“wat ouder”, komt uit Den Haag en woont nog
+							niet zo lang in Emmen. Hij heeft altijd met veel
+							plezier als vrijwilliger bij sportclubs in Den
+							Haag met jongeren opgetrokken. Dat Frans erg
+							goed is in wiskunde komt bovendien heel goed
+							van pas bij zijn rol als mentor van Jerry.
 
 					</p>
 
 					<div class="row">
 						
-						<div class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
+						<div style="display:none;" class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
 
 							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
 
@@ -230,7 +236,7 @@ Homepage
 				
 				<div class="space-outside-lg">
 					
-					<h1> {{ $data['actueeltitel']->title }} </h1>
+					<h1 class="wow fadeInDown"> {{ $data['actueeltitel']->title }} </h1>
 
 				</div>
 
@@ -238,7 +244,7 @@ Homepage
 
 			<div class="col-lg-6 space-outside-down-lg">
 				
-				<div class="image">
+				<div class="image wow fadeInDown">
 					
 					<img class="height-auto" src="{{ $data['actueeltitel']->photos->first()['path'] }}" alt="actueel nieuws over mentor4you" />
 
@@ -246,7 +252,7 @@ Homepage
 
 			</div>
 			
-			<div class="col-lg-6 space-outside-down-lg" >
+			<div class="col-lg-6 space-outside-down-lg wow fadeInDown" >
 				
 				<a class="twitter-timeline" data-lang="nl" data-height="540" data-theme="light" data-link-color="#01569B" href="https://twitter.com/M4YDrenthe">Tweets by M4YDrenthe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -270,7 +276,7 @@ Homepage
 
 			<div class="col-lg-12 text-center">
 				
-				<div class="space-outside-lg">
+				<div class="space-outside-lg fadeInDown wow">
 					
 					<h1> {{ $data['partnerstitel']->title }} </h1>
 
@@ -282,7 +288,7 @@ Homepage
 
 
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 fadeInDown wow">
 				
 				<div class="image rectangular-img ">
 					

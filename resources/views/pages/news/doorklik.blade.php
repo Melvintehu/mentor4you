@@ -7,11 +7,11 @@
 
 @section('content')
 
-	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg fadeInDown wow">
 			
 		<div class="row">
 
-			<div class="col-lg-6 space-outside-down-md text-center">
+			<div class="col-lg-6 space-outside-down-md xs-text-center">
 				
 
 
@@ -49,7 +49,7 @@
 
 	</section>
 
-	<section class="container-fluid space-outside-lg bg-accent">
+	<section class="container-fluid space-outside-lg bg-accent fadeInDown wow">
 
 		<div class="row-centered xs-space-inside-sides-sm space-inside-sides-lg ">
 

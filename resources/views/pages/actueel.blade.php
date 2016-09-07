@@ -11,7 +11,7 @@ Actueel
 			
 		<div class="row">
 
-			<div class="col-lg-12 space-outside-down-lg text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center fadeInDown wow">
 
 				<h1>{{ $data['titel']->title }}</h1>
 
@@ -51,7 +51,7 @@ Actueel
 
 					@foreach($data['nieuwsberichten'] as $nieuwsbericht)
 
-						<div class="col-lg-4 col-xs-12 space-outside-up-lg xs-space-inside-sides-sm xs-text-center">
+						<div class="col-lg-4 col-xs-12 space-outside-up-lg xs-space-inside-sides-sm xs-text-center fadeInDown wow">
 
 							<div class="image lg-rect-xl">
 
@@ -61,7 +61,7 @@ Actueel
 
 						</div>
 
-						<div class="col-lg-8 col-xs-12 space-outside-up-lg">
+						<div class="col-lg-8 col-xs-12 space-outside-up-lg fadeInDown wow">
 
 							<div class=" xs-space-outside-sides-sm space-outside-left-md">
 
