@@ -8,9 +8,11 @@
 	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg">
 			
 		<div class="row">
-			
+
 			<div class="col-lg-6 space-outside-down-md text-center">
 				
+
+
 				<h1 >{{ $data['news']->title }} </h1>
 
 			</div>
@@ -33,6 +35,12 @@
 
 				</div>
 
+			</div>
+
+			<div class="col-lg-12 space-outside-down-md">
+				
+				<a class='btn-standard bg-secondary text-color-light light' href='/actueel'>Ga terug</a>
+				
 			</div>
 
 		</div>	
