@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title')
+Resultaten
+@stop
 
 @section('content')
 

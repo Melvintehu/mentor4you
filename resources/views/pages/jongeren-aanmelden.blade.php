@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title')
+Aanmelden als jongere
+@stop
 
 @section('content')
 	
