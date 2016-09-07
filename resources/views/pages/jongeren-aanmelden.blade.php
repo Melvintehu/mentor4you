@@ -14,6 +14,18 @@
 
 			</div>
 
+			@if(session('succeed'))
+				<div class="col-lg-12 space-outside-down-lg">
+					<div class="alert alert-success" role="alert">
+						<p class="text bold">
+							
+							{!! session('succeed') !!} 
+
+						</p>
+					</div>
+				</div>
+			@endif
+
 			<div class="col-lg-5 space-outside-down-lg">
 				
 				<div class="image aanmelden-foto">

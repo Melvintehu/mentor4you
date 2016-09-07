@@ -26,7 +26,10 @@ class CandidatesWebsiteController extends Controller
 
         $candidate->save();
 
+        $request->session()->flash('succeed', 'Uw email is verzonden!');
+
         return redirect()->back();
+
 	}
 
 	public function createMentoren(Request $request)
@@ -45,7 +48,10 @@ class CandidatesWebsiteController extends Controller
 
         $candidate->save();
 
+        $request->session()->flash('succeed', 'Uw email is verzonden!');
+
         return redirect()->back();
+        
 	}
 
 

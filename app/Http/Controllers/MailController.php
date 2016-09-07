@@ -34,7 +34,9 @@ class MailController extends Controller
                   ->subject('Mentor4you bevestiging van bericht');
           });
 
-	        return redirect('/');
+          $request->session()->flash('succeed', 'Uw email is verzonden!');
+
+	        return redirect('/contact');
    }
 
    public function jongereMail(Request $request)
@@ -64,7 +66,9 @@ class MailController extends Controller
                   ->subject('Mentor4you bevestiging van bericht');
           });
 
+
           return redirect()->action('CandidatesWebsiteController@createJongere', [ $request]);
+
    }
 
    public function mentorMail(Request $request)
@@ -96,5 +100,6 @@ class MailController extends Controller
           });
 
           return redirect()->action('CandidatesWebsiteController@createMentoren', [$request]);   
+
    }
 }
