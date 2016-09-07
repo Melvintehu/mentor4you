@@ -68,5 +68,9 @@ Route::get('/home', 'HomeController@index');
 Route::post('/mail/contact-mail', 'MailController@contactMail');
 Route::post('/mail/jongere-mail', 'MailController@jongereMail');
 Route::post('/mail/mentor-mail', 'MailController@mentorMail');
+
+Route::post('/newsletters/subscribe', 'NewslettersWebsiteController@addEmail');
+
 Route::get('/aanmeldingen/nieuwe-jongere-aanmelding', 'CandidatesWebsiteController@createJongere');
 Route::get('/aanmeldingen/nieuwe-mentor-aanmelding', 'CandidatesWebsiteController@createMentoren');
+
