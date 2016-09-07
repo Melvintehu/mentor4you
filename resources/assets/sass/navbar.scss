@@ -115,6 +115,10 @@
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 
+    .navbar{
+        margin-bottom: 0 !important;
+
+    }
 
 }
 
@@ -128,7 +132,7 @@
     }
 
     .navbar{
-        margin-bottom: 0;
+        margin-bottom: 0 !important;
 
     }
 
