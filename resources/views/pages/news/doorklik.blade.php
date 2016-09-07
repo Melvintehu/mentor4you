@@ -1,6 +1,8 @@
 @extends('master')
 
-
+@section('title')
+{{ $data['news']->title }}
+@stop
 
 
 @section('content')

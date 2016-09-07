@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title')
+Over ons
+@stop
 
 @section('content')
 

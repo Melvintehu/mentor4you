@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title')
+Contact
+@stop
 
 @section('content')
 
