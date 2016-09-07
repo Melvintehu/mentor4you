@@ -14,6 +14,18 @@
 
 			</div>
 
+		@if(session('succeed'))
+			<div class="col-lg-12 space-outside-down-lg">
+				<div class="alert alert-success" role="alert">
+					<p class="text bold">
+						
+						{!! session('succeed') !!} 
+
+					</p>
+				</div>
+			</div>
+		@endif
+
 			<div class="col-lg-12 space-outside-down-lg">
 
 				<p class="text">
@@ -24,7 +36,7 @@
 
 			</div>
 
-			<div class="col-lg-12 space-outside-down-msm">
+			<div class="col-lg-12 space-outside-down-sm">
 				
 				<p class="text bold">
 					
@@ -33,6 +45,7 @@
 				</p>
 
 			</div>
+
 		
 		{!! Form::open(['method' => 'POST', 'action' => 'MailController@contactMail']) !!}
 
