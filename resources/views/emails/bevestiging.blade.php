@@ -11,6 +11,10 @@
 
         <p>Wij proberen zo spoedig mogelijk contact op te nemen.</p>
 
+        <p>Met vriendelijke groet,</p>
+
+        <p>Team Mentor4you</p>
+
     @include('beautymail::templates.sunny.contentEnd')
 
 @stop

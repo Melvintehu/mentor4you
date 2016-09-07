@@ -4,20 +4,39 @@
 		
 		<div class="row">
 			
+			{!! Form::open(['method' => 'POST', 'action' => 'NewslettersWebsiteController@addEmail']) !!}
+
+			{{ csrf_field() }}
+
 			<div class="col-lg-4 col-xs-12 space-outside-sm">
 
-				<input class="input space-inside-sides-sm space-outside-right-md" type="email" name="email" >
+				{!! Form::email('email', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input space-inside-sides-sm space-outside-right-md']) !!}
 
 			</div>
 
 			<div class="col-lg-4 col-xs-12 space-outside-sm">
 				
-				<a class="btn-round text-color-light hidden-xs" href="#schrijf-mij-in-voor-de-nieuwsbrief"> Schrijf mij in voor de nieuwsbrief <span class="circle circle-sm bg-white text-color-dark xs-hidden"> > </span></a>
+				<button class="btn-round text-color-light hidden-xs" href="#schrijf-mij-in-voor-de-nieuwsbrief">Schrijf mij in voor de nieuwsbrief<span class="circle circle-sm bg-white text-color-dark xs-hidden"> > </span></button>
+
+				
 
 				<a class="btn-standard text-center text-color-light visible-xs bg-main light " href="#nieuwsbrief">Abbonneer op de nieuwsbrief</a>
 
 			</div>
 
+			@if ($errors->has('email'))
+			<div class="col-lg-4 col-xs-12 space-outside-sm">
+				
+                    <span>
+
+                        <p class='text-color-light' >Dit emailadres is al in gebruik!</p>
+
+                    </span>
+    
+			</div>
+			@endif
+
+			{!! Form::close() !!}
 		</div>
 
 	</div>
@@ -32,25 +51,23 @@
 
 				<p class="space-outside-down-xs text-color-light block"> 06-24967211 </p>
 
-				<p class="space-outside-down-xs space-inside-right-md text-color-light left"> Straatnaam </p>
+				<p class="space-outside-down-xs space-inside-right-md text-color-light left"> Rodenburg </p>
 
-				<p class=" space-outside-down-xs text-color-light left"> 75 </p>
+				<p class=" space-outside-down-xs text-color-light left"> 1b </p>
 
-				<p class=" space-outside-down-xs text-color-light clear-left space-inside-right-md left"> Plaats </p>
+				<p class=" space-outside-down-xs text-color-light clear-left space-inside-right-md left"> Leek </p>
 
-				<p class=" space-outside-down-xs text-color-light left"> Postcode </p>
+				<p class=" space-outside-down-xs text-color-light left"> 9351 PV</p>
 
 			</div>
 
 			<div class="col-lg-4 col-sm-6 col-xs-12 ">
 				
 				<p class="space-outside-xs text-color-light block"> Algemene voorwaarden</p>
-
-				<p class="space-outside-xs text-color-light block"> Sitemap </p>
 			
-				<p class="space-outside-xs text-color-light block"> Mentor worden </p>
+				<p class="space-outside-xs text-color-light block"> <a class="text-color-light" href='/aanmelden-als-mentor'>Mentor worden</a> </p>
 
-				<p class="space-outside-xs text-color-light block"> Aanmelden als jongere </p>
+				<p class="space-outside-xs block"> <a class="text-color-light" href='/aanmelden-als-jongere'>Aanmelden als jongere</a></p>
 
 			</div>
 

@@ -1,5 +1,8 @@
 @extends('master')
 
+@section('title')
+Aanmelden als mentor
+@stop
 
 @section('content')
 	

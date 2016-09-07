@@ -6,7 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width">
-        <title>Laravel</title>
+        <title>@yield('title') || Mentor4you</title>
 
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,700' rel='stylesheet' type='text/css'>
 
@@ -20,7 +20,35 @@
 
     	@include('partials.banner')      
 
+        @if(session('addEmail'))
+
+            <section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl">
+                
+                <div class="row">
+
+                    <div class="col-lg-12 space-outside-md text-center">
+
+                        <div class="alert alert-success" role="alert">
+
+                            <p class="text bold">
+                                        
+                                {!! session('addEmail') !!} 
+
+                            </p>
+
+                         </div>
+
+                     </div>       
+
+                </div>
+
+            </section>
+             
+        @endif
+
     	@yield('content')	
+
+
 
         @include('partials.footer')
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
