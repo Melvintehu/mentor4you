@@ -51,13 +51,13 @@
 
 				<p class="space-outside-down-xs text-color-light block"> 06-24967211 </p>
 
-				<p class="space-outside-down-xs space-inside-right-md text-color-light left"> Rodenburg </p>
+				<p class="space-outside-down-xs space-inside-right-md text-color-light left"> Nieuwe Rijksweg  </p>
 
-				<p class=" space-outside-down-xs text-color-light left"> 1b </p>
+				<p class=" space-outside-down-xs text-color-light left"> 37 </p>
 
-				<p class=" space-outside-down-xs text-color-light clear-left space-inside-right-md left"> Leek </p>
+				<p class=" space-outside-down-xs text-color-light clear-left space-inside-right-md left"> Vries  </p>
 
-				<p class=" space-outside-down-xs text-color-light left"> 9351 PV</p>
+				<p class=" space-outside-down-xs text-color-light left"> 9481 AP </p>
 
 			</div>
 

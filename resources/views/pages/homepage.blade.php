@@ -46,13 +46,19 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-md ">
 
 								<p> 
 
 									{{ $data['zoekmentor']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="/aanmelden-als-jongere">Aanmelden als jongere</a>
 
 							</div>
 
@@ -84,12 +90,18 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-md ">
 								<p> 
 
 									{{ $data['aanmeldenmentor']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="/aanmelden-als-mentor">Aanmelden als mentor</a>
 
 							</div>
 
@@ -122,13 +134,19 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm ">
+							<div class=" space-outside-md ">
 								
 								<p> 
 
 									{{ $data['resultaten']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="#bekijk-de-resultaten">Bekijk de resultaten</a>
 
 							</div>
 
@@ -157,7 +175,7 @@ Homepage
 					
 						<div class="image circle circle-xl wow fadeInDown">
 							
-							<img class="width-auto " src="images/boy.jpg" alt="Mentor Sara">
+							<img class="width-auto " src="{{ $data['nieuwsbericht']->first()->photos->first()['path'] }}" alt="Mentor Sara">
 
 						</div>
 					
@@ -170,13 +188,13 @@ Homepage
 					
 					<div class="col-lg-9 col-xs-12">
 					
-						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> JERRY </h1>
+						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> {{ $data['nieuwsbericht']->first()->title }} </h1>
 
 					</div>
 
 					<div class="col-lg-3 col-xs-12 xs-text-center">
 						
-						<p class="text-color-light  "> ESDAL COLLEGE - Emmen </p>
+						<p class="text-color-light  "> {{ $data['nieuwsbericht']->first()->publish_date }} </p>
 
 					</div>
 
@@ -191,23 +209,15 @@ Homepage
 
 					<p class="text-color-light space-outside-down-md xs-space-inside-sides-sm">
 						
-						 Jerry is 13 jaar en zit in de eerste
-							klas van het Esdal College in Emmen en houdt
-							van voetbal en gamen op de computer. Frans is
-							“wat ouder”, komt uit Den Haag en woont nog
-							niet zo lang in Emmen. Hij heeft altijd met veel
-							plezier als vrijwilliger bij sportclubs in Den
-							Haag met jongeren opgetrokken. Dat Frans erg
-							goed is in wiskunde komt bovendien heel goed
-							van pas bij zijn rol als mentor van Jerry.
+						{!! nl2br($data['nieuwsbericht']->first()->body) !!} 
 
 					</p>
 
 					<div class="row">
 						
-						<div style="display:none;" class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
+						<div  class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
 
-							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
+							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Meer nieuws <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
 
 							<a class="btn-standard visible-xs bg-secondary light text-color-light" href="/actueel">MEER LEZEN</a>
 							

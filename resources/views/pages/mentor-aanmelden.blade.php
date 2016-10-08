@@ -33,7 +33,7 @@ Aanmelden als mentor
 				
 				<div class="image aanmelden-foto">
 					
-					<img src="images/foto1.jpg" alt="mentor die zich wil aanmelden">
+					<img class="height-auto" src="images/foto1.jpg" alt="mentor die zich wil aanmelden">
 
 				</div>
 
