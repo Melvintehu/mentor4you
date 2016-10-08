@@ -22,7 +22,7 @@
 
         @if(session('addEmail'))
 
-            <section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl">
+            <section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl fadeInDown wow">
                 
                 <div class="row">
 
@@ -189,6 +189,11 @@ jQuery(document).ready(function($){
     };
 });
 
+        </script>
+
+        <script src="../js/wow.min.js"></script>
+        <script>
+            new WOW().init();
         </script>
     </body>
 

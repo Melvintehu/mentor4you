@@ -11,14 +11,14 @@ Contact
 			
 		<div class="row">
 			
-			<div class="col-lg-12 space-outside-down-lg">
+			<div class="col-lg-12 space-outside-down-lg fadeInDown wow">
 			
 				<h1> {{ $data['titel']->title }} </h1>	
 
 			</div>
 
 		@if(session('succeed'))
-			<div class="col-lg-12 space-outside-down-lg">
+			<div class="col-lg-12 space-outside-down-lg fadeInDown wow">
 				<div class="alert alert-success" role="alert">
 					<p class="text bold">
 						
@@ -29,7 +29,7 @@ Contact
 			</div>
 		@endif
 
-			<div class="col-lg-12 space-outside-down-lg">
+			<div class="col-lg-12 space-outside-down-lg fadeInDown wow">
 
 				<p class="text">
 
@@ -39,7 +39,7 @@ Contact
 
 			</div>
 
-			<div class="col-lg-12 space-outside-down-sm">
+			<div class="col-lg-12 space-outside-down-sm fadeInDown wow">
 				
 				<p class="text bold">
 					
@@ -54,7 +54,7 @@ Contact
 
 		{{ csrf_field() }}
 
-		<div class="col-lg-12 space-outside-sm">
+		<div class="col-lg-12 space-outside-sm fadeInDown wow">
 
 			<div class="row">
 				
@@ -86,15 +86,7 @@ Contact
 
 			{!! Form::close() !!}
 
-				<div class="col-lg-12 space-outside-xs">
-				
-					<p class="text">
-						
-						Uw bericht is verzonden. Wij nemen zo spoedig mogelijk contact met u op.
-
-					</p>
-
-			</div>
+		
 
 			</div>
 
@@ -105,7 +97,7 @@ Contact
 
 	</section>
 
-	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg xs-space-outside-down-xs">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl space-outside-lg xs-space-outside-down-xs fadeInDown wow">
 
 			
 		<div class="row">

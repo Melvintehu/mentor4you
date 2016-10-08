@@ -11,13 +11,13 @@ Steun ons
 			
 		<div class="row">
 
-			<div class="col-lg-12 space-outside-down-lg text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center fadeInDown wow">
 
 				<h1>{{ $data['titel']->title }}</h1>
 
 			</div>
 
-			<div class="col-lg-8 col-xs-12 space-outside-down-lg xs-text-center">
+			<div class="col-lg-8 col-xs-12 space-outside-down-lg xs-text-center fadeInDown wow">
 
 				<h3 class="space-outside-down-md ">{{ $data['eerste_kop']->title }}</h3>
 
@@ -37,7 +37,7 @@ Steun ons
 
 			</div>
 
-			<div class="col-lg-4 col-xs-12 xs-space-outside-down-lg-none space-outside-down-lg space-inside-md  space-inside-sides-md  bg-accent">
+			<div class="col-lg-4 col-xs-12 xs-space-outside-down-lg-none space-outside-down-lg space-inside-md  space-inside-sides-md  bg-accent fadeInDown wow">
 
 				<div class="row">
 					

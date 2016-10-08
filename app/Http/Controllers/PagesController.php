@@ -30,10 +30,11 @@ class PagesController extends Controller
             'zoekmentor' => Section::where('id', 2)->first(),
             'aanmeldenmentor' => Section::where('id', 3)->first(),
             'resultaten' => Section::where('id', 4)->first(),
-            'actueeltitel' => Section::where('id', 5)->first(),
+            'actueeltitel' => Section::where('id', 36)->first(),
             'partnerstitel' => Section::where('id', 6)->first(),
             'sliders' => $this->getSliders(),
             'partners' => Partner::take(4)->get(),
+            'nieuwsbericht' => News::take(1)->get(),
         ];
 
       
@@ -88,7 +89,7 @@ class PagesController extends Controller
 	{
         $data = [
             'titel' => Section::where('id', 7)->first(),
-            'kop1' => Section::where('id', 8)->first(),
+            'kop1' => Section::where('id', 37)->first(),
             'kop2' => Section::where('id', 9)->first(),
             'kop3' => Section::where('id', 10)->first(),
             'kop4' => Section::where('id', 11)->first(),

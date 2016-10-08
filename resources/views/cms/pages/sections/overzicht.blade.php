@@ -57,7 +57,7 @@
                                                             </td>
 
                                                             <!-- Verwijderen form -->
-                                                            <td>
+                                                            <!-- <td>
                                                                  {!! Form::open(
                                                                     array(
                                                                         'method' => 'DELETE',
@@ -68,7 +68,7 @@
 
                                                                 <input type='submit' class='btn btn-danger' value='verwijderen' />
                                                                 {!! Form::close() !!}
-                                                            </td>
+                                                            </td> -->
 
 
                                                         </tr>

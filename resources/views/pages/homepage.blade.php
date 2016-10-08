@@ -22,7 +22,7 @@ Homepage
 
 			</div>
 
-			<div class="col-lg-12 col-centered text-center space-outside-down-lg">
+			<div class="col-lg-12 col-centered text-center space-outside-down-lg wow fadeInDown">
 				
 				<a href="/aanmelden-als-jongere">
 
@@ -46,13 +46,19 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-md ">
 
 								<p> 
 
 									{{ $data['zoekmentor']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="/aanmelden-als-jongere">Aanmelden als jongere</a>
 
 							</div>
 
@@ -84,12 +90,18 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm xs-space-outside-down-lg">
+							<div class=" space-outside-md ">
 								<p> 
 
 									{{ $data['aanmeldenmentor']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="/aanmelden-als-mentor">Aanmelden als mentor</a>
 
 							</div>
 
@@ -122,13 +134,19 @@ Homepage
 								
 							</div>
 
-							<div class=" space-outside-sm ">
+							<div class=" space-outside-md ">
 								
 								<p> 
 
 									{{ $data['resultaten']->body }}
 
 								</p>
+
+							</div>
+
+							<div class=" space-outside-sm xs-space-outside-down-lg">
+
+								<a class="btn-standard bg-secondary text-color-light light" href="#bekijk-de-resultaten">Bekijk de resultaten</a>
 
 							</div>
 
@@ -146,7 +164,7 @@ Homepage
 
 
 	<!-- Section waar blogverhalen weergegeven worden -->
-	<section class="container-fluid space-inside-sides-xl xs-space-inside-sides-xl-none bg-main space-outside-up-lg no-overflow">
+	<section class="container-fluid space-inside-sides-xl xs-space-inside-sides-xl-none bg-main space-outside-up-lg no-overflow ">
 		
 		<div class="row"> 
 			
@@ -155,28 +173,28 @@ Homepage
 
 				<div class="col-lg-4 col-xs-12 xs-space-outside-down-xs space-outside-xl xs-text-center sm-text-center">
 					
-						<div class="image circle circle-xl">
+						<div class="image circle circle-xl wow fadeInDown">
 							
-							<img class="width-auto" src="images/resultaten4.jpeg" alt="Mentor Sara">
+							<img class="width-auto " src="{{ $data['nieuwsbericht']->first()->photos->first()['path'] }}" alt="Mentor Sara">
 
 						</div>
 					
 				</div>	
 
 				<!-- Titel, tekst en link bij foto  -->
-				<div class="col-lg-8 col-xs-12 space-outside-xl xs-space-outside-up-lg xs-text-center">
+				<div class="col-lg-8 col-xs-12 space-outside-xl xs-space-outside-up-lg xs-text-center wow fadeInDown">
 
-				<div class="row">
+				<div class="row ">
 					
 					<div class="col-lg-9 col-xs-12">
 					
-						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> SARA </h1>
+						<h1 class="text-color-light   xs-text-center xs-space-outside-down-sm"> {{ $data['nieuwsbericht']->first()->title }} </h1>
 
 					</div>
 
 					<div class="col-lg-3 col-xs-12 xs-text-center">
 						
-						<p class="text-color-light  "> HAVO - Meppel </p>
+						<p class="text-color-light  "> {{ $data['nieuwsbericht']->first()->publish_date }} </p>
 
 					</div>
 
@@ -191,17 +209,15 @@ Homepage
 
 					<p class="text-color-light space-outside-down-md xs-space-inside-sides-sm">
 						
-						Doordat ik mijzelf aangemeld heb bij mentor4you,  non ipsum vulputate 
-						condimentum eu id tellus. Praesent commodo arcu quis rhoncus. 
-						Suspendisse volutpat, quam eu
+						{!! nl2br($data['nieuwsbericht']->first()->body) !!} 
 
 					</p>
 
 					<div class="row">
 						
-						<div class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
+						<div  class="col-lg-12 xs-text-center xs-space-inside-sides-sm">
 
-							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Bekijk het hele verhaal van Sara hier <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
+							<a href="/actueel" class="btn-round light text-color-light hidden-xs"> Meer nieuws <span class="circle circle-sm bg-secondary space-outside-xs"> > </span> </a>
 
 							<a class="btn-standard visible-xs bg-secondary light text-color-light" href="/actueel">MEER LEZEN</a>
 							
@@ -230,7 +246,7 @@ Homepage
 				
 				<div class="space-outside-lg">
 					
-					<h1> {{ $data['actueeltitel']->title }} </h1>
+					<h1 class="wow fadeInDown"> {{ $data['actueeltitel']->title }} </h1>
 
 				</div>
 
@@ -238,7 +254,7 @@ Homepage
 
 			<div class="col-lg-6 space-outside-down-lg">
 				
-				<div class="image">
+				<div class="image wow fadeInDown">
 					
 					<img class="height-auto" src="{{ $data['actueeltitel']->photos->first()['path'] }}" alt="actueel nieuws over mentor4you" />
 
@@ -246,7 +262,7 @@ Homepage
 
 			</div>
 			
-			<div class="col-lg-6 space-outside-down-lg" >
+			<div class="col-lg-6 space-outside-down-lg wow fadeInDown" >
 				
 				<a class="twitter-timeline" data-lang="nl" data-height="540" data-theme="light" data-link-color="#01569B" href="https://twitter.com/M4YDrenthe">Tweets by M4YDrenthe</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
@@ -270,7 +286,7 @@ Homepage
 
 			<div class="col-lg-12 text-center">
 				
-				<div class="space-outside-lg">
+				<div class="space-outside-lg fadeInDown wow">
 					
 					<h1> {{ $data['partnerstitel']->title }} </h1>
 
@@ -282,7 +298,7 @@ Homepage
 
 
 
-			<div class="col-lg-3">
+			<div class="col-lg-3 fadeInDown wow">
 				
 				<div class="image rectangular-img ">
 					
