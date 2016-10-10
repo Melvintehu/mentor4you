@@ -18,7 +18,7 @@ class NewsController extends Controller
     public function index()
     {
         $data = [
-            'news' => News::paginate(20),
+            'news' => News::orderBy('id', 'desc')->paginate(20),
         ];
 
         return view('cms.pages.news.overzicht', compact('data'));
