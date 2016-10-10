@@ -11,9 +11,9 @@ Over ons
 			
 		<div class="row">
 			
-			<div class="col-lg-12 space-outside-down-lg text-center">
+			<div class="col-lg-12 space-outside-down-lg text-center fadeInDown wow">
 
-				<h1>{{ $data['titel']->title }}</h1>
+				<h1 class="">{{ $data['titel']->title }}</h1>
 
 			</div>
 
@@ -27,7 +27,7 @@ Over ons
 				
 				<div class="col-lg-12 space-outside-down-md xs-text-center">
 
-					<div class="col-lg-12 space-outside-down-lg">
+					<div class="col-lg-12 space-outside-down-lg fadeInDown wow">
 
 						<h3 class="space-outside-down-sm ">{{ $data['kop1']->title }}</h3>
 
@@ -37,9 +37,9 @@ Over ons
 
 					</div>					
 
-					<div class="col-lg-8">
+					<div class="col-lg-8 fadeInDown wow">
 
-						<h3 class="space-outside-down-sm">{{ $data['kop3']->title }}</h3>
+						<h3 class="space-outside-down-sm ">{{ $data['kop3']->title }}</h3>
 
 						<p class="">
 							{!! nl2br($data['kop3']->body) !!}
@@ -90,7 +90,7 @@ Over ons
 
 	</section>
 
-	<section class="container-fluid xs-space-inside-sides-xl-none no-overflow push-65">
+	<section class="container-fluid xs-space-inside-sides-xl-none no-overflow push-65 ">
 
 			
 		<div class="row row-centered">
@@ -147,7 +147,7 @@ Over ons
 
 	</section>
 
-	<section class="container-fluid  space-outside-lg bg-accent">
+	<section class="container-fluid  space-outside-lg bg-accent fadeInDown wow">
 
 		<div class="row-centered xs-space-inside-sides-lg-none space-inside-sides-lg ">
 

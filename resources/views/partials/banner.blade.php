@@ -27,13 +27,13 @@
 							<div class="cd-full-width">
 								<div class="space-inside-sm">
 					
-								<h1 class="text-color-light uppercase">{{ $slider->title }} </h1>
+								<h1 class="text-color-light uppercase wow fadeInRight">{{ $slider->title }} </h1>
 
 							</div>
 
 							<div class="space-inside-sm">
 								
-								<p class="text-color-light">
+								<p class="text-color-light wow fadeInRight">
 									
 									{{ $slider->body }}
 
@@ -43,7 +43,7 @@
 
 							<div class="space-inside-sm">
 								
-								<a href="/over-ons" class="btn-standard bg-secondary light text-color-light"> lees meer  </a>
+								<a href="/over-ons" class="btn-standard bg-secondary light text-color-light wow fadeInRight"> lees meer  </a>
 
 							</div>
 							<div class="overlay-banner"></div>

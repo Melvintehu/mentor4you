@@ -6,7 +6,7 @@ Aanmelden als mentor
 
 @section('content')
 	
-	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl">
+	<section class="container-fluid xs-space-inside-sides-sm space-inside-sides-xl fadeInDown wow">
 		
 
 		<div class="row">
@@ -33,7 +33,7 @@ Aanmelden als mentor
 				
 				<div class="image aanmelden-foto">
 					
-					<img src="images/foto1.jpg" alt="mentor die zich wil aanmelden">
+					<img class="height-auto" src="images/foto1.jpg" alt="mentor die zich wil aanmelden">
 
 				</div>
 
@@ -56,7 +56,7 @@ Aanmelden als mentor
 
 	</section>
 
-	<section class="container-fluid space-outside-lg xs-space-inside-sides-sm space-inside-sides-xl">
+	<section class="container-fluid space-outside-lg xs-space-inside-sides-sm space-inside-sides-xl fadeInDown wow">
 
 			
 		<div class="row">
