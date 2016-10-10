@@ -23,7 +23,7 @@ Steun ons
 
 				<p class="space-outside-down-lg xs-space-inside-right-lg-none space-inside-right-lg">
 					
-					{{ $data['eerste_kop']->body }}
+					{!! nl2br($data['eerste_kop']->body) !!}
 
 				</p>
 
@@ -31,7 +31,7 @@ Steun ons
 
 				<p class="text">
 					
-					{{ $data['tweede_kop']->body }}
+					{!! nl2br($data['tweede_kop']->body) !!}
 				
 				</p>
 
