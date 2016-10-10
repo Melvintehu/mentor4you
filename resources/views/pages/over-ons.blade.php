@@ -161,7 +161,7 @@ Over ons
 			<div class="col-lg-4 col-centered space-outside-down-md">
 
 				<p class="text-center">
-					{{ $data['aanmeldbox']->body }}
+					{{ htmlentities(nl2br($data['aanmeldbox']->body)) }}
 				</p>
 
 			</div>
