@@ -120,7 +120,7 @@ class PagesController extends Controller
 	{
         $data = [
             'titel' => Section::where('id', 14)->first(),
-            'nieuwsberichten' => News::paginate(2),
+            'nieuwsberichten' => News::orderBy('id', 'desc')->paginate(2),
             'sliders' => $this->getSliders(),
         ];
 		return view('pages.actueel', compact('data'));
