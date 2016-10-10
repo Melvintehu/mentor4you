@@ -122,12 +122,12 @@ Contact
 
 				<div class="image hidden-xs hidden-sm">
 
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.6764854797398!2d6.371781515333525!3d53.169843795618824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c835a3911d22df%3A0x4c2e8f57f281cd81!2sRodenburg+1B%2C+9351+PV+Leek!5e0!3m2!1snl!2snl!4v1473158921917" width="1600" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.981542728389!2d6.576944415828201!3d53.07460487992301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c82fb3da541745%3A0x88ba63ae175b784d!2sNieuwe+Rijksweg+37%2C+9481+AP+Vries!5e0!3m2!1snl!2snl!4v1476097504382" width="1600" height="750" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 				</div>
 				
 				<div class="image hidden-lg hidden-md">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2391.6764854797398!2d6.371781515333525!3d53.169843795618824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c835a3911d22df%3A0x4c2e8f57f281cd81!2sRodenburg+1B%2C+9351+PV+Leek!5e0!3m2!1snl!2snl!4v1473158921917" width="992" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2396.981542728389!2d6.576944415828201!3d53.07460487992301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c82fb3da541745%3A0x88ba63ae175b784d!2sNieuwe+Rijksweg+37%2C+9481+AP+Vries!5e0!3m2!1snl!2snl!4v1476097504382" width="992" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 
 			</div>
