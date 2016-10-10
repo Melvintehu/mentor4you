@@ -1,7 +1,7 @@
 @extends('master')
 
 @section('title')
-{{ $data['news']->title }}
+	{{ $data['news']->title }}
 @stop
 
 
@@ -23,7 +23,7 @@
 				
 				<p>
 					
-					{!! $data['news']->body !!}
+					{!! htmlentities(nl2br($data['news']->body)) !!}
 
 				</p>
 
@@ -63,7 +63,7 @@
 			<div class="col-lg-4 col-centered space-outside-down-md">
 
 				<p class="text-center">
-					{{ $data['aanmeldbox']->body }}
+					{{ htmlentities(nl2br($data['aanmeldbox']->body)) }}
 				</p>
 
 			</div>
