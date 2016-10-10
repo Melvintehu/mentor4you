@@ -53,7 +53,7 @@
 
 							        <li class="{{ active_class(if_route(['home']) || if_uri(['/'])) }}"><a href="{{ URL::to('/') }}"><a href="/">HOME <span class="sr-only">(current)</span></a></li>
 
-							        <li class="{{ active_class(if_route(['over-ons']) || if_uri(['over-ons'])) }}"><a href=""><a href="{{ URL::to('over-ons') }}">OVER ONS</a></li>
+							        <li class="{{ active_class(if_route(['over-ons']) || if_uri(['over-ons'])) }}"><a href=""><a href="{{ URL::to('over-ons') }}">MENTOR4YOU</a></li>
 
 							       	<li class="{{ active_class(if_route(['actueel']) || if_uri(['actueel'])) }}"><a ><a href="{{ URL::to('actueel') }}">ACTUEEL</a></li>
 

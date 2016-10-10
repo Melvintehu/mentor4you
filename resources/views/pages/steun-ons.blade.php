@@ -99,9 +99,11 @@ Steun ons
 
 					<div class="col-lg-12 ">
 
-						<a href="/contact" class="btn-standard xs-text-center font-sm lowercase bg-secondary light text-color-light">PARTNER WORDEN</a>
-
+						<a href="/contact" class="btn-standard xs-text-center font-sm lowercase bg-secondary light text-color-light">Naar contactformulier</a>
 					</div>
+
+
+					
 
 
 				</div>
