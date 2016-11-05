@@ -19,13 +19,13 @@
             <li class="has-submenu "><a href="#"><i class="ion-document"></i> <span
                             class="nav-label">Pagina beheer</span></a>
                 <ul class="list-styled">
-                    <li><strong><a href="#">Pagina's</a></strong></li>
+                    <!-- <li><strong><a href="#">Pagina's</a></strong></li>
                     <li><a href="{{ URL::to("cms/page") }}"><i class="ion-grid"></i> Overzicht</a></li>
-                    <li><a href="{{ URL::to("cms/page/create") }}"><i class="ion-plus"></i> Toevoegen</a></li>
+                    <li><a href="{{ URL::to("cms/page/create") }}"><i class="ion-plus"></i> Toevoegen</a></li> -->
                     <li><strong><a href="#">Secties</a></strong></li>
                     <li><a href="{{ URL::to("cms/section") }}"><i class="ion-grid"></i> Overzicht </a></li>
-                    <li><a href="{{ URL::to("cms/section/create") }}"><i class="ion-plus"></i> Toevoegen</a></li>
-
+                    <!-- <li><a href="{{ URL::to("cms/section/create") }}"><i class="ion-plus"></i> Toevoegen</a></li>
+ -->
                 </ul>
             </li>
 
