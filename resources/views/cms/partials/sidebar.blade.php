@@ -24,8 +24,8 @@
                     <li><a href="{{ URL::to("cms/page/create") }}"><i class="ion-plus"></i> Toevoegen</a></li> -->
                     <li><strong><a href="#">Secties</a></strong></li>
                     <li><a href="{{ URL::to("cms/section") }}"><i class="ion-grid"></i> Overzicht </a></li>
-                    <li><a href="{{ URL::to("cms/section/create") }}"><i class="ion-plus"></i> Toevoegen</a></li>
-
+                    <!-- <li><a href="{{ URL::to("cms/section/create") }}"><i class="ion-plus"></i> Toevoegen</a></li>
+ -->
                 </ul>
             </li>
 
