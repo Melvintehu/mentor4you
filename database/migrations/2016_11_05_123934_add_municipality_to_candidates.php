@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class AddMunicipalityToMentors extends Migration
+class AddMunicipalityToCandidates extends Migration
 {
     /**
      * Run the migrations.
@@ -12,7 +12,7 @@ class AddMunicipalityToMentors extends Migration
      */
     public function up()
     {
-        Schema::table('mentors', function (Blueprint $table) {
+        Schema::table('candidates', function (Blueprint $table) {
             $table->string('municipality', 50)->nullable();
         });
     }
@@ -24,7 +24,7 @@ class AddMunicipalityToMentors extends Migration
      */
     public function down()
     {
-        Schema::table('mentors', function (Blueprint $table) {
+        Schema::table('candidates', function (Blueprint $table) {
             $table->dropColumn('municipality');
         });
     }

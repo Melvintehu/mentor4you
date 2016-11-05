@@ -94,7 +94,7 @@ Aanmelden als mentor
 
 				<div class="col-lg-5 space-outside-up-sm"> 
 	    		
-				{!! Form::label('voornaam', 'Voornaam') !!}
+				{!! Form::label('voornaam', 'voornaam') !!}
 	    			{!! Form::text('voornaam', null, ['required', 'placeholder' => 'Voornaam', 'class' => 'input border border-accent space-outside-xs']) !!}
 				
 	    		</div>

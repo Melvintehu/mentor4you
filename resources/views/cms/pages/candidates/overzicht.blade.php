@@ -42,6 +42,7 @@
                                                         <th>Geboortedatum</th>
                                                         <th>Bericht</th>
                                                         <th>Aangemeld als</th>
+                                                        <th>Gemeente</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -55,6 +56,7 @@
                                                             <td>{{ $candidate->date_of_birth }}</td>
                                                             <td>{{ $candidate->message }}</td>
                                                             <td>{{ $candidate->choices }}</td>     
+                                                            <td>{{ $candidate->municipality }}</td>   
                                                         </tr>
                                                     @endforeach
                                                 </tbody>
