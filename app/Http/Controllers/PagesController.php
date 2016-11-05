@@ -66,9 +66,13 @@ class PagesController extends Controller
 
 	public function mentorenAanmelden()
 	{
+
+        $municipalities = ['Noordenveld' => 'Noordenveld', 'Tynaarlo' => 'Tynaarlo', 'Assen' => 'Assen', 'Midden-Drenthe' => 'Midden-Drenthe', 'Aa en Hunze' => 'Aa en Hunze'];
+
          $data = [
             'aanmeldenMentoren' => Section::where('id', 33)->first(),
             'aanmelden' => Section::where('id', 35)->first(),
+            'municipalities' => $municipalities,
             'sliders' => $this->getSliders(),
         ];
 

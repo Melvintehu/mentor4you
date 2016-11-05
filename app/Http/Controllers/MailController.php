@@ -79,6 +79,7 @@ class MailController extends Controller
        $birthdate = $request->input('geboortedatum');
 
        $telefoonnummer = $request->input('telefoonnummer');
+       $gemeente = $request->input('gemeente');
        $bericht = $request->input('bericht');
 
        $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);

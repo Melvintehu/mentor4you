@@ -111,6 +111,12 @@ Aanmelden als mentor
 				</div>
 
 				<div class="col-lg-5 clear-left"> 
+
+					{!! Form::select('gemeente', $data['municipalities'], null, [ 'required', 'class' => 'input border border-accent space-outside-xs font-xs']) !!} 
+
+				</div>
+
+				<div class="col-lg-5 clear-left"> 
 					
 					{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs font-xs']) !!}
 				</div>

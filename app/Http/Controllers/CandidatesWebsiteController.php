@@ -43,6 +43,7 @@ class CandidatesWebsiteController extends Controller
         $candidate->telephone_number = $request->telefoonnummer;
         $candidate->date_of_birth = $request->geboortedatum;
         $candidate->email_address	 = $request->emailadres;
+        $candidate->municipality = $request->gemeente;
         $candidate->message = $request->bericht;
         $candidate->choices = "mentor";
 
