@@ -32,11 +32,7 @@ Route::group(['prefix' => 'cms', 'middleware' => ['auth'] ], function () {
 	// get routes
 	Route::get('/', function(){ return view('cms.cms'); });
 
-    Route::get('/logout', function()
-	{
-		Auth::logout();
-		return redirect('/cms');
-	});
+    Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 
 	Route::get('candidate/mentoren', 'CandidatesController@mentoren');

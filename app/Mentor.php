@@ -10,7 +10,8 @@ class Mentor extends Model
     	'first_name',
     	'last_name',
     	'description',
-    	'date_of_birth'
+    	'date_of_birth',
+    	'municipality',
 
     ];
 
