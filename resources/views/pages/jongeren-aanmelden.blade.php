@@ -94,30 +94,37 @@ Aanmelden als jongere
 			<div class="row">
 					
 
-				<div class="col-lg-5"> 
+				<div class="col-lg-5 space-outside-up-sm"> 
+	    		
+				{!! Form::label('voornaam', 'Voornaam') !!}
 	    			{!! Form::text('voornaam', null, ['required', 'placeholder' => 'Voornaam', 'class' => 'input border border-accent space-outside-xs']) !!}
+				
 	    		</div>
 
-	    		<div class="col-lg-5 clear-left"> 
+	    		<div class="col-lg-5 clear-left space-outside-up-sm"> 
+	    		{!! Form::label('achternaam', 'achternaam') !!}
 	    			{!! Form::text('achternaam', null, ['required', 'placeholder' => 'Achternaam', 'class' => 'input border border-accent space-outside-xs']) !!}
 	    		</div>
 
-
-				<div class="col-lg-5 clear-left"> 
+				<div class="col-lg-5 clear-left space-outside-up-sm"> 
+	    		{!! Form::label('telefoonnummer', 'telefoonnummer') !!}
 					{!! Form::text('telefoonnummer', null, ['required', 'placeholder' => 'Telefoonnummer', 'class' => 'input border border-accent space-outside-xs']) !!}
 				</div>
 
-				<div class="col-lg-5 clear-left"> 
+				<div class="col-lg-5 clear-left space-outside-up-sm"> 
+				{!! Form::label('emailadres', 'emailadres') !!}
 					
 					{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
 				</div>
 
-				<div class="col-lg-5 clear-left"> 
+				<div class="col-lg-5 clear-left space-outside-up-sm"> 
+				{!! Form::label('geboortedatum', 'geboortedatum') !!}
 					
 					{!! Form::date('geboortedatum', null, ['required', 'placeholder' => '', 'class' => 'input border border-accent space-outside-xs font-xs']) !!}
 				</div>
-					
-				<div class="col-lg-7 clear-left"> 	
+				
+				<div class="col-lg-7 clear-left space-outside-up-sm"> 	
+				{!! Form::label('bericht', 'kort bericht') !!}
 
 					{!! Form::textarea('bericht', null, ['required', 'placeholder' => 'Uw bericht of opmerking', 'class' => 'textarea border border-accent space-outside-xs']) !!}
 				</div>
