@@ -13,6 +13,7 @@
 
 // website routes
 
+
 Route::get('/', 'PagesController@indexHome');
 Route::get('/aanmelden-als-jongere', 'PagesController@jongerenAanmelden');
 Route::get('/contact', 'PagesController@contact');
