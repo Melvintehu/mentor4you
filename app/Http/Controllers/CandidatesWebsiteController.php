@@ -21,12 +21,13 @@ class CandidatesWebsiteController extends Controller
         $candidate->telephone_number = $request->telefoonnummer;
         $candidate->date_of_birth = $request->geboortedatum;
         $candidate->email_address	 = $request->emailadres;
+        $candidate->municipality = $request->gemeente;
         $candidate->message = $request->bericht;
         $candidate->choices = "jongere";
 
         $candidate->save();
 
-        $request->session()->flash('succeed', 'Uw email is verzonden!');
+        $request->session()->flash('succeed', 'Uw aanvraag is verzonden!');
 
         return redirect()->back();
 
@@ -43,12 +44,13 @@ class CandidatesWebsiteController extends Controller
         $candidate->telephone_number = $request->telefoonnummer;
         $candidate->date_of_birth = $request->geboortedatum;
         $candidate->email_address	 = $request->emailadres;
+        $candidate->municipality = $request->gemeente;
         $candidate->message = $request->bericht;
         $candidate->choices = "mentor";
 
         $candidate->save();
 
-        $request->session()->flash('succeed', 'Uw email is verzonden!');
+        $request->session()->flash('succeed', 'Uw aanvraag is verzonden!');
 
         return redirect()->back();
         

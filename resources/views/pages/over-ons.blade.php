@@ -91,7 +91,27 @@ Over ons
 
 			</div> -->
 
+			<div class="col-lg-12 space-outside-down-md xs-text-center">			
 
+					<div class="col-lg-8 fadeInDown wow">
+
+						<h3 class="space-outside-down-sm ">Onderdeel van Spinn</h3>
+
+						<p class="">
+							Mentor4you is onderdeel van Spinn
+						</p>
+
+						<div class="image rectangular-img ">
+
+							<img class="height-auto" src="/partner/photos/1473166226@2x-spinn-logo-web-top.png" />
+
+						</div>
+
+					</div>
+
+
+
+				</div>
 
 
 			<div class="col-lg-12">
@@ -104,7 +124,7 @@ Over ons
 
 	</section>
 
-	<section class="container-fluid xs-space-inside-sides-xl-none no-overflow push-65 ">
+<!-- 	<section class="container-fluid xs-space-inside-sides-xl-none no-overflow push-65 ">
 
 			
 		<div class="row row-centered">
@@ -159,7 +179,7 @@ Over ons
 
 		</div>
 
-	</section>
+	</section> -->
 
 	<section class="container-fluid  space-outside-lg bg-accent fadeInDown wow">
 

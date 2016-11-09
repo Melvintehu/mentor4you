@@ -43,10 +43,13 @@ class PagesController extends Controller
 
 	public function jongerenAanmelden()
 	{
+        $municipalities = ['Noordenveld' => 'Noordenveld', 'Tynaarlo' => 'Tynaarlo', 'Assen' => 'Assen', 'Midden-Drenthe' => 'Midden-Drenthe', 'Aa en Hunze' => 'Aa en Hunze'];
+        
          $data = [
             'sliders' => $this->getSliders(),
             'aanmeldenJongeren' => Section::where('id', 32)->first(),
             'aanmelden' => Section::where('id', 34)->first(),
+            'municipalities' => $municipalities,
             'title' => Section::where('id', 32)->first(),
         ];
 		return view('pages.jongeren-aanmelden', compact('data'));
@@ -66,9 +69,13 @@ class PagesController extends Controller
 
 	public function mentorenAanmelden()
 	{
+
+        $municipalities = ['Noordenveld' => 'Noordenveld', 'Tynaarlo' => 'Tynaarlo', 'Assen' => 'Assen', 'Midden-Drenthe' => 'Midden-Drenthe', 'Aa en Hunze' => 'Aa en Hunze'];
+
          $data = [
             'aanmeldenMentoren' => Section::where('id', 33)->first(),
             'aanmelden' => Section::where('id', 35)->first(),
+            'municipalities' => $municipalities,
             'sliders' => $this->getSliders(),
         ];
 

@@ -96,7 +96,7 @@ Aanmelden als jongere
 
 				<div class="col-lg-5 space-outside-up-sm"> 
 	    		
-				{!! Form::label('voornaam', 'Voornaam') !!}
+				{!! Form::label('voornaam', 'voornaam') !!}
 	    			{!! Form::text('voornaam', null, ['required', 'placeholder' => 'Voornaam', 'class' => 'input border border-accent space-outside-xs']) !!}
 				
 	    		</div>
@@ -115,6 +115,15 @@ Aanmelden als jongere
 				{!! Form::label('emailadres', 'emailadres') !!}
 					
 					{!! Form::text('emailadres', null, ['required', 'placeholder' => 'Uw emailadres', 'class' => 'input border border-accent space-outside-xs']) !!}
+				</div>
+
+				<div class="col-lg-5 clear-left space-outside-up-sm"> 
+
+				{!! Form::label('Gemeente', 'gemeente') !!}
+					
+
+					{!! Form::select('gemeente', $data['municipalities'], null, [ 'required', 'class' => 'input border border-accent space-outside-xs font-xs']) !!} 
+
 				</div>
 
 				<div class="col-lg-5 clear-left space-outside-up-sm"> 

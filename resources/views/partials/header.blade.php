@@ -89,6 +89,48 @@
 
 	<div class="row">
 
+		<div class="col-lg-4 space-outside-up-xs xs-clear-float left">
+
+				<div class="row">
+
+					<div class="col-lg-6 col-xs-12 ">
+
+						<a href='https://twitter.com/m4ydrenthe'>
+
+							<div style="width:30px;" class="image inline-block space-outside-right-xs">
+							
+								<img class="height-auto" src="../images/twitter.png">
+							
+							</div>
+
+						</a>
+
+						<a href='https://www.facebook.com/Mentor4You-Drenthe-599475793411930/'>
+
+							<div style="width:30px;" class="image inline-block space-outside-right-xs">
+							
+								<img class="height-auto" src="../images/facebook.png">
+							
+							</div>
+
+						</a>
+
+						<a href='https://www.instagram.com/m4ydrenthe/'>
+
+							<div style="width:30.5px;" class="image inline-block space-outside-right-xs">
+							
+								<img class="height-auto" src="../images/instagram.png">
+							
+							</div>
+
+						</a>
+
+					</div>
+
+				</div>
+
+		</div>
+
 		<div class="col-lg-4  space-inside-sm xs-clear-float right">
 
 				<div class="row">
