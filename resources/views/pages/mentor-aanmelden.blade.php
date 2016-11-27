@@ -40,7 +40,10 @@ Aanmelden als mentor
 			</div>
 			
 			<div class="col-lg-7 space-inside-sides-md">
-				
+				<p>
+					Een uitgebreide beschrijving in PDF-formaat? <a class='text-color-main' href="images/mentor-worden.pdf">Klik hier</a> 
+				</p>
+				<div class="divider bg-accent space-outside-sm"></div>
 				<p class="text space-outside-down-lg ">
 					{!! nl2br($data['aanmeldenMentoren']->body) !!}		
 

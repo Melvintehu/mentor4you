@@ -12,37 +12,25 @@ Over ons
 					space-outside-lg 
 					no-overflow
 	">
-
-			
 		<div class="row">
-			
 			<div class="col-lg-12 
 						space-outside-down-lg 
 						text-center 
 						fadeInDown 
 						wow
 			">
-
 				<h1 class="text-color-main">{{ $data['titel']->title }}</h1>
-
 			</div>
-
 			<div class="col-lg-12 space-outside-down-lg ">
-
 				<div class="divider bg-accent"></div>
-
 			</div>
-
 			<div class="row xs-space-inside-sides-xs">
-				
 				<div class="col-lg-12 space-outside-down-md xs-text-center">
-
 					<div class="col-lg-12 
 								space-outside-down-lg 
 								fadeInDown 
 								wow
 					">
-
 						<h3 class="space-outside-down-sm text-color-main">{{ $data['kop1']->title }}</h3>
 
 						<p class=" ">
