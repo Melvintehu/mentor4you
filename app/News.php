@@ -3,7 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-use App\LoadingModel;
+
 class News extends Model
 {
     protected $fillable = [
@@ -15,11 +15,8 @@ class News extends Model
     ];
 
 
-    public function photos()
-    {
+    public function photos(){
         return $this->belongsToMany('App\Photo')->withPivot('type')->withTimeStamps();      
     } 
     
-
-
 }

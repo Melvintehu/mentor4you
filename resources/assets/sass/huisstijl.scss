@@ -1,82 +1,6 @@
-/*
-	DOCUMENT RULES
-
-	- Secties aangeven met een lange gestreepte lijn. Daarin in hoofdletters de title van de sectie aangeven..
-	- volgorde per sectie is: --Base settings--, --classes--, --media queries--.
-	- probeer de single responsibility rule aan te houden. 
-
-/* --------------------------------------------- { TITLE } -------------------------------------------- */
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */ 
+/* VARIABLES */
 
 
-/* 
-
-	/* Large desktops and laptops */
-	@media (min-width: 1200px) { }
-
-	/* Landscape tablets and medium desktops */
-	@media (min-width: 992px) and (max-width: 1199px) { }
-
-	/* Portrait tablets and small desktops */
-	@media (min-width: 768px) and (max-width: 991px) { }
-
-	/* Landscape phones and portrait tablets */
-	@media (max-width: 767px) { }
-
-	/* Portrait phones and smaller */
-	@media (max-width: 480px) { }
-
-/*
-
-	
-	INCLUDED IN THIS DOCUMENT:
-	-- color variables
-	-- font variables
-	-- font size variables
-	-- shape size variables
-	-- form element variables
-	-- aesthetic variables
-	-- base settings
-	
-	HUISSTIJL
-	-------------------------------------
-	-- backgrounds
-	-- buttons
-	-- form elements
-	-- borders
-	-- hovers
-	-- text and heading colors
-	-- text transforms and font classes
-	-- animations
-	-- shadows
-	-- client manipulator
-	--------------------------------------
-
-	HTML STRUCTURE RULES
-	--------------------------------------
-	-- centering
-	-- floats
-	-- shapes
-
-*/
-
-
-/* --------------------------------------------- COLOR VARIABLES -------------------------------------------- */
 
 
 $light-color: white;
@@ -86,87 +10,122 @@ $secondary-color : #E65100;
 $accent-color : #F1F1F1;
 
 
+
 $background-color-light: white;
 $background-color-dark: #000000;
 
 
 
 
-/* --------------------------------------------- FONT VARIABLES -------------------------------------------- */
-
-
 $font: 'Lato', sans-serif;
 $font-heading: 'Lato', sans-serif;
-
-
-/* --------------------------------------------- FONT SIZE VARIABLES -------------------------------------------- */
-
-
-/* font-size variables */
 
 
 $font-size-xs: 14px;
 $font-size-sm: 19px;
 $font-size-md: 28px;
 $font-size-lg: 48px;
-$font-size-xl: 48px;
-
-
-/* --------------------------------------------- SHAPE SIZE VARIABLES -------------------------------------------- */
-
-
-$circle-dist-xs: 25px;
-$circle-dist-sm: 30px;
-$circle-dist-md: 50px;
-$circle-dist-lg: 150px;
-$circle-dist-xl: 225px;
-
-
-/* --------------------------------------------- FORM ELEMENT VARIABLES -------------------------------------------- */
 
 
 $input-height: 33px;
 
+.font-main{
+	font-family: $font;
+}
 
-/* --------------------------------------------- AESTHETIC VARIABLES -------------------------------------------- */
-
-
-$opacity-xs: 0.85;
-$opacity-sm: 0.70;
-$opacity-md: 0.55;
-$opacity-lg: 0.40;
-$opacity-xl: 0.25;
+.font-secondary{
+	font-family: $font-heading;
+}
 
 
-/* --------------------------------------------- BASE SETTINGS -------------------------------------------- */
-
-
-/* resets */
-
-
-
-body, p, span, a, h1, h2, h3, h4, h5, .container-fluid{ margin: 0; padding: 0; }
 
 body{
-	background: $background-color-light;
+
+	background: white;
 	font-size: $font-size-sm;
-	font-family: $font;
 }
 
-a, a:hover, a:focus, a:active{ text-decoration: none; }
+a{ color: $dark-color; }
 
-p{
-	font-family: $font;
-	font-weight: 300;
+
+
+/* COLORS */
+
+
+/* text colors */
+
+
+
+.text-color-light{
+	color: $light-color;
 }
 
-h1,h2,h3,h4,h5{ 
-	font-family: $font-heading !important; 
+.text-color-dark{
+	color: $dark-color;
+}
+
+.text-color-main{
+	color: $main-color;
+}
+
+.text-color-secondary{
+	color: $secondary-color;
+}
+
+.text-color-accent{
+	color: $accent-color;
 }
 
 
 
 
+/* background colors */
+
+
+.bg-white{
+	background: white;
+	min-height: 1px;
+}
+
+.bg-light{ 
+	background: $background-color-light; 
+	min-height: 1px;
+}
+
+.bg-dark{ 
+	background: $background-color-dark; 
+	min-height: 1px;
+}
+
+.bg-main{
+	background: $main-color !important;
+	min-height: 1px;
+}
+
+.bg-secondary{
+	background: $secondary-color;
+	min-height: 1px;
+}
+
+.bg-accent{
+	background: $accent-color;
+	min-height: 1px;
+}
+
+
+
+
+/* background hover colors */
+
+.hover-light:hover{ background: $background-color-light !important; }
+
+.hover-dark:hover{ background: $background-color-dark !important; }
+
+.hover-main:hover{ background: $main-color !important; }
+
+.hover-secondary:hover{ background: $secondary-color !important; }
+
+.hover-accent:hover{ background: $accent-color !important; }
 
 
 
@@ -176,116 +135,64 @@ h1,h2,h3,h4,h5{
 
 
 
-/* --------------------------------------------- BACKGROUNDS -------------------------------------------- */
+/* HEADINGS AND TEXT */
 
 
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
+/* font size classes */
 
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-.bg-light{ background: $background-color-light; min-height: 1px; }
-.bg-dark{ background: $background-color-dark; min-height: 1px; }
-.bg-main{ background: $main-color !important; min-height: 1px; }
-.bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-.bg-accent{ background: $accent-color; min-height: 1px; }
+.font-xs{ font-size: $font-size-xs; }
+.font-sm{ font-size: $font-size-sm; }
+.font-md{ font-size: $font-size-md; }
+.font-lg{ font-size: $font-size-lg; }
 
 
+/* transforms */
 
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
-
-
-	/* Large desktops and laptops */
-	@media (min-width: 1200px) { 
-		.lg-bg-light{ background: $background-color-light; min-height: 1px; }
-		.lg-bg-dark{ background: $background-color-dark; min-height: 1px; }
-		.lg-bg-main{ background: $main-color !important; min-height: 1px; }
-		.lg-bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-		.lg-bg-accent{ background: $accent-color; min-height: 1px; }
-	}
-
-	/* Landscape tablets and medium desktops */
-	@media (min-width: 992px) and (max-width: 1199px) { 
-		.md-bg-light{ background: $background-color-light; min-height: 1px; }
-		.md-bg-dark{ background: $background-color-dark; min-height: 1px; }
-		.md-bg-main{ background: $main-color !important; min-height: 1px; }
-		.md-bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-		.md-bg-accent{ background: $accent-color; min-height: 1px; }
-	}
-
-	/* Portrait tablets and small desktops */
-	@media (min-width: 768px) and (max-width: 991px) { 
-		.sm-bg-light{ background: $background-color-light; min-height: 1px; }
-		.sm-bg-dark{ background: $background-color-dark; min-height: 1px; }
-		.sm-bg-main{ background: $main-color !important; min-height: 1px; }
-		.sm-bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-		.sm-bg-accent{ background: $accent-color; min-height: 1px; }
-	}
-
-	/* Landscape phones and portrait tablets */
-	@media (max-width: 767px) {
-		.xs-bg-light{ background: $background-color-light; min-height: 1px; }
-		.xs-bg-dark{ background: $background-color-dark; min-height: 1px; }
-		.xs-bg-main{ background: $main-color !important; min-height: 1px; }
-		.xs-bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-		.xs-bg-accent{ background: $accent-color; min-height: 1px; }
-	 }
-
-	/* Portrait phones and smaller */
-	@media (max-width: 480px) { 
-		.xs-bg-light{ background: $background-color-light; min-height: 1px; }
-		.xs-bg-dark{ background: $background-color-dark; min-height: 1px; }
-		.xs-bg-main{ background: $main-color !important; min-height: 1px; }
-		.xs-bg-secondary{ 	background: $secondary-color; min-height: 1px; }
-		.xs-bg-accent{ background: $accent-color; min-height: 1px; }
-	}
+.uppercase{ text-transform: uppercase; }
+.lowercase{ text-transform: lowercase; }
 
 
-/* --------------------------------------------- BUTTONS -------------------------------------------- */
+/* Heading sizes */
 
+h1{ font-size: $font-size-lg; }
 
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
+h2{ font-size: $font-size-md; }
+
+h3{ font-size: $font-size-sm; }
 
 
 
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
 
-.btn-standard {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BUTTONS */
+
+
+
+a.btn-standard, input[type=submit].btn-standard, button.btn-standard{
 	padding: 15px 55px;
+	
 	margin-left: auto;
 	margin-right: auto;
-	display: inline-block;
-}
 
-.btn-round {
-	span {
-		margin-left: 20px;
-	}
-}
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-a.btn-standard, input[type=submit].btn-standard, button.btn-standard
-{
-	padding: 15px 55px;
-	margin-left: auto;
-	margin-right: auto;
+	border: none;
 	display: inline-block;
 }
 
 a.btn-round, input[type=submit].btn-round, button.btn-round{
+	font-weight: 300;
 	border: none;
 	background: transparent;
 
@@ -295,23 +202,17 @@ a.btn-round, input[type=submit].btn-round, button.btn-round{
 }
 
 
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
 
 
 
-/* --------------------------------------------- FORM ELEMENTS -------------------------------------------- */
 
 
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
 
 
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
+
+
+
+/* FORM ELEMENTS */
 
 
 .input{
@@ -335,200 +236,88 @@ a.btn-round, input[type=submit].btn-round, button.btn-round{
 }
 
 
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-
 .input::placeholder, .textarea::placeholder{
 	color: $dark-color;
 	font-size: $font-size-xs;
 }
 
 
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
+
+/* BORDERS */
 
 
 
-/* --------------------------------------------- BORDERS -------------------------------------------- */
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-.border{
-	border-style: solid;
-	border-width: 3px;
-}
-
-/* ---- color ---- */
 
 .border-light{ border-color: $background-color-light; }
+
 .border-dark{ border-color: $background-color-dark; }
+
 .border-accent{ border-color: $accent-color; }
+
 .border-secondary{ border-color: $secondary-color; }
+
 .border-main{ border-color: $main-color; }
 
+.border-white{ border-color: white; }
 
-/* ---- appearence ---- */
+/* border shapes */
 
-.border-curved { border-radius: 5px; }
+.border-curved{ border-radius: 5px; }
 
-.border-curved-down { 
+.border-curved-down{ 
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
  }
 
-.border-curved-up { 
+.border-curved-up{ 
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px; 
 }
 
-.border-curved-right {
+.border-curved-right{
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 }
 
-.border-curved-left {
+.border-curved-left{
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;	
 }
 
 
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
+/* border thickness */
 
 
-/* --------------------------------------------- HOVERS -------------------------------------------- */
+.border-1{ border-width: 1px;}
+
+.border-2{ border-width: 2px; }
+
+.border-3{ border-width: 3px; }
+
+.border-4{ border-width: 4px; }
+
+.border-5{ border-width: 5px; }
+
+.border-6{ border-width: 6px; }
+
+.border-7{ border-width: 7px; }
+
+/* Heading colors*/
+
+/* Default color */
+
+h1, h2, h3, h4, h5{
+	color: $main-color;
+}
 
 
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
+
+h1,h2,h3,h4,h5{
+	font-family: $font-heading !important;
+}
 
 
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-/* ---- border hovers ---- */
-
-
-.border-hover-light:hover{ border-color: $light-color; }
-.border-hover-dark:hover{ border-color: $dark-color;  }
-.border-hover-main:hover{ border-color: $main-color; }
-.border-hover-secondary:hover{ border-color: $secondary-color; }
-.border-hover-accent:hover{ border-color: $accent-color; }
-
-
-/*  ---- background-color hovers ---- */
-
-
-.hover-light:hover{ background: $background-color-light !important; }
-.hover-dark:hover{ background: $background-color-dark !important; }
-.hover-main:hover{ background: $main-color !important; }
-.hover-secondary:hover{ background: $secondary-color !important; }
-.hover-accent:hover{ background: $accent-color !important; }
-
-
-/* darken color hovers */
-
-
-.hover-darken-light:hover { background: darken($light-color, 10%) !important; }
-.hover-darken-dark:hover { background: darken($dark-color, 10%) !important; }
-.hover-darken-main:hover { background: darken($main-color, 10%) !important; }
-.hover-darken-secondary:hover { background: darken($secondary-color, 10%) !important; }
-.hover-darken-accent:hover { background: darken($accent-color, 10%) !important; }
-
-
-/* lighten color hovers */
-
-
-.hover-lighten-light:hover { background: lighten($light-color, 10%) !important; }
-.hover-lighten-dark:hover { background: lighten($dark-color, 10%) !important; }
-.hover-lighten-main:hover { background: lighten($main-color, 10%) !important; }
-.hover-lighten-secondary:hover { background: lighten($secondary-color, 10%) !important; }
-.hover-lighten-accent:hover { background: lighten($accent-color, 10%) !important; }
-
-
-/* ---- text color hovers ---- */
-
-
-.text-hover-light:hover{ color: $light-color !important; }
-.text-hover-dark:hover{ color: $dark-color !important; }
-.text-hover-main:hover{ color: $main-color !important; }
-.text-hover-secondary:hover{ color: $secondary-color !important; }
-.text-hover-accent:hover{ color: $accent-color !important; }
-
-
-/* ---- shadow hovers ---- */
-
-
-.shadow-xs-hover:hover { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-.shadow-sm-hover:hover { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-.shadow-md-hover:hover { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
-.shadow-lg-hover:hover { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
-
-
-/*  opacity hovers */
-
-
-.hover-opacity-transparent:hover{ opacity : 0 };
-.hover-opacity-xs:hover{ opacity : $opacity-xs };
-.hover-opacity-sm:hover{ opacity : $opacity-sm };
-.hover-opacity-md:hover{ opacity : $opacity-md };
-.hover-opacity-lg:hover{ opacity : $opacity-lg };
-.hover-opacity-xl:hover{ opacity : $opacity-xl };
-
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
-
-
-/* --------------------------------------------- TEXT AND HEADING COLORS -------------------------------------------- */
-
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-h1, h2, h3, h4, h5{ color: $dark-color; }
-
-a{ color: $dark-color; }
-p{ color: $dark-color; }
-
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-.text-color-light{ color: $light-color; }
-.text-color-dark{ color: $dark-color; }
-.text-color-main{ color: $main-color; }
-.text-color-secondary{ color: $secondary-color; }
-.text-color-accent{ color: $accent-color; }
-
-.text-color-dark-lighten-xs { color: lighten($dark-color, 10%); }
-.text-color-dark-lighten-sm { color: lighten($dark-color, 30%); }
-.text-color-dark-lighten-md { color: lighten($dark-color, 50%); }
-.text-color-dark-lighten-lg { color: lighten($dark-color, 70%); }
-.text-color-dark-lighten-xl { color: lighten($dark-color, 90%); }
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
+/* Other colors */
 
 h1.text-color-light, h2.text-color-light, h3.text-color-light, h4.text-color-light, h5.text-color-light, span.text-color-light, p.text-color-light, a.text-color-light{
 	color : $light-color;
@@ -548,380 +337,4 @@ h1.text-color-secondary, h2.text-color-secondary, h3.text-color-secondary, h4.te
 
 h1.text-color-accent, h2.text-color-accent, h3.text-color-accent, h4.text-color-accent, h5.text-color-accent, span.text-color-accent, p.text-color-accent, a.text-color-accent{
 	color: $accent-color;
-}
-
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
-
-
-	/* Large desktops and laptops */
-	@media (min-width: 1200px) { 
-		.lg-text-color-light{ color: $light-color; }
-		.lg-text-color-dark{ color: $dark-color; }
-		.lg-text-color-main{ color: $main-color; }
-		.lg-text-color-secondary{ color: $secondary-color; }
-		.lg-text-color-accent{ color: $accent-color; }
-	}
-
-	/* Landscape tablets and medium desktops */
-	@media (min-width: 992px) and (max-width: 1199px) { 
-		.md-text-color-light{ color: $light-color; }
-		.md-text-color-dark{ color: $dark-color; }
-		.md-text-color-main{ color: $main-color; }
-		.md-text-color-secondary{ color: $secondary-color; }
-		.md-text-color-accent{ color: $accent-color; }
-	}
-
-	/* Portrait tablets and small desktops */
-	@media (min-width: 768px) and (max-width: 991px) { 
-		.sm-text-color-light{ color: $light-color; }
-		.sm-text-color-dark{ color: $dark-color; }
-		.sm-text-color-main{ color: $main-color; }
-		.sm-text-color-secondary{ color: $secondary-color; }
-		.sm-text-color-accent{ color: $accent-color; }
-	}
-
-	/* Landscape phones and portrait tablets */
-	@media (max-width: 767px) { 
-		.xs-text-color-light{ color: $light-color; }
-		.xs-text-color-dark{ color: $dark-color; }
-		.xs-text-color-main{ color: $main-color; }
-		.xs-text-color-secondary{ color: $secondary-color; }
-		.xs-text-color-accent{ color: $accent-color; }
-	}
-
-	/* Portrait phones and smaller */
-	@media (max-width: 480px) { 
-		.xs-text-color-light{ color: $light-color; }
-		.xs-text-color-dark{ color: $dark-color; }
-		.xs-text-color-main{ color: $main-color; }
-		.xs-text-color-secondary{ color: $secondary-color; }
-		.xs-text-color-accent{ color: $accent-color; }
-	}
-
-
-/* --------------------------------------------- TEXT TRANSFORMS AND FONT CLASSES -------------------------------------------- */
-
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-
-h1{ font-size: $font-size-xl; }
-h2{ font-size: $font-size-lg; }
-h3{ font-size: $font-size-md; }
-
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-
-/* ---- font size classes ---- */
-
-
-.font-xs{ font-size: $font-size-xs; }
-.font-sm{ font-size: $font-size-sm; }
-.font-md{ font-size: $font-size-md; }
-.font-lg{ font-size: $font-size-lg; }
-
-
-/* ---- font family classes ---- */
-
-
-.font-main{ font-family: $font; }
-.font-secondary{ font-family: $font-heading; }
-
-
-/* ---- text appearence classes ---- */
-
-
-.uppercase{ text-transform: uppercase; }
-.lowercase{ text-transform: lowercase; }
-
-.text-bold { font-weight: 700; }
-.text-thin { font-weight: 100; }
-.text-light { font-weight: 300; }
-.text-italic { font-style: italic; }
-.text-oblique { font-style: oblique; }
-
-.text-line-through { text-decoration: line-through; }
-.text-underlined { text-decoration: underline; }
-.text-overlined { text-decoration: overline; }
-
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
-
-
-/* Large desktops and laptops */
-
-
-@media (min-width: 1200px) {
-	.lg-font-xs{ font-size: $font-size-xs; }
-	.lg-font-sm{ font-size: $font-size-sm; }
-	.lg-font-md{ font-size: $font-size-md; }
-	.lg-font-lg{ font-size: $font-size-lg; }
-}
-
-
-/* Landscape tablets and medium desktops */
-
-
-@media (min-width: 992px) and (max-width: 1199px) {
-	.md-font-xs{ font-size: $font-size-xs; }
-	.md-font-sm{ font-size: $font-size-sm; }
-	.md-font-md{ font-size: $font-size-md; }
-	.md-font-lg{ font-size: $font-size-lg; }
-}
-
-
-/* Portrait tablets and small desktops */
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.sm-font-xs{ font-size: $font-size-xs; }
-	.sm-font-sm{ font-size: $font-size-sm; }
-	.sm-font-md{ font-size: $font-size-md; }
-	.sm-font-lg{ font-size: $font-size-lg; }
-}
-
-
-/* Landscape phones and portrait tablets */
-
-
-@media (max-width: 767px) {
-	.xs-font-xs{ font-size: $font-size-xs; }
-	.xs-font-sm{ font-size: $font-size-sm; }
-	.xs-font-md{ font-size: $font-size-md; }
-	.xs-font-lg{ font-size: $font-size-lg; }
-}
-
-
-/* Portrait phones and smaller */
-
-
-@media (max-width: 480px) {
-	.xs-font-xs{ font-size: $font-size-xs; }
-	.xs-font-sm{ font-size: $font-size-sm; }
-	.xs-font-md{ font-size: $font-size-md; }
-	.xs-font-lg{ font-size: $font-size-lg; }
-}
-
-
-/* --------------------------------------------- ANIMATIONS -------------------------------------------- */
-
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-/* ---- transitions ---- */
-
-
-.transition-slow {
-	-webkit-transition: 1000ms;
-    -moz-transition: 1000ms;
-    -o-transition: 1000ms;
-    transition: 1000ms;
-}
-
-
-.transition-normal {
-	-webkit-transition: 500ms;
-    -moz-transition: 500ms;
-    -o-transition: 500ms;
-    transition: 500ms;
-}
-
-
-.transition-fast {
-	-webkit-transition: 200ms;
-    -moz-transition: 200ms;
-    -o-transition: 200ms;
-    transition: 200ms;
-}
-
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */
-
-
-/* --------------------------------------------- SHADOWS -------------------------------------------- */
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-.shadow-xs { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-.shadow-sm { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
-.shadow-md { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
-.shadow-lg { box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
-.shadow-xl { box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); }
-
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */ 
-
-
-
-/* --------------------------------------------- CLIENT MANIPULATORS -------------------------------------------- */
-
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-
-.pointer { cursor: pointer; }
-
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */ 
-
-
-
-/* --------------------------------------------- SHAPES -------------------------------------------- */
-
-/* ----------------------- */
-/* || --base settings-- || */
-/* ----------------------- */
-
-/* ----------------- */
-/* || --classes-- || */
-/* ----------------- */
-
-.circle{
-	border-radius:2000px;
-	text-align: center;
-
-}
-
-
-.circle{
-	border-radius:2000px;
-	text-align: center;
-
-}
-
-
-.circle-xs{
-	width: $circle-dist-xs;
-	height: $circle-dist-xs;
-}
-
-.circle-sm{
-	width: $circle-dist-sm;
-	height: $circle-dist-sm;
-	line-height: $circle-dist-sm;
-}
-
-
-.circle-md{
-	width: $circle-dist-md;
-	height: $circle-dist-md;
-	line-height: $circle-dist-md;
-
-}
-
-.circle-lg{
-	width: $circle-dist-lg;
-	height: $circle-dist-lg;
-
-}
-
-
-.circle-xl{
-	width: $circle-dist-xl;
-	height: $circle-dist-xl;
-}
-
-
-
-
-/* -------------------------- */
-/* || --class attaching -- || */
-/* -------------------------- */
-
-/* ----------------------- */
-/* || --media queries-- || */
-/* ----------------------- */ 
-
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) { 
-	.lg-circle-xl { width: $circle-dist-xl; height: $circle-dist-xl; line-height: $circle-dist-xl ; }
-	.lg-circle-lg { width: $circle-dist-lg; height: $circle-dist-lg; line-height: $circle-dist-lg ; }
-	.lg-circle-md { width: $circle-dist-md; height: $circle-dist-md; line-height: $circle-dist-md ; }
-	.lg-circle-sm { width: $circle-dist-sm; height: $circle-dist-sm; line-height: $circle-dist-sm ; }
-	.lg-circle-xs { width: $circle-dist-xs; height: $circle-dist-xs; line-height: $circle-dist-xs ; }
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) { 
-	.md-circle-xl { width: $circle-dist-xl; height: $circle-dist-xl; line-height: $circle-dist-xl ; }
-	.md-circle-lg { width: $circle-dist-lg; height: $circle-dist-lg; line-height: $circle-dist-lg ; }
-	.md-circle-md { width: $circle-dist-md; height: $circle-dist-md; line-height: $circle-dist-md ; }
-	.md-circle-sm { width: $circle-dist-sm; height: $circle-dist-sm; line-height: $circle-dist-sm ; }
-	.md-circle-xs { width: $circle-dist-xs; height: $circle-dist-xs; line-height: $circle-dist-xs ; }
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) { 
-	.sm-circle-xl { width: $circle-dist-xl; height: $circle-dist-xl; line-height: $circle-dist-xl ; }
-	.sm-circle-lg { width: $circle-dist-lg; height: $circle-dist-lg; line-height: $circle-dist-lg ; }
-	.sm-circle-md { width: $circle-dist-md; height: $circle-dist-md; line-height: $circle-dist-md ; }
-	.sm-circle-sm { width: $circle-dist-sm; height: $circle-dist-sm; line-height: $circle-dist-sm ; }
-	.sm-circle-xs { width: $circle-dist-xs; height: $circle-dist-xs; line-height: $circle-dist-xs ; }
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) { 
-	.xs-circle-xl { width: $circle-dist-xl; height: $circle-dist-xl; line-height: $circle-dist-xl ; }
-	.xs-circle-lg { width: $circle-dist-lg; height: $circle-dist-lg; line-height: $circle-dist-lg ; }
-	.xs-circle-md { width: $circle-dist-md; height: $circle-dist-md; line-height: $circle-dist-md ; }
-	.xs-circle-sm { width: $circle-dist-sm; height: $circle-dist-sm; line-height: $circle-dist-sm ; }
-	.xs-circle-xs { width: $circle-dist-xs; height: $circle-dist-xs; line-height: $circle-dist-xs ; }
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) { 
-	.xs-circle-xl { width: $circle-dist-xl; height: $circle-dist-xl; line-height: $circle-dist-xl ; }
-	.xs-circle-lg { width: $circle-dist-lg; height: $circle-dist-lg; line-height: $circle-dist-lg ; }
-	.xs-circle-md { width: $circle-dist-md; height: $circle-dist-md; line-height: $circle-dist-md ; }
-	.xs-circle-sm { width: $circle-dist-sm; height: $circle-dist-sm; line-height: $circle-dist-sm ; }
-	.xs-circle-xs { width: $circle-dist-xs; height: $circle-dist-xs; line-height: $circle-dist-xs ; }
 }

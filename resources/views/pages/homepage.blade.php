@@ -146,7 +146,7 @@ Homepage
 
 							<div class=" space-outside-sm xs-space-outside-down-lg">
 
-								<a class="btn-standard bg-secondary text-color-light light" href="#bekijk-de-resultaten">Bekijk de ervaringen</a>
+								<a class="btn-standard bg-secondary text-color-light light" href="#bekijk-de-resultaten">Bekijk de resultaten</a>
 
 							</div>
 

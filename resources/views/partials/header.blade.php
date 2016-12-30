@@ -8,7 +8,7 @@
 		<!-- Row wrapper voor content -->
 			<div class="row ">
 
-			<a class="hidden-sm" href="/">
+			<a href="/">
 				
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 main-logo hidden-xs ">
 
@@ -21,52 +21,16 @@
 
 			<!-- navigatie -->
 		
-				<div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
 					
 					<div class="placeholder-nav"> 
 
 					<!-- navbar -->
 							<nav class="navbar navbar-default navbar-right xs-clear-float"> 
 
-
-
 							  <div class="container-fluid">
 							    <!-- Brand and toggle get grouped for better mobile display -->
 							    <div class="navbar-header">
-
-							    <div class='col-xs-5 hidden-lg hidden-md hidden-sm xs-space-outside-xs xs-space-outside-left-xs'>
-
-									<a href='https://twitter.com/m4ydrenthe'>
-
-										<div style="width:30px;" class="image inline-block space-outside-right-xs">
-										
-											<img class="height-auto" src="../images/twitter.png">
-										
-										</div>
-
-									</a>
-
-									<a href='https://www.facebook.com/Mentor4You-Drenthe-599475793411930/'>
-
-										<div style="width:30px;" class="image inline-block space-outside-right-xs">
-										
-											<img class="height-auto" src="../images/facebook.png">
-										
-										</div>
-
-									</a>
-
-									<a href='https://www.instagram.com/m4ydrenthe/'>
-
-										<div style="width:30.5px;" class="image inline-block space-outside-right-xs">
-										
-											<img class="height-auto" src="../images/instagram.png">
-										
-										</div>
-
-									</a>
-
-								</div>
 
 							      <button type="button" class="navbar-toggle collapsed xs-space-outside-right-sm" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 
@@ -93,7 +57,7 @@
 
 							       	<li class="{{ active_class(if_route(['actueel']) || if_uri(['actueel'])) }}"><a ><a href="{{ URL::to('actueel') }}">ACTUEEL</a></li>
 
-							      	<li><a href="/behaalde-resultaten">ERVARINGEN</a></li>
+							       <!-- 	<li><a href="/behaalde-resultaten">RESULTATEN</a></li> -->
 
 
 
@@ -125,67 +89,27 @@
 
 	<div class="row">
 
-		<div class="col-lg-4 space-outside-up-xs xs-clear-float hidden-xs left">
-
-				<div class="row">
-
-					<div class="col-lg-6 col-xs-12 ">
-
-						<a href='https://twitter.com/m4ydrenthe'>
-
-							<div style="width:30px;" class="image inline-block space-outside-right-xs">
-							
-								<img class="height-auto" src="../images/twitter.png">
-							
-							</div>
-
-						</a>
-
-						<a href='https://www.facebook.com/Mentor4You-Drenthe-599475793411930/'>
-
-							<div style="width:30px;" class="image inline-block space-outside-right-xs">
-							
-								<img class="height-auto" src="../images/facebook.png">
-							
-							</div>
-
-						</a>
-
-						<a href='https://www.instagram.com/m4ydrenthe/'>
-
-							<div style="width:30.5px;" class="image inline-block space-outside-right-xs">
-							
-								<img class="height-auto" src="../images/instagram.png">
-							
-							</div>
-
-						</a>
-
-					</div>
-
-				</div>
-
-		</div>
-
-		<div class="col-lg-5 col-md-6 col-sm-7 space-inside-sm xs-clear-float xs-text-center right">
+		<div class="col-lg-4  space-inside-sm xs-clear-float right">
 
 				<div class="row">
 					
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
+					<div class="col-lg-6 col-xs-12 ">
 						
-						<p class="text-color-light font-xs xs-clear-float right">
+						<p class="text-color-light font-xs xs-clear-float  right">
 				
-							<span class="bold text-color-main xs-space-inside-left-xs lg-space-inside-left-md space-inside-right-sm"> T </span> 06-24967211
+							<span class="bold text-color-main xs-space-inside-left-xs space-inside-left-md space-inside-right-sm xs-space-insi "> T </span> 06-24967211
 				
 						</p>
 
 					</div>
 
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 xs-space-outside-down-xs">
+					<div class="col-lg-6 col-xs-12 xs-space-outside-down-xs">
 						
-						<p class="text-color-light font-xs xs-clear-float right">
+						<p class="text-color-light font-xs xs-clear-float  right">
 		
-							<span class="bold text-color-main xs-space-inside-left-xs lg-space-inside-left-md space-inside-right-sm"> E </span> info@mentor4you.nl
+							<span class="bold text-color-main xs-space-inside-left-xs space-inside-left-md space-inside-right-sm "> E </span> 
+							
+							info@mentor4you.nl
 						
 						</p>
 						
@@ -193,6 +117,10 @@
 
 				</div>
 
+				
+		
+				
+			
 		</div>
 
 	</div>

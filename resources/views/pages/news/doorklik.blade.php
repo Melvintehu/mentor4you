@@ -23,8 +23,7 @@
 				
 				<p>
 					
-
-					{!! nl2br(parseLink($data['news']->body)) !!}
+					{!! htmlentities(nl2br($data['news']->body)) !!}
 
 				</p>
 

@@ -12,7 +12,9 @@ Aanmelden als jongere
 		<div class="row fadeInDown wow">
 
 			<div class="col-lg-12 space-outside-lg xs-text-center "> 
-				<h1>{{ $data['aanmeldenJongeren']->title }}</h1> 
+
+				<h1>{{ $data['aanmeldenJongeren']->title }}</h1>
+
 			</div>
 
 			@if(session('succeed'))
@@ -38,10 +40,7 @@ Aanmelden als jongere
 			</div>
 			
 			<div class="col-lg-7 space-inside-sides-md">
-				<p>
-					Een uitgebreide beschrijving in PDF-formaat? <a class='text-color-main' href="images/mentor-zoeken.pdf">Klik hier</a> 
-				</p>
-				<div class="divider bg-accent space-outside-sm"></div>
+				
 				<p class="text space-outside-down-lg ">
 					{!! nl2br($data['aanmeldenJongeren']->body) !!}	
 
